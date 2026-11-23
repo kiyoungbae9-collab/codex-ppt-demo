@@ -1,0 +1,67 @@
+{
+  "_note": "Verbatim English presenter script from 'GPM Chamber Presentation v1.0'. Edit text here, then run tools/build_narration.py and tools/build.py.",
+  "voice": "am_michael",
+  "speed": 1.12,
+  "slides": [
+    {
+      "id": "s01",
+      "title": "Korea–Ghana Industrial Partnership",
+      "text": "Good morning, distinguished representatives of the Chamber of Commerce and business leaders. Thank you for this opportunity. Today, I would like to introduce a practical business partnership between Korea and Ghana. Korea has industrial equipment, manufacturing experience, and technical expertise. Ghana has entrepreneurs, growing business ambitions, and opportunities to develop local manufacturing. Global Partner Market aims to connect these capabilities and turn them into real business projects. Our goal is not simply to sell machines. It is to help create sustainable manufacturing opportunities together."
+    },
+    {
+      "id": "s02",
+      "title": "A Manufacturing Opportunity",
+      "text": "Let me begin with a question. What product would you like to manufacture in Ghana if you could find suitable equipment and technical support? For some businesses, the opportunity may be hygiene products. For others, pharmaceutical manufacturing, plastic products, or packaging. Starting a manufacturing project requires more than buying equipment. You need market demand, the right technology, trained people, and a suitable factory. We believe there is an opportunity to connect Korean industrial resources with Ghanaian entrepreneurs who already understand their local markets. The starting point is your business idea."
+    },
+    {
+      "id": "s03",
+      "title": "What GPM Connects",
+      "text": "This is the role of Global Partner Market, or GPM. On the Korean side, we seek suitable equipment suppliers, manufacturing technologies, and specialist companies. On the Ghanaian side, we work to identify manufacturing demand, potential local partners, and project requirements. GPM connects these two sides through equipment matching, technical review, business planning, and implementation coordination. We are proposing a platform for practical cooperation. Each project must be evaluated separately, with the relevant suppliers and local partners. Our value is in helping the right companies and technologies come together."
+    },
+    {
+      "id": "s04",
+      "title": "Priority Manufacturing Opportunities",
+      "text": "We are focusing on four groups of manufacturing opportunities. First, pharmaceutical equipment, including sterile vial powder filling and capping systems. These projects require particularly careful technical, quality, and regulatory review. Second, hygiene products. We are looking at three distinct categories: baby diapers, adult diapers, and feminine sanitary pads. Each requires its own suitable manufacturing equipment. Third, plastic injection molding equipment, including machines, molds, and related automation. And fourth, other industrial equipment such as packaging and processing machinery. We would like to learn which of these sectors is most relevant to your business."
+    },
+    {
+      "id": "s05",
+      "title": "Beyond Equipment Supply",
+      "text": "Purchasing a machine is only one part of starting a manufacturing business. A company also needs to understand installation requirements, utilities, operating procedures, quality control, and maintenance. Our proposed model connects equipment sourcing with engineering review and practical workforce training. Depending on the project, Korean specialists and local technical partners may support equipment inspection, installation planning, commissioning, and training. The objective is straightforward: to help a local business move toward an operational manufacturing facility, rather than receive equipment without the knowledge needed to use it."
+    },
+    {
+      "id": "s06",
+      "title": "How We Develop a Project",
+      "text": "Let me explain how a project can move forward. We begin by identifying equipment and reviewing its technical condition. Next, we match potential equipment with the needs of a Ghanaian business. Then we assess feasibility, including the factory site, utilities, maintenance requirements, investment and operating conditions. If the parties agree, the project can move to contracting, relocation, installation, commissioning, and training. Finally, production performance and operational readiness are reviewed. These stages are not automatic promises. They are checkpoints intended to support better decisions before a company makes a major commitment."
+    },
+    {
+      "id": "s07",
+      "title": "Industrial Equipment Matching Platform",
+      "text": "Another important part of our approach is organizing industrial equipment information. When considering equipment from another country, business owners need more than a photograph and a price. They need technical specifications, equipment condition, maintenance history where available, and information about installation and relocation. GPM proposes to organize these details in a digital equipment catalog that supports discussions between suppliers and potential buyers. The interface shown here is a conceptual model, not a confirmed list of machines for immediate sale. Better information helps both sides determine whether an opportunity deserves further investigation."
+    },
+    {
+      "id": "s08",
+      "title": "Feasibility Before Investment",
+      "text": "We understand that manufacturing investment requires careful decisions. A machine may be technically functional but unsuitable for the local factory, raw materials, production requirements, or market conditions. That is why we propose reviewing six essential areas before major commitments are made: market demand, equipment suitability, investment and operating costs, factory infrastructure, workforce capability, and regulatory requirements. For pharmaceutical projects, quality and licensing requirements are particularly important. We do not want to promise an investment return without reliable evidence. We want to help identify which opportunities are worth evaluating further."
+    },
+    {
+      "id": "s09",
+      "title": "Partnership Roles",
+      "text": "Successful cooperation requires clear responsibilities. Korean partners may provide industrial equipment, technical documentation, engineering support, and training. Ghanaian manufacturers and investors bring local market knowledge, project sites, business operations, and investment decisions. GPM aims to connect the parties and coordinate the early stages of project development. Chambers of Commerce and relevant institutions can also help businesses identify potential partners and opportunities for further discussion. This is a proposed cooperation structure. Actual roles, contracts, and responsibilities must be agreed upon by the participating companies."
+    },
+    {
+      "id": "s10",
+      "title": "Start with a Pilot Project",
+      "text": "We suggest beginning with a focused pilot project. Instead of trying to build several factories at once, let us first select one product category and identify one committed local business partner. Together, we can define the required equipment, examine possible Korean supply options, and review the site, utilities, market demand, investment needs, and technical risks. If the feasibility review is positive, the parties can discuss a detailed implementation plan. A pilot does not guarantee commercial success. However, it gives us a practical way to test the opportunity before considering a larger manufacturing program."
+    },
+    {
+      "id": "s11",
+      "title": "More Infrastructure Opportunities",
+      "text": "Industrial equipment transfer is the main focus of today’s presentation, but GPM also introduces five complementary infrastructure business areas. These include mobile solar cold storage, solar cold-chain logistics terminals, modular housing, refrigeration efficiency improvement, and solar-powered EV charging. These solutions may be relevant to manufacturing sites, agricultural businesses, logistics operators, and industrial facilities. We present them as additional areas for project-specific discussion, not as completed installations or guaranteed performance solutions. If any of these opportunities relates to your business, we would welcome a separate technical conversation."
+    },
+    {
+      "id": "s12",
+      "title": "Let’s Build the Next Project Together",
+      "text": "Let me close with a simple invitation. If you are considering a manufacturing business in Ghana, we would like to hear about your product, your business plans, and the challenges you face. You do not need to have every answer today. We can begin with a preliminary discussion to understand your requirements and assess whether suitable Korean equipment or technical partners may be available. We welcome conversations with manufacturers, investors, business associations, and technical partners. Thank you for your attention. We look forward to exploring practical Korea–Ghana manufacturing partnerships with you."
+    }
+  ]
+}

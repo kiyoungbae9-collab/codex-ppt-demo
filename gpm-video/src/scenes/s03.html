@@ -1,0 +1,108 @@
+<template>
+  <style>
+{{BASE_CSS}}
+    .s03-box { top: 326px; width: 470px; height: 300px; }
+    #s03-k { left: 192px; } #s03-g { left: 725px; } #s03-h { left: 1258px; }
+    .s03-box .cap { position: absolute; left: 26px; top: 26px; }
+    .s03-box .h { position: absolute; left: 26px; top: 72px; }
+    .s03-list { position: absolute; left: 26px; top: 130px; display: flex; flex-direction: column; gap: 12px; }
+    .s03-it { display: flex; align-items: center; gap: 10px; font-size: 28px; color: #4A5759; white-space: nowrap; }
+    .s03-it .ic { width: 26px; height: 26px; color: #008C91; flex: none; }
+    #s03-g .s03-sub { position: absolute; left: 26px; top: 130px; font-size: 28px; color: #CFE6E5; }
+    #s03-prop { position: absolute; left: 26px; top: 226px; background: rgba(255,255,255,0.16); color: #fff; }
+    .s03-arrow { position: absolute; top: 462px; width: 63px; height: 36px; color: #008C91; }
+    #s03-a1 { left: 662px; } #s03-a2 { left: 1195px; }
+    #s03-st { left: 958px; top: 626px; width: 4px; height: 26px; }
+    #s03-bar { left: 375px; top: 650px; width: 1170px; height: 4px; }
+    .s03-sd { top: 652px; width: 4px; height: 24px; }
+    #s03-d1 { left: 373px; } #s03-d2 { left: 763px; } #s03-d3 { left: 1153px; } #s03-d4 { left: 1543px; }
+    .s03-svc { top: 676px; width: 366px; height: 84px; display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 28px; font-weight: 700; color: #1C2528; }
+    .s03-svc .ic { width: 30px; height: 30px; color: #008C91; }
+    #s03-s1 { left: 192px; } #s03-s2 { left: 582px; } #s03-s3 { left: 972px; } #s03-s4 { left: 1362px; }
+    #s03-note { position: absolute; left: 0; right: 0; top: 790px; text-align: center; }
+  </style>
+  <div id="root" data-composition-id="s03" data-width="1920" data-height="1080">
+    <div class="stage" id="s03-stage">
+      <h1 class="title" id="s03-title">{{TITLE}}</h1>
+      <div class="rule" id="s03-rule"></div>
+      <p class="headline" id="s03-headline">From Equipment Sourcing to Local Manufacturing</p>
+
+      <div class="card s03-box" id="s03-k">
+        <div class="cap">Korea</div>
+        <p class="h">Equipment &amp; Technology</p>
+        <div class="s03-list">
+          <div class="s03-it" id="s03-k1">{{icon:cog}}Equipment suppliers</div>
+          <div class="s03-it" id="s03-k2">{{icon:layers}}Manufacturing technologies</div>
+          <div class="s03-it" id="s03-k3">{{icon:hard-hat}}Specialist companies</div>
+        </div>
+      </div>
+      <svg class="s03-arrow" id="s03-a1" viewBox="0 0 63 36" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 18 H55 M43 6 L55 18 L43 30" /></svg>
+      <div class="card hub s03-box" id="s03-g">
+        <div class="cap">GPM</div>
+        <p class="h">Project Coordination</p>
+        <p class="s03-sub">Global Partner Market</p>
+        <span class="tag" id="s03-prop">Proposed platform</span>
+      </div>
+      <svg class="s03-arrow" id="s03-a2" viewBox="0 0 63 36" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 18 H55 M43 6 L55 18 L43 30" /></svg>
+      <div class="card s03-box" id="s03-h">
+        <div class="cap">Ghana</div>
+        <p class="h">Manufacturing Partners</p>
+        <div class="s03-list">
+          <div class="s03-it" id="s03-h1">{{icon:store}}Manufacturing demand</div>
+          <div class="s03-it" id="s03-h2">{{icon:users}}Local partners</div>
+          <div class="s03-it" id="s03-h3">{{icon:clipboard-check}}Project requirements</div>
+        </div>
+      </div>
+
+      <div class="ln" id="s03-st"></div>
+      <div class="ln" id="s03-bar"></div>
+      <div class="ln s03-sd" id="s03-d1"></div><div class="ln s03-sd" id="s03-d2"></div><div class="ln s03-sd" id="s03-d3"></div><div class="ln s03-sd" id="s03-d4"></div>
+      <div class="card s03-svc" id="s03-s1">{{icon:search}}Demand Identification</div>
+      <div class="card s03-svc" id="s03-s2">{{icon:link}}Equipment Matching</div>
+      <div class="card s03-svc" id="s03-s3">{{icon:clipboard-check}}Feasibility</div>
+      <div class="card s03-svc" id="s03-s4">{{icon:wrench}}Implementation Support</div>
+      <p class="note" id="s03-note">Each project is evaluated separately, with the relevant suppliers and local partners.</p>
+      <div class="pageno" id="s03-page">{{PAGE}}</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+{{HELPERS}}
+    E.title();
+    E.blurIn("#s03-headline", 0.85);
+    // "This is the role of Global Partner Market, or GPM."
+    E.open("#s03-g", {{at:Global Partner Market}});
+    // "On the Korean side, we seek suitable equipment suppliers, manufacturing technologies, and specialist companies."
+    E.open("#s03-k", {{at:On the Korean side}});
+    E.blurIn("#s03-k1", {{at:equipment suppliers}});
+    E.blurIn("#s03-k2", {{at:manufacturing technologies}});
+    E.blurIn("#s03-k3", {{at:specialist companies}});
+    // "On the Ghanaian side, we work to identify manufacturing demand, potential local partners, and project requirements."
+    E.open("#s03-h", {{at:On the Ghanaian side}});
+    E.blurIn("#s03-h1", {{at:manufacturing demand}});
+    E.blurIn("#s03-h2", {{at:potential local partners}});
+    E.blurIn("#s03-h3", {{at:project requirements}});
+    // "GPM connects these two sides through equipment matching, technical review, business planning, and implementation coordination."
+    E.open("#s03-a1", {{at:connects these two sides}}, 0.4);
+    E.open("#s03-a2", {{at:connects these two sides+0.25}}, 0.4);
+    E.drawY("#s03-st", {{at:two sides}}, 0.25);
+    E.drawX("#s03-bar", {{at:two sides+0.2}}, 0.5, "center center");
+    E.drawY("#s03-d1, #s03-d2, #s03-d3, #s03-d4", {{at:two sides+0.6}}, 0.25);
+    E.blurIn("#s03-s1", {{at:through equipment matching-0.2}});
+    E.blurIn("#s03-s2", {{at:equipment matching}});
+    E.blurIn("#s03-s3", {{at:technical review}});
+    E.blurIn("#s03-s4", {{at:implementation coordination}});
+    focus(["#s03-s1", "#s03-s2"], "#s03-s2", {{at:equipment matching}});
+    focus(["#s03-s1", "#s03-s2", "#s03-s3"], "#s03-s3", {{at:technical review}});
+    focus(["#s03-s1", "#s03-s2", "#s03-s3", "#s03-s4"], "#s03-s4", {{at:implementation coordination}});
+    E.rest("#s03-s1, #s03-s2, #s03-s3, #s03-s4", {{at:We are proposing}});
+    // "We are proposing a platform for practical cooperation."
+    E.land("#s03-prop", {{at:proposing a platform}});
+    // "Each project must be evaluated separately..."
+    E.blurIn("#s03-note", {{at:Each project must}});
+    // "Our value is in helping the right companies and technologies come together."
+    tl.to("#s03-k, #s03-h", { borderColor: TEAL, backgroundColor: LIGHT, duration: 0.4, ease: "power2.inOut" }, {{at:the right companies}});
+    E.exit({{EXIT}});
+    window.__timelines["s03"] = tl;
+  </script>
+</template>

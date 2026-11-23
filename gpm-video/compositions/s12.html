@@ -1,0 +1,143 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #ffffff; color: #1C2528; font-family: "Inter", sans-serif; overflow: hidden; }
+    #root * { box-sizing: border-box; margin: 0; padding: 0; }
+    #root .stage { position: absolute; inset: 0; }
+    #root .title { position: absolute; left: 192px; top: 146px; font-size: 60px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; white-space: nowrap; color: #1C2528; }
+    #root .title .w { display: inline-block; }
+    #root .rule { position: absolute; left: 192px; top: 228px; width: 96px; height: 6px; background: #008C91; }
+    #root .headline { position: absolute; left: 192px; top: 252px; font-size: 34px; font-weight: 400; line-height: 1.25; color: #005B62; white-space: nowrap; }
+    #root .pageno { position: absolute; left: 0; right: 0; top: 982px; text-align: center; font-size: 28px; font-weight: 400; color: #7A898C; }
+    #root .card { position: absolute; background: #ffffff; border: 2px solid #D3DDDE; border-radius: 10px; }
+    #root .card.hub { background: #005B62; border-color: #005B62; color: #ffffff; }
+    #root .ghost { position: absolute; border: 2px dashed #C3D0D1; border-radius: 10px; }
+    #root .tile { width: 72px; height: 72px; border-radius: 10px; background: #E4F2F1; color: #008C91; display: flex; align-items: center; justify-content: center; flex: none; }
+    #root .tile.sm { width: 56px; height: 56px; }
+    #root .tile.sm .ic { width: 32px; height: 32px; }
+    #root .hub .tile { background: rgba(255, 255, 255, 0.14); color: #ffffff; }
+    #root .ic { width: 40px; height: 40px; stroke-width: 1.8; }
+    #root .cap { font-size: 28px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #008C91; }
+    #root .num { font-size: 28px; font-weight: 700; color: #008C91; }
+    #root .h { font-size: 30px; font-weight: 700; line-height: 1.2; color: #1C2528; }
+    #root .hub .h, #root .hub .b, #root .hub .cap { color: #ffffff; }
+    #root .b { font-size: 28px; font-weight: 400; line-height: 1.3; color: #4A5759; }
+    #root .note { font-size: 28px; font-weight: 400; line-height: 1.3; color: #7A898C; }
+    #root .tag { display: inline-flex; align-items: center; gap: 10px; padding: 6px 16px; border-radius: 6px; background: #E4F2F1; color: #005B62; font-size: 28px; font-weight: 700; white-space: nowrap; }
+    #root .tag .ic { width: 28px; height: 28px; }
+    #root .tag.out { background: #ffffff; border: 2px solid #005B62; }
+    #root .ln { position: absolute; background: #008C91; }
+    #root .abs { position: absolute; }
+    #root .row { display: flex; align-items: center; }
+
+    .s12-it { position: absolute; left: 192px; width: 920px; display: flex; align-items: center; gap: 22px; }
+    #s12-i1 { top: 344px; } #s12-i2 { top: 446px; } #s12-i3 { top: 548px; }
+    .s12-ck { width: 60px; height: 60px; border-radius: 50%; border: 3px solid #C3D0D1; color: #C3D0D1; display: flex; align-items: center; justify-content: center; flex: none; }
+    .s12-ck .ic { width: 32px; height: 32px; stroke-width: 2.6; }
+    .s12-it p { font-size: 32px; font-weight: 700; line-height: 1.2; color: #1C2528; }
+    .s12-it p span { display: block; font-size: 28px; font-weight: 400; color: #4A5759; }
+    #s12-thanks { position: absolute; left: 192px; top: 700px; font-size: 72px; font-weight: 700; letter-spacing: -0.02em; color: #1C2528; }
+    #s12-panel { left: 1196px; top: 318px; width: 532px; height: 500px; }
+    #s12-logo { position: absolute; left: 186px; top: 40px; width: 160px; height: 160px; }
+    #s12-brand { position: absolute; left: 0; right: 0; top: 226px; text-align: center; font-size: 28px; font-weight: 700; letter-spacing: 0.12em; color: #1C2528; }
+    #s12-url { position: absolute; left: 0; right: 0; top: 274px; text-align: center; font-size: 30px; color: #008C91; }
+    #s12-kg { position: absolute; left: 44px; top: 384px; width: 444px; height: 60px; }
+    #s12-kg .cap { position: absolute; top: 14px; }
+    #s12-kl { left: 0; } #s12-kr { right: 0; }
+    #s12-kline { left: 130px; top: 30px; width: 184px; height: 3px; }
+    #s12-kdot { position: absolute; left: 212px; top: 21px; width: 20px; height: 20px; border-radius: 50%; background: #005B62; }
+  </style>
+  <div id="root" data-composition-id="s12" data-width="1920" data-height="1080">
+    <div class="stage" id="s12-stage">
+      <h1 class="title" id="s12-title"><span class="w">Let’s</span> <span class="w">Build</span> <span class="w">the</span> <span class="w">Next</span> <span class="w">Project</span> <span class="w">Together</span></h1>
+      <div class="rule" id="s12-rule"></div>
+      <p class="headline" id="s12-headline">Which Manufacturing Opportunity Would You Like to Explore?</p>
+
+      <div class="s12-it" id="s12-i1"><div class="s12-ck" id="s12-k1"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg></div><p>Identify your product or manufacturing interest</p></div>
+      <div class="s12-it" id="s12-i2"><div class="s12-ck" id="s12-k2"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg></div><p>Discuss your factory and investment requirements</p></div>
+      <div class="s12-it" id="s12-i3"><div class="s12-ck" id="s12-k3"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg></div><p>Request a preliminary equipment-matching discussion</p></div>
+      <p id="s12-thanks">Thank You</p>
+
+      <div class="card" id="s12-panel">
+        <!-- Logo area: official green GPM logo goes here (assets/brand/logo-slot.svg is a placeholder). -->
+        <img id="s12-logo" src="assets/brand/logo-slot.svg" alt="GPM logo area" />
+        <p id="s12-brand">GLOBAL PARTNER MARKET</p>
+        <p id="s12-url">global.partnermarket.kr</p>
+        <div id="s12-kg">
+          <span class="cap" id="s12-kl">Korea</span>
+          <div class="ln" id="s12-kline"></div>
+          <div id="s12-kdot"></div>
+          <span class="cap" id="s12-kr">Ghana</span>
+        </div>
+      </div>
+      <div class="pageno" id="s12-page">12</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Shared motion vocabulary (SPEC.md MOTION). `tl` is this scene's paused timeline.
+    const TEAL = "#008C91", LIGHT = "#E4F2F1", HAIR = "#D3DDDE", WHITE = "#FFFFFF";
+    const E = {
+      // text and blocks arrive by focusing in place: blur 8 -> 0, no translate
+      blurIn: (sel, t, d = 0.45) =>
+        tl.fromTo(sel, { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: d, ease: "expo.out" }, t),
+      // title words: 0.13 s each, 0.067 s apart
+      words: (sel, t) =>
+        tl.fromTo(sel, { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.13, stagger: 0.067, ease: "power4.out" }, t),
+      // lines and arrows draw
+      drawX: (sel, t, d = 0.6, origin = "left center") =>
+        tl.fromTo(sel, { scaleX: 0, transformOrigin: origin }, { scaleX: 1, duration: d, ease: "power2.inOut" }, t),
+      drawY: (sel, t, d = 0.45, origin = "center top") =>
+        tl.fromTo(sel, { scaleY: 0, transformOrigin: origin }, { scaleY: 1, duration: d, ease: "power2.inOut" }, t),
+      // SVG strokes draw (pathLength="1" on the element)
+      stroke: (sel, t, d = 0.7) =>
+        tl.fromTo(sel, { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: d, ease: "power2.inOut" }, t),
+      // cards open left to right
+      open: (sel, t, d = 0.5) =>
+        tl.fromTo(sel, { clipPath: "inset(0% 100% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: d, ease: "power3.out" }, t),
+      // tags, ticks and stamps land with a damped spring (scale only; opacity never overshoots)
+      land: (sel, t) => {
+        tl.fromTo(sel, { scale: 0.86 }, { scale: 1, duration: 0.4, ease: "back.out(1.5)" }, t);
+        tl.fromTo(sel, { opacity: 0 }, { opacity: 1, duration: 0.18, ease: "power2.out" }, t);
+      },
+      // focus: the named item goes teal, the rest step back
+      on: (sel, t) => tl.to(sel, { opacity: 1, borderColor: TEAL, backgroundColor: LIGHT, duration: 0.3, ease: "power2.inOut" }, t),
+      off: (sel, t, dimTo = 0.38) => tl.to(sel, { opacity: dimTo, borderColor: HAIR, backgroundColor: WHITE, duration: 0.3, ease: "power2.inOut" }, t),
+      rest: (sel, t) => tl.to(sel, { opacity: 1, borderColor: HAIR, backgroundColor: WHITE, duration: 0.4, ease: "power2.inOut" }, t),
+      dim: (sel, t, v = 0.38) => tl.to(sel, { opacity: v, duration: 0.3, ease: "power2.inOut" }, t),
+      full: (sel, t) => tl.to(sel, { opacity: 1, duration: 0.3, ease: "power2.inOut" }, t),
+      ink: (sel, t, c = "#005B62") => tl.to(sel, { color: c, duration: 0.35, ease: "power2.inOut" }, t),
+      // the scene leaves as one: blur out and fade, ending one frame before the cut
+      exit: (t) => tl.to("#s12-stage", { opacity: 0, filter: "blur(8px)", duration: 0.3, ease: "power3.in" }, t),
+      title: () => {
+        E.words("#s12-title .w", 0.25);
+        E.drawX("#s12-rule", 0.55, 0.5);
+        E.blurIn("#s12-page", 0.3, 0.4);
+      },
+    };
+    // focus one id from a list of already-visible ids
+    const focus = (ids, active, t) => ids.forEach((id) => (id === active ? E.on(id, t) : E.off(id, t)));
+
+    E.title();
+    // "If you are considering a manufacturing business in Ghana, ..."
+    E.blurIn("#s12-headline", 4.286);
+    // "...we would like to hear about your product, your business plans, and the challenges you face."
+    const tick = (i, t) => {
+      E.blurIn("#s12-i" + i, t - 0.1);
+      tl.to("#s12-k" + i, { borderColor: TEAL, backgroundColor: TEAL, color: WHITE, duration: 0.3, ease: "power2.inOut" }, t + 0.25);
+    };
+    tick(1, 8.576);
+    tick(2, 10.101);
+    // "We can begin with a preliminary discussion..."
+    tick(3, 17.517);
+    // "We welcome conversations with manufacturers, investors, business associations, and technical partners."
+    E.open("#s12-panel", 27.054, 0.6);
+    E.blurIn("#s12-kl, #s12-kr", 27.554);
+    // "Thank you for your attention."
+    E.blurIn("#s12-thanks", 34.482, 0.6);
+    // "...exploring practical Korea–Ghana manufacturing partnerships with you."
+    E.drawX("#s12-kline", 38.164, 0.8);
+    E.land("#s12-kdot", 38.664);
+    // Final scene: no exit, the last frame holds.
+    window.__timelines["s12"] = tl;
+  </script>
+</template>

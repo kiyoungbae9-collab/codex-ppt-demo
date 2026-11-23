@@ -1,0 +1,160 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #ffffff; color: #1C2528; font-family: "Inter", sans-serif; overflow: hidden; }
+    #root * { box-sizing: border-box; margin: 0; padding: 0; }
+    #root .stage { position: absolute; inset: 0; }
+    #root .title { position: absolute; left: 192px; top: 146px; font-size: 60px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; white-space: nowrap; color: #1C2528; }
+    #root .title .w { display: inline-block; }
+    #root .rule { position: absolute; left: 192px; top: 228px; width: 96px; height: 6px; background: #008C91; }
+    #root .headline { position: absolute; left: 192px; top: 252px; font-size: 34px; font-weight: 400; line-height: 1.25; color: #005B62; white-space: nowrap; }
+    #root .pageno { position: absolute; left: 0; right: 0; top: 982px; text-align: center; font-size: 28px; font-weight: 400; color: #7A898C; }
+    #root .card { position: absolute; background: #ffffff; border: 2px solid #D3DDDE; border-radius: 10px; }
+    #root .card.hub { background: #005B62; border-color: #005B62; color: #ffffff; }
+    #root .ghost { position: absolute; border: 2px dashed #C3D0D1; border-radius: 10px; }
+    #root .tile { width: 72px; height: 72px; border-radius: 10px; background: #E4F2F1; color: #008C91; display: flex; align-items: center; justify-content: center; flex: none; }
+    #root .tile.sm { width: 56px; height: 56px; }
+    #root .tile.sm .ic { width: 32px; height: 32px; }
+    #root .hub .tile { background: rgba(255, 255, 255, 0.14); color: #ffffff; }
+    #root .ic { width: 40px; height: 40px; stroke-width: 1.8; }
+    #root .cap { font-size: 28px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #008C91; }
+    #root .num { font-size: 28px; font-weight: 700; color: #008C91; }
+    #root .h { font-size: 30px; font-weight: 700; line-height: 1.2; color: #1C2528; }
+    #root .hub .h, #root .hub .b, #root .hub .cap { color: #ffffff; }
+    #root .b { font-size: 28px; font-weight: 400; line-height: 1.3; color: #4A5759; }
+    #root .note { font-size: 28px; font-weight: 400; line-height: 1.3; color: #7A898C; }
+    #root .tag { display: inline-flex; align-items: center; gap: 10px; padding: 6px 16px; border-radius: 6px; background: #E4F2F1; color: #005B62; font-size: 28px; font-weight: 700; white-space: nowrap; }
+    #root .tag .ic { width: 28px; height: 28px; }
+    #root .tag.out { background: #ffffff; border: 2px solid #005B62; }
+    #root .ln { position: absolute; background: #008C91; }
+    #root .abs { position: absolute; }
+    #root .row { display: flex; align-items: center; }
+
+    .s04-card { width: 753px; height: 252px; }
+    #s04-c1 { left: 192px; top: 284px; } #s04-c2 { left: 975px; top: 284px; }
+    #s04-c3 { left: 192px; top: 562px; } #s04-c4 { left: 975px; top: 562px; }
+    .s04-card .num { position: absolute; left: 34px; top: 28px; }
+    .s04-card .tile { position: absolute; right: 34px; top: 28px; }
+    .s04-card .h { position: absolute; left: 34px; top: 76px; text-transform: uppercase; letter-spacing: 0.02em; color: #005B62; }
+    .s04-card .b { position: absolute; left: 34px; top: 126px; }
+    .s04-row { position: absolute; left: 34px; display: flex; gap: 12px; }
+    #s04-flag { position: absolute; left: 34px; top: 180px; }
+    #s04-hy { top: 124px; }
+    #s04-sep { position: absolute; left: 34px; top: 190px; }
+    #s04-note { position: absolute; left: 0; right: 0; top: 832px; text-align: center; }
+  </style>
+  <div id="root" data-composition-id="s04" data-width="1920" data-height="1080">
+    <div class="stage" id="s04-stage">
+      <h1 class="title" id="s04-title"><span class="w">Priority</span> <span class="w">Manufacturing</span> <span class="w">Opportunities</span></h1>
+      <div class="rule" id="s04-rule"></div>
+
+      <div class="card s04-card" id="s04-c1">
+        <div class="num">01</div>
+        <div class="tile" id="s04-i1"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2" /> <path d="M8.5 2h7" /> <path d="M7 16h10" /> </svg></div>
+        <p class="h" id="s04-h1">Pharmaceutical Equipment</p>
+        <p class="b" id="s04-b1">Sterile vial filling &amp; capping</p>
+        <span class="tag out" id="s04-flag"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /> </svg>Quality &amp; regulatory review required</span>
+      </div>
+      <div class="card s04-card" id="s04-c2">
+        <div class="num">02</div>
+        <div class="tile" id="s04-i2"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" /> <path d="M12 22V12" /> <path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7" /> <path d="m7.5 4.27 9 5.15" /> </svg></div>
+        <p class="h" id="s04-h2">Hygiene Products</p>
+        <div class="s04-row" id="s04-hy">
+          <span class="tag" id="s04-t1">Baby diapers</span>
+          <span class="tag" id="s04-t2">Adult diapers</span>
+          <span class="tag" id="s04-t3">Sanitary pads</span>
+        </div>
+        <p class="note" id="s04-sep">Separate equipment for each category</p>
+      </div>
+      <div class="card s04-card" id="s04-c3">
+        <div class="num">03</div>
+        <div class="tile" id="s04-i3"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect width="7" height="7" x="14" y="3" rx="1" /> <path d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3" /> </svg></div>
+        <p class="h" id="s04-h3">Plastic Injection Molding</p>
+        <p class="b" id="s04-b3">Machines · Molds · Automation</p>
+      </div>
+      <div class="card s04-card" id="s04-c4">
+        <div class="num">04</div>
+        <div class="tile" id="s04-i4"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /> <path d="m7 16.5-4.74-2.85" /> <path d="m7 16.5 5-3" /> <path d="M7 16.5v5.17" /> <path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /> <path d="m17 16.5-5-3" /> <path d="m17 16.5 4.74-2.85" /> <path d="M17 16.5v5.17" /> <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /> <path d="M12 8 7.26 5.15" /> <path d="m12 8 4.74-2.85" /> <path d="M12 13.5V8" /> </svg></div>
+        <p class="h" id="s04-h4">Other Industrial Equipment</p>
+        <p class="b" id="s04-b4">Packaging · Processing · Machining</p>
+      </div>
+      <p class="note" id="s04-note">All equipment availability and regulatory requirements are subject to verification.</p>
+      <div class="pageno" id="s04-page">04</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Shared motion vocabulary (SPEC.md MOTION). `tl` is this scene's paused timeline.
+    const TEAL = "#008C91", LIGHT = "#E4F2F1", HAIR = "#D3DDDE", WHITE = "#FFFFFF";
+    const E = {
+      // text and blocks arrive by focusing in place: blur 8 -> 0, no translate
+      blurIn: (sel, t, d = 0.45) =>
+        tl.fromTo(sel, { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: d, ease: "expo.out" }, t),
+      // title words: 0.13 s each, 0.067 s apart
+      words: (sel, t) =>
+        tl.fromTo(sel, { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.13, stagger: 0.067, ease: "power4.out" }, t),
+      // lines and arrows draw
+      drawX: (sel, t, d = 0.6, origin = "left center") =>
+        tl.fromTo(sel, { scaleX: 0, transformOrigin: origin }, { scaleX: 1, duration: d, ease: "power2.inOut" }, t),
+      drawY: (sel, t, d = 0.45, origin = "center top") =>
+        tl.fromTo(sel, { scaleY: 0, transformOrigin: origin }, { scaleY: 1, duration: d, ease: "power2.inOut" }, t),
+      // SVG strokes draw (pathLength="1" on the element)
+      stroke: (sel, t, d = 0.7) =>
+        tl.fromTo(sel, { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: d, ease: "power2.inOut" }, t),
+      // cards open left to right
+      open: (sel, t, d = 0.5) =>
+        tl.fromTo(sel, { clipPath: "inset(0% 100% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: d, ease: "power3.out" }, t),
+      // tags, ticks and stamps land with a damped spring (scale only; opacity never overshoots)
+      land: (sel, t) => {
+        tl.fromTo(sel, { scale: 0.86 }, { scale: 1, duration: 0.4, ease: "back.out(1.5)" }, t);
+        tl.fromTo(sel, { opacity: 0 }, { opacity: 1, duration: 0.18, ease: "power2.out" }, t);
+      },
+      // focus: the named item goes teal, the rest step back
+      on: (sel, t) => tl.to(sel, { opacity: 1, borderColor: TEAL, backgroundColor: LIGHT, duration: 0.3, ease: "power2.inOut" }, t),
+      off: (sel, t, dimTo = 0.38) => tl.to(sel, { opacity: dimTo, borderColor: HAIR, backgroundColor: WHITE, duration: 0.3, ease: "power2.inOut" }, t),
+      rest: (sel, t) => tl.to(sel, { opacity: 1, borderColor: HAIR, backgroundColor: WHITE, duration: 0.4, ease: "power2.inOut" }, t),
+      dim: (sel, t, v = 0.38) => tl.to(sel, { opacity: v, duration: 0.3, ease: "power2.inOut" }, t),
+      full: (sel, t) => tl.to(sel, { opacity: 1, duration: 0.3, ease: "power2.inOut" }, t),
+      ink: (sel, t, c = "#005B62") => tl.to(sel, { color: c, duration: 0.35, ease: "power2.inOut" }, t),
+      // the scene leaves as one: blur out and fade, ending one frame before the cut
+      exit: (t) => tl.to("#s04-stage", { opacity: 0, filter: "blur(8px)", duration: 0.3, ease: "power3.in" }, t),
+      title: () => {
+        E.words("#s04-title .w", 0.25);
+        E.drawX("#s04-rule", 0.55, 0.5);
+        E.blurIn("#s04-page", 0.3, 0.4);
+      },
+    };
+    // focus one id from a list of already-visible ids
+    const focus = (ids, active, t) => ids.forEach((id) => (id === active ? E.on(id, t) : E.off(id, t)));
+
+    const C = ["#s04-c1", "#s04-c2", "#s04-c3", "#s04-c4"];
+    E.title();
+    // "We are focusing on four groups of manufacturing opportunities." -> four numbered frames
+    C.forEach((c, i) => E.open(c, 2.405 + i * 0.12, 0.45));
+    // "First, pharmaceutical equipment, including sterile vial powder filling and capping systems."
+    E.blurIn("#s04-h1, #s04-i1", 5.611);
+    focus(C, "#s04-c1", 5.611);
+    E.blurIn("#s04-b1", 8.286);
+    // "...careful technical, quality, and regulatory review."
+    E.land("#s04-flag", 15.893);
+    // "Second, hygiene products. ... baby diapers, adult diapers, and feminine sanitary pads."
+    E.blurIn("#s04-h2, #s04-i2", 17.748);
+    focus(C, "#s04-c2", 17.748);
+    E.land("#s04-t1", 22.369);
+    E.land("#s04-t2", 23.544);
+    E.land("#s04-t3", 24.759);
+    E.blurIn("#s04-sep", 27.053);
+    // "Third, plastic injection molding equipment, including machines, molds, and related automation."
+    E.blurIn("#s04-h3, #s04-i3", 31.048);
+    focus(C, "#s04-c3", 31.048);
+    E.blurIn("#s04-b3", 33.933);
+    // "And fourth, other industrial equipment such as packaging and processing machinery."
+    E.blurIn("#s04-h4, #s04-i4", 38.041);
+    focus(C, "#s04-c4", 38.041);
+    E.blurIn("#s04-b4", 40.241);
+    // "We would like to learn which of these sectors is most relevant to your business."
+    E.rest(C.join(", "), 43.127);
+    E.blurIn("#s04-note", 44.077);
+    E.exit(48.407);
+    window.__timelines["s04"] = tl;
+  </script>
+</template>

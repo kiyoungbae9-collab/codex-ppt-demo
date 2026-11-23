@@ -1,0 +1,136 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #ffffff; color: #1C2528; font-family: "Inter", sans-serif; overflow: hidden; }
+    #root * { box-sizing: border-box; margin: 0; padding: 0; }
+    #root .stage { position: absolute; inset: 0; }
+    #root .title { position: absolute; left: 192px; top: 146px; font-size: 60px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; white-space: nowrap; color: #1C2528; }
+    #root .title .w { display: inline-block; }
+    #root .rule { position: absolute; left: 192px; top: 228px; width: 96px; height: 6px; background: #008C91; }
+    #root .headline { position: absolute; left: 192px; top: 252px; font-size: 34px; font-weight: 400; line-height: 1.25; color: #005B62; white-space: nowrap; }
+    #root .pageno { position: absolute; left: 0; right: 0; top: 982px; text-align: center; font-size: 28px; font-weight: 400; color: #7A898C; }
+    #root .card { position: absolute; background: #ffffff; border: 2px solid #D3DDDE; border-radius: 10px; }
+    #root .card.hub { background: #005B62; border-color: #005B62; color: #ffffff; }
+    #root .ghost { position: absolute; border: 2px dashed #C3D0D1; border-radius: 10px; }
+    #root .tile { width: 72px; height: 72px; border-radius: 10px; background: #E4F2F1; color: #008C91; display: flex; align-items: center; justify-content: center; flex: none; }
+    #root .tile.sm { width: 56px; height: 56px; }
+    #root .tile.sm .ic { width: 32px; height: 32px; }
+    #root .hub .tile { background: rgba(255, 255, 255, 0.14); color: #ffffff; }
+    #root .ic { width: 40px; height: 40px; stroke-width: 1.8; }
+    #root .cap { font-size: 28px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #008C91; }
+    #root .num { font-size: 28px; font-weight: 700; color: #008C91; }
+    #root .h { font-size: 30px; font-weight: 700; line-height: 1.2; color: #1C2528; }
+    #root .hub .h, #root .hub .b, #root .hub .cap { color: #ffffff; }
+    #root .b { font-size: 28px; font-weight: 400; line-height: 1.3; color: #4A5759; }
+    #root .note { font-size: 28px; font-weight: 400; line-height: 1.3; color: #7A898C; }
+    #root .tag { display: inline-flex; align-items: center; gap: 10px; padding: 6px 16px; border-radius: 6px; background: #E4F2F1; color: #005B62; font-size: 28px; font-weight: 700; white-space: nowrap; }
+    #root .tag .ic { width: 28px; height: 28px; }
+    #root .tag.out { background: #ffffff; border: 2px solid #005B62; }
+    #root .ln { position: absolute; background: #008C91; }
+    #root .abs { position: absolute; }
+    #root .row { display: flex; align-items: center; }
+
+    .s11-c { top: 326px; width: 288px; height: 292px; }
+    #s11-c1 { left: 192px; } #s11-c2 { left: 504px; } #s11-c3 { left: 816px; } #s11-c4 { left: 1128px; } #s11-c5 { left: 1440px; }
+    .s11-c .num { position: absolute; left: 24px; top: 20px; }
+    .s11-c .tile { position: absolute; left: 24px; top: 66px; }
+    .s11-c .sun { position: absolute; left: 112px; top: 82px; width: 40px; height: 40px; color: #008C91; }
+    .s11-c .sun .ic { width: 40px; height: 40px; }
+    .s11-c .h { position: absolute; left: 24px; top: 160px; width: 244px; line-height: 1.18; }
+    #s11-rel { position: absolute; left: 192px; top: 656px; display: flex; align-items: center; gap: 12px; }
+    #s11-rel .note { margin-right: 6px; }
+    #s11-note { position: absolute; left: 0; right: 0; top: 760px; text-align: center; }
+  </style>
+  <div id="root" data-composition-id="s11" data-width="1920" data-height="1080">
+    <div class="stage" id="s11-stage">
+      <h1 class="title" id="s11-title"><span class="w">More</span> <span class="w">Infrastructure</span> <span class="w">Opportunities</span></h1>
+      <div class="rule" id="s11-rule"></div>
+      <p class="headline" id="s11-headline">Five Complementary Business Areas</p>
+
+      <div class="card s11-c" id="s11-c1"><div class="num">01</div><div class="tile"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" /> <path d="M15 18H9" /> <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" /> <circle cx="17" cy="18" r="2" /> <circle cx="7" cy="18" r="2" /> </svg></div><div class="sun"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <line x1="2" x2="22" y1="12" y2="12" /> <line x1="12" x2="12" y1="2" y2="22" /> <path d="m20 16-4-4 4-4" /> <path d="m4 8 4 4-4 4" /> <path d="m16 4-4 4-4-4" /> <path d="m8 20 4-4 4 4" /> </svg></div><p class="h">Mobile Solar Cold Chain</p></div>
+      <div class="card s11-c" id="s11-c2"><div class="num">02</div><div class="tile"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M22 8.35V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.35A2 2 0 0 1 3.26 6.5l8-3.2a2 2 0 0 1 1.48 0l8 3.2A2 2 0 0 1 22 8.35Z" /> <path d="M6 18h12" /> <path d="M6 14h12" /> <rect width="12" height="12" x="6" y="10" /> </svg></div><div class="sun"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <line x1="2" x2="22" y1="12" y2="12" /> <line x1="12" x2="12" y1="2" y2="22" /> <path d="m20 16-4-4 4-4" /> <path d="m4 8 4 4-4 4" /> <path d="m16 4-4 4-4-4" /> <path d="m8 20 4-4 4 4" /> </svg></div><p class="h">Solar Cold Chain Logistics Terminal</p></div>
+      <div class="card s11-c" id="s11-c3"><div class="num">03</div><div class="tile"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M22 7.7c0-.6-.4-1.2-.8-1.5l-6.3-3.9a1.72 1.72 0 0 0-1.7 0l-10.3 6c-.5.2-.9.8-.9 1.4v6.6c0 .5.4 1.2.8 1.5l6.3 3.9a1.72 1.72 0 0 0 1.7 0l10.3-6c.5-.3.9-1 .9-1.5Z" /> <path d="M10 21.9V14L2.1 9.1" /> <path d="m10 14 11.9-6.9" /> <path d="M14 19.8v-8.1" /> <path d="M18 17.5V9.4" /> </svg></div><div class="sun"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <circle cx="12" cy="12" r="4" /> <path d="M12 2v2" /> <path d="M12 20v2" /> <path d="m4.93 4.93 1.41 1.41" /> <path d="m17.66 17.66 1.41 1.41" /> <path d="M2 12h2" /> <path d="M20 12h2" /> <path d="m6.34 17.66-1.41 1.41" /> <path d="m19.07 4.93-1.41 1.41" /> </svg></div><p class="h">Solar Foldable Container Housing</p></div>
+      <div class="card s11-c" id="s11-c4"><div class="num">04</div><div class="tile"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M2 12h10" /> <path d="M9 4v16" /> <path d="m3 9 3 3-3 3" /> <path d="M12 6 9 9 6 6" /> <path d="m6 18 3-3 1.5 1.5" /> <path d="M20 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z" /> </svg></div><p class="h">Refrigeration Efficiency Improvement</p></div>
+      <div class="card s11-c" id="s11-c5"><div class="num">05</div><div class="tile"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z" /> <path d="m2 22 3-3" /> <path d="M7.5 13.5 10 11" /> <path d="M10.5 16.5 13 14" /> <path d="m18 3-4 4h6l-4 4" /> </svg></div><div class="sun"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <circle cx="12" cy="12" r="4" /> <path d="M12 2v2" /> <path d="M12 20v2" /> <path d="m4.93 4.93 1.41 1.41" /> <path d="m17.66 17.66 1.41 1.41" /> <path d="M2 12h2" /> <path d="M20 12h2" /> <path d="m6.34 17.66-1.41 1.41" /> <path d="m19.07 4.93-1.41 1.41" /> </svg></div><p class="h">Solar EV Charging Stations</p></div>
+
+      <div id="s11-rel">
+        <span class="note" id="s11-rl">Relevant for:</span>
+        <span class="tag" id="s11-r1">Manufacturing sites</span>
+        <span class="tag" id="s11-r2">Agricultural businesses</span>
+        <span class="tag" id="s11-r3">Logistics operators</span>
+        <span class="tag" id="s11-r4">Industrial facilities</span>
+      </div>
+      <p class="note" id="s11-note">Proposed areas for project-specific discussion — not completed installations or guaranteed performance.</p>
+      <div class="pageno" id="s11-page">11</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Shared motion vocabulary (SPEC.md MOTION). `tl` is this scene's paused timeline.
+    const TEAL = "#008C91", LIGHT = "#E4F2F1", HAIR = "#D3DDDE", WHITE = "#FFFFFF";
+    const E = {
+      // text and blocks arrive by focusing in place: blur 8 -> 0, no translate
+      blurIn: (sel, t, d = 0.45) =>
+        tl.fromTo(sel, { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: d, ease: "expo.out" }, t),
+      // title words: 0.13 s each, 0.067 s apart
+      words: (sel, t) =>
+        tl.fromTo(sel, { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.13, stagger: 0.067, ease: "power4.out" }, t),
+      // lines and arrows draw
+      drawX: (sel, t, d = 0.6, origin = "left center") =>
+        tl.fromTo(sel, { scaleX: 0, transformOrigin: origin }, { scaleX: 1, duration: d, ease: "power2.inOut" }, t),
+      drawY: (sel, t, d = 0.45, origin = "center top") =>
+        tl.fromTo(sel, { scaleY: 0, transformOrigin: origin }, { scaleY: 1, duration: d, ease: "power2.inOut" }, t),
+      // SVG strokes draw (pathLength="1" on the element)
+      stroke: (sel, t, d = 0.7) =>
+        tl.fromTo(sel, { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: d, ease: "power2.inOut" }, t),
+      // cards open left to right
+      open: (sel, t, d = 0.5) =>
+        tl.fromTo(sel, { clipPath: "inset(0% 100% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: d, ease: "power3.out" }, t),
+      // tags, ticks and stamps land with a damped spring (scale only; opacity never overshoots)
+      land: (sel, t) => {
+        tl.fromTo(sel, { scale: 0.86 }, { scale: 1, duration: 0.4, ease: "back.out(1.5)" }, t);
+        tl.fromTo(sel, { opacity: 0 }, { opacity: 1, duration: 0.18, ease: "power2.out" }, t);
+      },
+      // focus: the named item goes teal, the rest step back
+      on: (sel, t) => tl.to(sel, { opacity: 1, borderColor: TEAL, backgroundColor: LIGHT, duration: 0.3, ease: "power2.inOut" }, t),
+      off: (sel, t, dimTo = 0.38) => tl.to(sel, { opacity: dimTo, borderColor: HAIR, backgroundColor: WHITE, duration: 0.3, ease: "power2.inOut" }, t),
+      rest: (sel, t) => tl.to(sel, { opacity: 1, borderColor: HAIR, backgroundColor: WHITE, duration: 0.4, ease: "power2.inOut" }, t),
+      dim: (sel, t, v = 0.38) => tl.to(sel, { opacity: v, duration: 0.3, ease: "power2.inOut" }, t),
+      full: (sel, t) => tl.to(sel, { opacity: 1, duration: 0.3, ease: "power2.inOut" }, t),
+      ink: (sel, t, c = "#005B62") => tl.to(sel, { color: c, duration: 0.35, ease: "power2.inOut" }, t),
+      // the scene leaves as one: blur out and fade, ending one frame before the cut
+      exit: (t) => tl.to("#s11-stage", { opacity: 0, filter: "blur(8px)", duration: 0.3, ease: "power3.in" }, t),
+      title: () => {
+        E.words("#s11-title .w", 0.25);
+        E.drawX("#s11-rule", 0.55, 0.5);
+        E.blurIn("#s11-page", 0.3, 0.4);
+      },
+    };
+    // focus one id from a list of already-visible ids
+    const focus = (ids, active, t) => ids.forEach((id) => (id === active ? E.on(id, t) : E.off(id, t)));
+
+    const C = ["#s11-c1", "#s11-c2", "#s11-c3", "#s11-c4", "#s11-c5"];
+    E.title();
+    E.blurIn("#s11-headline", 0.85);
+    // "...GPM also introduces five complementary infrastructure business areas."
+    C.forEach((c, i) => E.open(c, 8.699 + i * 0.1, 0.45));
+    E.dim(C.join(", "), 10.049, 0.32);
+    // "These include mobile solar cold storage, solar cold-chain logistics terminals, modular housing,
+    //  refrigeration efficiency improvement, and solar-powered EV charging."
+    const order = [13.019, 15.169, 17.894, 19.344, 21.869];
+    order.forEach((t, i) => {
+      if (i > 0) E.rest(C[i - 1], t);
+      E.on(C[i], t);
+    });
+    // "These solutions may be relevant to manufacturing sites, agricultural businesses, logistics operators, and industrial facilities."
+    E.rest("#s11-c5", 24.426);
+    E.blurIn("#s11-rl", 25.351);
+    E.land("#s11-r1", 26.276);
+    E.land("#s11-r2", 28.076);
+    E.land("#s11-r3", 29.776);
+    E.land("#s11-r4", 31.451);
+    // "We present them as additional areas for project-specific discussion, not as completed installations..."
+    E.blurIn("#s11-note", 33.395);
+    E.exit(49.573);
+    window.__timelines["s11"] = tl;
+  </script>
+</template>

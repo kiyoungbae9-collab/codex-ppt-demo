@@ -1,0 +1,80 @@
+<template>
+  <style>
+{{BASE_CSS}}
+    #s05-eq { position: absolute; left: 192px; top: 252px; font-size: 34px; font-weight: 700; color: #C5CFD0; white-space: nowrap; }
+    #s05-eq .op { color: #C5CFD0; padding: 0 12px; font-weight: 400; }
+    .s05-blk, .s05-gh { top: 330px; width: 348px; height: 226px; }
+    #s05-b1, #s05-g1 { left: 192px; } #s05-b2, #s05-g2 { left: 588px; } #s05-b3, #s05-g3 { left: 984px; } #s05-b4, #s05-g4 { left: 1380px; }
+    .s05-blk .num { position: absolute; left: 28px; top: 26px; }
+    .s05-blk .tile { position: absolute; right: 28px; top: 26px; }
+    .s05-blk .h { position: absolute; left: 28px; top: 126px; width: 290px; }
+    .s05-seg { top: 584px; height: 4px; }
+    #s05-l1 { left: 366px; width: 396px; } #s05-l2 { left: 762px; width: 396px; } #s05-l3 { left: 1158px; width: 396px; }
+    .s05-dot { position: absolute; top: 576px; width: 20px; height: 20px; border-radius: 50%; background: #008C91; }
+    #s05-p1 { left: 356px; } #s05-p2 { left: 752px; } #s05-p3 { left: 1148px; } #s05-p4 { left: 1544px; }
+    #s05-needs { position: absolute; left: 192px; top: 626px; display: flex; align-items: center; gap: 12px; }
+    #s05-needs .note { margin-right: 6px; }
+    #s05-m1 { position: absolute; left: 192px; top: 722px; font-size: 34px; color: #1C2528; white-space: nowrap; }
+    #s05-m1 b { color: #008C91; font-weight: 700; }
+    #s05-m2 { position: absolute; left: 192px; top: 770px; font-size: 34px; color: #7A898C; white-space: nowrap; }
+  </style>
+  <div id="root" data-composition-id="s05" data-width="1920" data-height="1080">
+    <div class="stage" id="s05-stage">
+      <h1 class="title" id="s05-title">{{TITLE}}</h1>
+      <div class="rule" id="s05-rule"></div>
+      <p id="s05-eq"><span id="s05-e1">Equipment</span><span class="op">+</span><span id="s05-e2">Engineering</span><span class="op">+</span><span id="s05-e3">Training</span><span class="op">+</span><span id="s05-e4">Operational Readiness</span></p>
+
+      <div class="ghost s05-gh" id="s05-g2"></div><div class="ghost s05-gh" id="s05-g3"></div><div class="ghost s05-gh" id="s05-g4"></div>
+      <div class="card s05-blk" id="s05-b1"><div class="num">1</div><div class="tile">{{icon:cog}}</div><p class="h">Equipment Sourcing</p></div>
+      <div class="card s05-blk" id="s05-b2"><div class="num">2</div><div class="tile">{{icon:wrench}}</div><p class="h">Engineering &amp; Installation</p></div>
+      <div class="card s05-blk" id="s05-b3"><div class="num">3</div><div class="tile">{{icon:graduation-cap}}</div><p class="h">Workforce Training</p></div>
+      <div class="card s05-blk" id="s05-b4"><div class="num">4</div><div class="tile">{{icon:circle-check}}</div><p class="h">Operational Readiness</p></div>
+      <div class="ln s05-seg" id="s05-l1"></div><div class="ln s05-seg" id="s05-l2"></div><div class="ln s05-seg" id="s05-l3"></div>
+      <div class="s05-dot" id="s05-p1"></div><div class="s05-dot" id="s05-p2"></div><div class="s05-dot" id="s05-p3"></div><div class="s05-dot" id="s05-p4"></div>
+
+      <div id="s05-needs">
+        <span class="note" id="s05-nl">A business also needs:</span>
+        <span class="tag" id="s05-n1">Installation</span>
+        <span class="tag" id="s05-n2">Utilities</span>
+        <span class="tag" id="s05-n3">Operating procedures</span>
+        <span class="tag" id="s05-n4">Quality control</span>
+        <span class="tag" id="s05-n5">Maintenance</span>
+      </div>
+      <p id="s05-m1">The objective is a <b>viable local manufacturing operation</b>,</p>
+      <p id="s05-m2">not merely an equipment shipment.</p>
+      <div class="pageno" id="s05-page">{{PAGE}}</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+{{HELPERS}}
+    E.title();
+    E.blurIn("#s05-eq", 0.85);
+    // "Purchasing a machine is only one part of starting a manufacturing business."
+    E.open("#s05-b1", {{at:Purchasing a machine}});
+    E.land("#s05-p1", {{at:Purchasing a machine+0.3}});
+    E.ink("#s05-e1", {{at:Purchasing a machine}});
+    E.blurIn("#s05-g2, #s05-g3, #s05-g4", {{at:only one part}}, 0.6);
+    // "A company also needs to understand installation requirements, utilities, operating procedures, quality control, and maintenance."
+    E.blurIn("#s05-nl", {{at:A company also needs}});
+    E.land("#s05-n1", {{at:installation requirements}});
+    E.land("#s05-n2", {{at:utilities}});
+    E.land("#s05-n3", {{at:operating procedures}});
+    E.land("#s05-n4", {{at:quality control}});
+    E.land("#s05-n5", {{at:and maintenance}});
+    // "Our proposed model connects equipment sourcing with engineering review and practical workforce training."
+    E.open("#s05-b2", {{at:engineering review}}); E.drawX("#s05-l1", {{at:engineering review-0.3}}, 0.4); E.land("#s05-p2", {{at:engineering review+0.1}}); E.ink("#s05-e2", {{at:engineering review}});
+    E.open("#s05-b3", {{at:workforce training}}); E.drawX("#s05-l2", {{at:workforce training-0.3}}, 0.4); E.land("#s05-p3", {{at:workforce training+0.1}}); E.ink("#s05-e3", {{at:workforce training}});
+    // "...Korean specialists and local technical partners may support..."
+    tl.to("#s05-b2, #s05-b3", { borderColor: TEAL, backgroundColor: LIGHT, duration: 0.3, ease: "power2.inOut" }, {{at:Korean specialists}});
+    // "...to help a local business move toward an operational manufacturing facility..."
+    E.open("#s05-b4", {{at:operational manufacturing facility}}); E.drawX("#s05-l3", {{at:operational manufacturing facility-0.3}}, 0.4); E.land("#s05-p4", {{at:operational manufacturing facility+0.1}}); E.ink("#s05-e4", {{at:operational manufacturing facility}});
+    E.rest("#s05-b2, #s05-b3", {{at:operational manufacturing facility}});
+    tl.to("#s05-eq .op", { color: "#7A898C", duration: 0.35, ease: "power2.inOut" }, {{at:operational manufacturing facility}});
+    E.dim("#s05-needs", {{at:The objective is}}, 0.4);
+    E.blurIn("#s05-m1", {{at:The objective is}});
+    E.blurIn("#s05-m2", {{at:rather than receive}});
+    E.exit({{EXIT}});
+    window.__timelines["s05"] = tl;
+  </script>
+</template>

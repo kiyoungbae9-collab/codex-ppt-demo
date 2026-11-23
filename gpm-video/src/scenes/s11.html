@@ -1,0 +1,66 @@
+<template>
+  <style>
+{{BASE_CSS}}
+    .s11-c { top: 326px; width: 288px; height: 292px; }
+    #s11-c1 { left: 192px; } #s11-c2 { left: 504px; } #s11-c3 { left: 816px; } #s11-c4 { left: 1128px; } #s11-c5 { left: 1440px; }
+    .s11-c .num { position: absolute; left: 24px; top: 20px; }
+    .s11-c .tile { position: absolute; left: 24px; top: 66px; }
+    .s11-c .sun { position: absolute; left: 112px; top: 82px; width: 40px; height: 40px; color: #008C91; }
+    .s11-c .sun .ic { width: 40px; height: 40px; }
+    .s11-c .h { position: absolute; left: 24px; top: 160px; width: 244px; line-height: 1.18; }
+    #s11-rel { position: absolute; left: 192px; top: 656px; display: flex; align-items: center; gap: 12px; }
+    #s11-rel .note { margin-right: 6px; }
+    #s11-note { position: absolute; left: 0; right: 0; top: 760px; text-align: center; }
+  </style>
+  <div id="root" data-composition-id="s11" data-width="1920" data-height="1080">
+    <div class="stage" id="s11-stage">
+      <h1 class="title" id="s11-title">{{TITLE}}</h1>
+      <div class="rule" id="s11-rule"></div>
+      <p class="headline" id="s11-headline">Five Complementary Business Areas</p>
+
+      <div class="card s11-c" id="s11-c1"><div class="num">01</div><div class="tile">{{icon:truck}}</div><div class="sun">{{icon:snowflake}}</div><p class="h">Mobile Solar Cold Chain</p></div>
+      <div class="card s11-c" id="s11-c2"><div class="num">02</div><div class="tile">{{icon:warehouse}}</div><div class="sun">{{icon:snowflake}}</div><p class="h">Solar Cold Chain Logistics Terminal</p></div>
+      <div class="card s11-c" id="s11-c3"><div class="num">03</div><div class="tile">{{icon:container}}</div><div class="sun">{{icon:sun}}</div><p class="h">Solar Foldable Container Housing</p></div>
+      <div class="card s11-c" id="s11-c4"><div class="num">04</div><div class="tile">{{icon:thermometer-snowflake}}</div><p class="h">Refrigeration Efficiency Improvement</p></div>
+      <div class="card s11-c" id="s11-c5"><div class="num">05</div><div class="tile">{{icon:plug-zap}}</div><div class="sun">{{icon:sun}}</div><p class="h">Solar EV Charging Stations</p></div>
+
+      <div id="s11-rel">
+        <span class="note" id="s11-rl">Relevant for:</span>
+        <span class="tag" id="s11-r1">Manufacturing sites</span>
+        <span class="tag" id="s11-r2">Agricultural businesses</span>
+        <span class="tag" id="s11-r3">Logistics operators</span>
+        <span class="tag" id="s11-r4">Industrial facilities</span>
+      </div>
+      <p class="note" id="s11-note">Proposed areas for project-specific discussion — not completed installations or guaranteed performance.</p>
+      <div class="pageno" id="s11-page">{{PAGE}}</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+{{HELPERS}}
+    const C = ["#s11-c1", "#s11-c2", "#s11-c3", "#s11-c4", "#s11-c5"];
+    E.title();
+    E.blurIn("#s11-headline", 0.85);
+    // "...GPM also introduces five complementary infrastructure business areas."
+    C.forEach((c, i) => E.open(c, {{at:five complementary}} + i * 0.1, 0.45));
+    E.dim(C.join(", "), {{at:infrastructure business areas}}, 0.32);
+    // "These include mobile solar cold storage, solar cold-chain logistics terminals, modular housing,
+    //  refrigeration efficiency improvement, and solar-powered EV charging."
+    const order = [{{at:mobile solar cold storage}}, {{at:solar cold-chain logistics}}, {{at:modular housing}}, {{at:refrigeration efficiency improvement}}, {{at:solar-powered EV charging}}];
+    order.forEach((t, i) => {
+      if (i > 0) E.rest(C[i - 1], t);
+      E.on(C[i], t);
+    });
+    // "These solutions may be relevant to manufacturing sites, agricultural businesses, logistics operators, and industrial facilities."
+    E.rest("#s11-c5", {{at:These solutions may}});
+    E.blurIn("#s11-rl", {{at:may be relevant}});
+    E.land("#s11-r1", {{at:manufacturing sites}});
+    E.land("#s11-r2", {{at:agricultural businesses}});
+    E.land("#s11-r3", {{at:logistics operators}});
+    E.land("#s11-r4", {{at:industrial facilities}});
+    // "We present them as additional areas for project-specific discussion, not as completed installations..."
+    E.blurIn("#s11-note", {{at:We present them}});
+    E.exit({{EXIT}});
+    window.__timelines["s11"] = tl;
+  </script>
+</template>

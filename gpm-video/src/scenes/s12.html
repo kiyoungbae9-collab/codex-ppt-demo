@@ -1,0 +1,73 @@
+<template>
+  <style>
+{{BASE_CSS}}
+    .s12-it { position: absolute; left: 192px; width: 920px; display: flex; align-items: center; gap: 22px; }
+    #s12-i1 { top: 344px; } #s12-i2 { top: 446px; } #s12-i3 { top: 548px; }
+    .s12-ck { width: 60px; height: 60px; border-radius: 50%; border: 3px solid #C3D0D1; color: #C3D0D1; display: flex; align-items: center; justify-content: center; flex: none; }
+    .s12-ck .ic { width: 32px; height: 32px; stroke-width: 2.6; }
+    .s12-it p { font-size: 32px; font-weight: 700; line-height: 1.2; color: #1C2528; }
+    .s12-it p span { display: block; font-size: 28px; font-weight: 400; color: #4A5759; }
+    #s12-thanks { position: absolute; left: 192px; top: 700px; font-size: 72px; font-weight: 700; letter-spacing: -0.02em; color: #1C2528; }
+    #s12-panel { left: 1196px; top: 318px; width: 532px; height: 500px; }
+    #s12-logo { position: absolute; left: 186px; top: 40px; width: 160px; height: 160px; }
+    #s12-brand { position: absolute; left: 0; right: 0; top: 226px; text-align: center; font-size: 28px; font-weight: 700; letter-spacing: 0.12em; color: #1C2528; }
+    #s12-url { position: absolute; left: 0; right: 0; top: 274px; text-align: center; font-size: 30px; color: #008C91; }
+    #s12-kg { position: absolute; left: 44px; top: 384px; width: 444px; height: 60px; }
+    #s12-kg .cap { position: absolute; top: 14px; }
+    #s12-kl { left: 0; } #s12-kr { right: 0; }
+    #s12-kline { left: 130px; top: 30px; width: 184px; height: 3px; }
+    #s12-kdot { position: absolute; left: 212px; top: 21px; width: 20px; height: 20px; border-radius: 50%; background: #005B62; }
+  </style>
+  <div id="root" data-composition-id="s12" data-width="1920" data-height="1080">
+    <div class="stage" id="s12-stage">
+      <h1 class="title" id="s12-title">{{TITLE}}</h1>
+      <div class="rule" id="s12-rule"></div>
+      <p class="headline" id="s12-headline">Which Manufacturing Opportunity Would You Like to Explore?</p>
+
+      <div class="s12-it" id="s12-i1"><div class="s12-ck" id="s12-k1">{{icon:check}}</div><p>Identify your product or manufacturing interest</p></div>
+      <div class="s12-it" id="s12-i2"><div class="s12-ck" id="s12-k2">{{icon:check}}</div><p>Discuss your factory and investment requirements</p></div>
+      <div class="s12-it" id="s12-i3"><div class="s12-ck" id="s12-k3">{{icon:check}}</div><p>Request a preliminary equipment-matching discussion</p></div>
+      <p id="s12-thanks">Thank You</p>
+
+      <div class="card" id="s12-panel">
+        <!-- Logo area: official green GPM logo goes here (assets/brand/logo-slot.svg is a placeholder). -->
+        <img id="s12-logo" src="assets/brand/logo-slot.svg" alt="GPM logo area" />
+        <p id="s12-brand">GLOBAL PARTNER MARKET</p>
+        <p id="s12-url">global.partnermarket.kr</p>
+        <div id="s12-kg">
+          <span class="cap" id="s12-kl">Korea</span>
+          <div class="ln" id="s12-kline"></div>
+          <div id="s12-kdot"></div>
+          <span class="cap" id="s12-kr">Ghana</span>
+        </div>
+      </div>
+      <div class="pageno" id="s12-page">{{PAGE}}</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+{{HELPERS}}
+    E.title();
+    // "If you are considering a manufacturing business in Ghana, ..."
+    E.blurIn("#s12-headline", {{at:If you are considering}});
+    // "...we would like to hear about your product, your business plans, and the challenges you face."
+    const tick = (i, t) => {
+      E.blurIn("#s12-i" + i, t - 0.1);
+      tl.to("#s12-k" + i, { borderColor: TEAL, backgroundColor: TEAL, color: WHITE, duration: 0.3, ease: "power2.inOut" }, t + 0.25);
+    };
+    tick(1, {{at:hear about your product}});
+    tick(2, {{at:your business plans}});
+    // "We can begin with a preliminary discussion..."
+    tick(3, {{at:a preliminary discussion}});
+    // "We welcome conversations with manufacturers, investors, business associations, and technical partners."
+    E.open("#s12-panel", {{at:We welcome conversations}}, 0.6);
+    E.blurIn("#s12-kl, #s12-kr", {{at:We welcome conversations+0.5}});
+    // "Thank you for your attention."
+    E.blurIn("#s12-thanks", {{at:Thank you for your attention}}, 0.6);
+    // "...exploring practical Korea–Ghana manufacturing partnerships with you."
+    E.drawX("#s12-kline", {{at:practical Korea–Ghana}}, 0.8);
+    E.land("#s12-kdot", {{at:practical Korea–Ghana+0.5}});
+    // Final scene: no exit, the last frame holds.
+    window.__timelines["s12"] = tl;
+  </script>
+</template>

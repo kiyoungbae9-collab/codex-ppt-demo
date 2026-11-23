@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+  <!-- Reserved area for the official green GPM logo. Replace this file (keep the name) or point
+       the <img> tags in src/chrome.html and src/scenes/s12.html at the logo file. -->
+  <rect x="4" y="4" width="232" height="232" rx="24" fill="none" stroke="#9FB3B5" stroke-width="6" stroke-dasharray="18 12"/>
+</svg>

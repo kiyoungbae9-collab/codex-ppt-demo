@@ -1,0 +1,5988 @@
+{
+ "fps": 30,
+ "duration": 555.9333,
+ "voice": "am_michael",
+ "speed": 1.12,
+ "slides": [
+  {
+   "id": "s01",
+   "title": "Korea–Ghana Industrial Partnership",
+   "start": 0.0,
+   "duration": 44.3,
+   "sentences": [
+    {
+     "text": "Good morning, distinguished representatives of the Chamber of Commerce and business leaders.",
+     "start": 2.459,
+     "end": 7.613,
+     "words": [
+      {
+       "text": "Good",
+       "start": 2.459,
+       "end": 2.659
+      },
+      {
+       "text": "morning,",
+       "start": 2.709,
+       "end": 3.334
+      },
+      {
+       "text": "distinguished",
+       "start": 3.509,
+       "end": 4.184
+      },
+      {
+       "text": "representatives",
+       "start": 4.234,
+       "end": 5.084
+      },
+      {
+       "text": "of",
+       "start": 5.134,
+       "end": 5.234
+      },
+      {
+       "text": "the",
+       "start": 5.234,
+       "end": 5.309
+      },
+      {
+       "text": "Chamber",
+       "start": 5.384,
+       "end": 5.809
+      },
+      {
+       "text": "of",
+       "start": 5.834,
+       "end": 5.909
+      },
+      {
+       "text": "Commerce",
+       "start": 5.984,
+       "end": 6.509
+      },
+      {
+       "text": "and",
+       "start": 6.559,
+       "end": 6.634
+      },
+      {
+       "text": "business",
+       "start": 6.684,
+       "end": 7.034
+      },
+      {
+       "text": "leaders.",
+       "start": 7.084,
+       "end": 7.613
+      }
+     ]
+    },
+    {
+     "text": "Thank you for this opportunity.",
+     "start": 8.225,
+     "end": 10.087,
+     "words": [
+      {
+       "text": "Thank",
+       "start": 8.225,
+       "end": 8.475
+      },
+      {
+       "text": "you",
+       "start": 8.55,
+       "end": 8.7
+      },
+      {
+       "text": "for",
+       "start": 8.75,
+       "end": 8.85
+      },
+      {
+       "text": "this",
+       "start": 8.875,
+       "end": 9.05
+      },
+      {
+       "text": "opportunity.",
+       "start": 9.1,
+       "end": 10.087
+      }
+     ]
+    },
+    {
+     "text": "Today, I would like to introduce a practical business partnership between Korea and Ghana.",
+     "start": 10.513,
+     "end": 15.493,
+     "words": [
+      {
+       "text": "Today,",
+       "start": 10.513,
+       "end": 11.013
+      },
+      {
+       "text": "I",
+       "start": 11.113,
+       "end": 11.188
+      },
+      {
+       "text": "would",
+       "start": 11.213,
+       "end": 11.288
+      },
+      {
+       "text": "like",
+       "start": 11.338,
+       "end": 11.488
+      },
+      {
+       "text": "to",
+       "start": 11.538,
+       "end": 11.613
+      },
+      {
+       "text": "introduce",
+       "start": 11.688,
+       "end": 12.163
+      },
+      {
+       "text": "a",
+       "start": 12.213,
+       "end": 12.263
+      },
+      {
+       "text": "practical",
+       "start": 12.313,
+       "end": 12.813
+      },
+      {
+       "text": "business",
+       "start": 12.888,
+       "end": 13.213
+      },
+      {
+       "text": "partnership",
+       "start": 13.263,
+       "end": 13.863
+      },
+      {
+       "text": "between",
+       "start": 13.913,
+       "end": 14.188
+      },
+      {
+       "text": "Korea",
+       "start": 14.238,
+       "end": 14.788
+      },
+      {
+       "text": "and",
+       "start": 14.863,
+       "end": 14.938
+      },
+      {
+       "text": "Ghana.",
+       "start": 15.013,
+       "end": 15.493
+      }
+     ]
+    },
+    {
+     "text": "Korea has industrial equipment, manufacturing experience, and technical expertise.",
+     "start": 16.043,
+     "end": 21.73,
+     "words": [
+      {
+       "text": "Korea",
+       "start": 16.043,
+       "end": 16.468
+      },
+      {
+       "text": "has",
+       "start": 16.518,
+       "end": 16.718
+      },
+      {
+       "text": "industrial",
+       "start": 16.768,
+       "end": 17.368
+      },
+      {
+       "text": "equipment,",
+       "start": 17.418,
+       "end": 18.143
+      },
+      {
+       "text": "manufacturing",
+       "start": 18.343,
+       "end": 19.168
+      },
+      {
+       "text": "experience,",
+       "start": 19.218,
+       "end": 20.118
+      },
+      {
+       "text": "and",
+       "start": 20.218,
+       "end": 20.293
+      },
+      {
+       "text": "technical",
+       "start": 20.368,
+       "end": 20.818
+      },
+      {
+       "text": "expertise.",
+       "start": 20.893,
+       "end": 21.73
+      }
+     ]
+    },
+    {
+     "text": "Ghana has entrepreneurs, growing business ambitions, and opportunities to develop local manufacturing.",
+     "start": 22.309,
+     "end": 28.906,
+     "words": [
+      {
+       "text": "Ghana",
+       "start": 22.309,
+       "end": 22.659
+      },
+      {
+       "text": "has",
+       "start": 22.709,
+       "end": 22.934
+      },
+      {
+       "text": "entrepreneurs,",
+       "start": 23.059,
+       "end": 24.084
+      },
+      {
+       "text": "growing",
+       "start": 24.259,
+       "end": 24.609
+      },
+      {
+       "text": "business",
+       "start": 24.684,
+       "end": 25.034
+      },
+      {
+       "text": "ambitions,",
+       "start": 25.109,
+       "end": 25.934
+      },
+      {
+       "text": "and",
+       "start": 26.084,
+       "end": 26.159
+      },
+      {
+       "text": "opportunities",
+       "start": 26.209,
+       "end": 26.934
+      },
+      {
+       "text": "to",
+       "start": 26.984,
+       "end": 27.034
+      },
+      {
+       "text": "develop",
+       "start": 27.084,
+       "end": 27.534
+      },
+      {
+       "text": "local",
+       "start": 27.609,
+       "end": 27.934
+      },
+      {
+       "text": "manufacturing.",
+       "start": 27.984,
+       "end": 28.906
+      }
+     ]
+    },
+    {
+     "text": "Global Partner Market aims to connect these capabilities and turn them into real business projects.",
+     "start": 29.466,
+     "end": 35.317,
+     "words": [
+      {
+       "text": "Global",
+       "start": 29.466,
+       "end": 29.841
+      },
+      {
+       "text": "Partner",
+       "start": 29.891,
+       "end": 30.241
+      },
+      {
+       "text": "Market",
+       "start": 30.291,
+       "end": 30.716
+      },
+      {
+       "text": "aims",
+       "start": 30.841,
+       "end": 31.041
+      },
+      {
+       "text": "to",
+       "start": 31.091,
+       "end": 31.166
+      },
+      {
+       "text": "connect",
+       "start": 31.216,
+       "end": 31.566
+      },
+      {
+       "text": "these",
+       "start": 31.616,
+       "end": 31.816
+      },
+      {
+       "text": "capabilities",
+       "start": 31.866,
+       "end": 32.916
+      },
+      {
+       "text": "and",
+       "start": 33.016,
+       "end": 33.091
+      },
+      {
+       "text": "turn",
+       "start": 33.166,
+       "end": 33.391
+      },
+      {
+       "text": "them",
+       "start": 33.416,
+       "end": 33.516
+      },
+      {
+       "text": "into",
+       "start": 33.566,
+       "end": 33.766
+      },
+      {
+       "text": "real",
+       "start": 33.866,
+       "end": 34.191
+      },
+      {
+       "text": "business",
+       "start": 34.241,
+       "end": 34.566
+      },
+      {
+       "text": "projects.",
+       "start": 34.616,
+       "end": 35.317
+      }
+     ]
+    },
+    {
+     "text": "Our goal is not simply to sell machines.",
+     "start": 36.016,
+     "end": 38.407,
+     "words": [
+      {
+       "text": "Our",
+       "start": 36.016,
+       "end": 36.091
+      },
+      {
+       "text": "goal",
+       "start": 36.141,
+       "end": 36.416
+      },
+      {
+       "text": "is",
+       "start": 36.466,
+       "end": 36.566
+      },
+      {
+       "text": "not",
+       "start": 36.616,
+       "end": 36.816
+      },
+      {
+       "text": "simply",
+       "start": 36.891,
+       "end": 37.191
+      },
+      {
+       "text": "to",
+       "start": 37.241,
+       "end": 37.316
+      },
+      {
+       "text": "sell",
+       "start": 37.391,
+       "end": 37.591
+      },
+      {
+       "text": "machines.",
+       "start": 37.616,
+       "end": 38.407
+      }
+     ]
+    },
+    {
+     "text": "It is to help create sustainable manufacturing opportunities together.",
+     "start": 38.947,
+     "end": 42.981,
+     "words": [
+      {
+       "text": "It",
+       "start": 38.947,
+       "end": 39.097
+      },
+      {
+       "text": "is",
+       "start": 39.172,
+       "end": 39.272
+      },
+      {
+       "text": "to",
+       "start": 39.322,
+       "end": 39.397
+      },
+      {
+       "text": "help",
+       "start": 39.447,
+       "end": 39.672
+      },
+      {
+       "text": "create",
+       "start": 39.722,
+       "end": 40.072
+      },
+      {
+       "text": "sustainable",
+       "start": 40.122,
+       "end": 40.722
+      },
+      {
+       "text": "manufacturing",
+       "start": 40.772,
+       "end": 41.572
+      },
+      {
+       "text": "opportunities",
+       "start": 41.622,
+       "end": 42.272
+      },
+      {
+       "text": "together.",
+       "start": 42.322,
+       "end": 42.981
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "title": "A Manufacturing Opportunity",
+   "start": 44.3,
+   "duration": 43.3333,
+   "sentences": [
+    {
+     "text": "Let me begin with a question.",
+     "start": 1.348,
+     "end": 3.077,
+     "words": [
+      {
+       "text": "Let",
+       "start": 1.348,
+       "end": 1.498
+      },
+      {
+       "text": "me",
+       "start": 1.523,
+       "end": 1.623
+      },
+      {
+       "text": "begin",
+       "start": 1.673,
+       "end": 2.023
+      },
+      {
+       "text": "with",
+       "start": 2.073,
+       "end": 2.173
+      },
+      {
+       "text": "a",
+       "start": 2.198,
+       "end": 2.223
+      },
+      {
+       "text": "question.",
+       "start": 2.273,
+       "end": 3.077
+      }
+     ]
+    },
+    {
+     "text": "What product would you like to manufacture in Ghana if you could find suitable equipment and technical support?",
+     "start": 3.554,
+     "end": 9.87,
+     "words": [
+      {
+       "text": "What",
+       "start": 3.554,
+       "end": 3.729
+      },
+      {
+       "text": "product",
+       "start": 3.779,
+       "end": 4.204
+      },
+      {
+       "text": "would",
+       "start": 4.229,
+       "end": 4.304
+      },
+      {
+       "text": "you",
+       "start": 4.354,
+       "end": 4.429
+      },
+      {
+       "text": "like",
+       "start": 4.479,
+       "end": 4.679
+      },
+      {
+       "text": "to",
+       "start": 4.729,
+       "end": 4.804
+      },
+      {
+       "text": "manufacture",
+       "start": 4.854,
+       "end": 5.604
+      },
+      {
+       "text": "in",
+       "start": 5.654,
+       "end": 5.754
+      },
+      {
+       "text": "Ghana",
+       "start": 5.804,
+       "end": 6.479
+      },
+      {
+       "text": "if",
+       "start": 6.579,
+       "end": 6.654
+      },
+      {
+       "text": "you",
+       "start": 6.704,
+       "end": 6.779
+      },
+      {
+       "text": "could",
+       "start": 6.829,
+       "end": 6.954
+      },
+      {
+       "text": "find",
+       "start": 7.029,
+       "end": 7.329
+      },
+      {
+       "text": "suitable",
+       "start": 7.429,
+       "end": 7.829
+      },
+      {
+       "text": "equipment",
+       "start": 7.879,
+       "end": 8.529
+      },
+      {
+       "text": "and",
+       "start": 8.604,
+       "end": 8.679
+      },
+      {
+       "text": "technical",
+       "start": 8.754,
+       "end": 9.204
+      },
+      {
+       "text": "support?",
+       "start": 9.254,
+       "end": 9.87
+      }
+     ]
+    },
+    {
+     "text": "For some businesses, the opportunity may be hygiene products.",
+     "start": 10.338,
+     "end": 13.973,
+     "words": [
+      {
+       "text": "For",
+       "start": 10.338,
+       "end": 10.438
+      },
+      {
+       "text": "some",
+       "start": 10.513,
+       "end": 10.713
+      },
+      {
+       "text": "businesses,",
+       "start": 10.763,
+       "end": 11.538
+      },
+      {
+       "text": "the",
+       "start": 11.638,
+       "end": 11.738
+      },
+      {
+       "text": "opportunity",
+       "start": 11.788,
+       "end": 12.388
+      },
+      {
+       "text": "may",
+       "start": 12.438,
+       "end": 12.538
+      },
+      {
+       "text": "be",
+       "start": 12.588,
+       "end": 12.688
+      },
+      {
+       "text": "hygiene",
+       "start": 12.738,
+       "end": 13.238
+      },
+      {
+       "text": "products.",
+       "start": 13.288,
+       "end": 13.973
+      }
+     ]
+    },
+    {
+     "text": "For others, pharmaceutical manufacturing, plastic products, or packaging.",
+     "start": 14.485,
+     "end": 19.07,
+     "words": [
+      {
+       "text": "For",
+       "start": 14.485,
+       "end": 14.61
+      },
+      {
+       "text": "others,",
+       "start": 14.71,
+       "end": 15.085
+      },
+      {
+       "text": "pharmaceutical",
+       "start": 15.21,
+       "end": 15.91
+      },
+      {
+       "text": "manufacturing,",
+       "start": 15.96,
+       "end": 16.96
+      },
+      {
+       "text": "plastic",
+       "start": 17.115,
+       "end": 17.54
+      },
+      {
+       "text": "products,",
+       "start": 17.59,
+       "end": 18.065
+      },
+      {
+       "text": "or",
+       "start": 18.185,
+       "end": 18.26
+      },
+      {
+       "text": "packaging.",
+       "start": 18.335,
+       "end": 19.07
+      }
+     ]
+    },
+    {
+     "text": "Starting a manufacturing project requires more than buying equipment.",
+     "start": 19.591,
+     "end": 23.863,
+     "words": [
+      {
+       "text": "Starting",
+       "start": 19.591,
+       "end": 19.916
+      },
+      {
+       "text": "a",
+       "start": 19.966,
+       "end": 19.991
+      },
+      {
+       "text": "manufacturing",
+       "start": 20.041,
+       "end": 20.866
+      },
+      {
+       "text": "project",
+       "start": 20.916,
+       "end": 21.691
+      },
+      {
+       "text": "requires",
+       "start": 21.766,
+       "end": 22.341
+      },
+      {
+       "text": "more",
+       "start": 22.416,
+       "end": 22.616
+      },
+      {
+       "text": "than",
+       "start": 22.666,
+       "end": 22.791
+      },
+      {
+       "text": "buying",
+       "start": 22.841,
+       "end": 23.191
+      },
+      {
+       "text": "equipment.",
+       "start": 23.241,
+       "end": 23.863
+      }
+     ]
+    },
+    {
+     "text": "You need market demand, the right technology, trained people, and a suitable factory.",
+     "start": 24.34,
+     "end": 29.615,
+     "words": [
+      {
+       "text": "You",
+       "start": 24.34,
+       "end": 24.44
+      },
+      {
+       "text": "need",
+       "start": 24.49,
+       "end": 24.715
+      },
+      {
+       "text": "market",
+       "start": 24.765,
+       "end": 25.065
+      },
+      {
+       "text": "demand,",
+       "start": 25.115,
+       "end": 25.715
+      },
+      {
+       "text": "the",
+       "start": 25.84,
+       "end": 25.915
+      },
+      {
+       "text": "right",
+       "start": 25.965,
+       "end": 26.19
+      },
+      {
+       "text": "technology,",
+       "start": 26.24,
+       "end": 27.04
+      },
+      {
+       "text": "trained",
+       "start": 27.19,
+       "end": 27.49
+      },
+      {
+       "text": "people,",
+       "start": 27.54,
+       "end": 27.99
+      },
+      {
+       "text": "and",
+       "start": 28.155,
+       "end": 28.23
+      },
+      {
+       "text": "a",
+       "start": 28.255,
+       "end": 28.305
+      },
+      {
+       "text": "suitable",
+       "start": 28.405,
+       "end": 28.805
+      },
+      {
+       "text": "factory.",
+       "start": 28.88,
+       "end": 29.615
+      }
+     ]
+    },
+    {
+     "text": "We believe there is an opportunity to connect Korean industrial resources with Ghanaian entrepreneurs who already understand their local markets.",
+     "start": 30.024,
+     "end": 38.819,
+     "words": [
+      {
+       "text": "We",
+       "start": 30.024,
+       "end": 30.149
+      },
+      {
+       "text": "believe",
+       "start": 30.199,
+       "end": 30.624
+      },
+      {
+       "text": "there",
+       "start": 30.674,
+       "end": 30.849
+      },
+      {
+       "text": "is",
+       "start": 30.899,
+       "end": 30.974
+      },
+      {
+       "text": "an",
+       "start": 30.999,
+       "end": 31.049
+      },
+      {
+       "text": "opportunity",
+       "start": 31.099,
+       "end": 31.724
+      },
+      {
+       "text": "to",
+       "start": 31.774,
+       "end": 31.849
+      },
+      {
+       "text": "connect",
+       "start": 31.899,
+       "end": 32.274
+      },
+      {
+       "text": "Korean",
+       "start": 32.349,
+       "end": 32.824
+      },
+      {
+       "text": "industrial",
+       "start": 32.874,
+       "end": 33.474
+      },
+      {
+       "text": "resources",
+       "start": 33.524,
+       "end": 34.449
+      },
+      {
+       "text": "with",
+       "start": 34.499,
+       "end": 34.624
+      },
+      {
+       "text": "Ghanaian",
+       "start": 34.699,
+       "end": 35.224
+      },
+      {
+       "text": "entrepreneurs",
+       "start": 35.324,
+       "end": 36.399
+      },
+      {
+       "text": "who",
+       "start": 36.474,
+       "end": 36.599
+      },
+      {
+       "text": "already",
+       "start": 36.674,
+       "end": 36.999
+      },
+      {
+       "text": "understand",
+       "start": 37.074,
+       "end": 37.649
+      },
+      {
+       "text": "their",
+       "start": 37.674,
+       "end": 37.799
+      },
+      {
+       "text": "local",
+       "start": 37.849,
+       "end": 38.174
+      },
+      {
+       "text": "markets.",
+       "start": 38.224,
+       "end": 38.819
+      }
+     ]
+    },
+    {
+     "text": "The starting point is your business idea.",
+     "start": 39.435,
+     "end": 42.004,
+     "words": [
+      {
+       "text": "The",
+       "start": 39.435,
+       "end": 39.51
+      },
+      {
+       "text": "starting",
+       "start": 39.56,
+       "end": 40.035
+      },
+      {
+       "text": "point",
+       "start": 40.085,
+       "end": 40.485
+      },
+      {
+       "text": "is",
+       "start": 40.56,
+       "end": 40.66
+      },
+      {
+       "text": "your",
+       "start": 40.71,
+       "end": 40.835
+      },
+      {
+       "text": "business",
+       "start": 40.91,
+       "end": 41.285
+      },
+      {
+       "text": "idea.",
+       "start": 41.36,
+       "end": 42.004
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s03",
+   "title": "What GPM Connects",
+   "start": 87.6333,
+   "duration": 45.6,
+   "sentences": [
+    {
+     "text": "This is the role of Global Partner Market, or GPM.",
+     "start": 1.259,
+     "end": 4.933,
+     "words": [
+      {
+       "text": "This",
+       "start": 1.259,
+       "end": 1.409
+      },
+      {
+       "text": "is",
+       "start": 1.459,
+       "end": 1.559
+      },
+      {
+       "text": "the",
+       "start": 1.584,
+       "end": 1.659
+      },
+      {
+       "text": "role",
+       "start": 1.734,
+       "end": 2.009
+      },
+      {
+       "text": "of",
+       "start": 2.034,
+       "end": 2.109
+      },
+      {
+       "text": "Global",
+       "start": 2.159,
+       "end": 2.534
+      },
+      {
+       "text": "Partner",
+       "start": 2.584,
+       "end": 2.934
+      },
+      {
+       "text": "Market,",
+       "start": 2.984,
+       "end": 3.534
+      },
+      {
+       "text": "or",
+       "start": 3.659,
+       "end": 3.934
+      },
+      {
+       "text": "GPM.",
+       "start": 4.034,
+       "end": 4.933
+      }
+     ]
+    },
+    {
+     "text": "On the Korean side, we seek suitable equipment suppliers, manufacturing technologies, and specialist companies.",
+     "start": 5.649,
+     "end": 12.684,
+     "words": [
+      {
+       "text": "On",
+       "start": 5.649,
+       "end": 5.749
+      },
+      {
+       "text": "the",
+       "start": 5.749,
+       "end": 5.799
+      },
+      {
+       "text": "Korean",
+       "start": 5.849,
+       "end": 6.274
+      },
+      {
+       "text": "side,",
+       "start": 6.349,
+       "end": 6.974
+      },
+      {
+       "text": "we",
+       "start": 7.099,
+       "end": 7.174
+      },
+      {
+       "text": "seek",
+       "start": 7.249,
+       "end": 7.474
+      },
+      {
+       "text": "suitable",
+       "start": 7.574,
+       "end": 7.974
+      },
+      {
+       "text": "equipment",
+       "start": 8.024,
+       "end": 8.399
+      },
+      {
+       "text": "suppliers,",
+       "start": 8.449,
+       "end": 9.349
+      },
+      {
+       "text": "manufacturing",
+       "start": 9.539,
+       "end": 10.289
+      },
+      {
+       "text": "technologies,",
+       "start": 10.339,
+       "end": 11.139
+      },
+      {
+       "text": "and",
+       "start": 11.189,
+       "end": 11.264
+      },
+      {
+       "text": "specialist",
+       "start": 11.339,
+       "end": 11.889
+      },
+      {
+       "text": "companies.",
+       "start": 11.939,
+       "end": 12.684
+      }
+     ]
+    },
+    {
+     "text": "On the Ghanaian side, we work to identify manufacturing demand, potential local partners, and project requirements.",
+     "start": 13.257,
+     "end": 20.74,
+     "words": [
+      {
+       "text": "On",
+       "start": 13.257,
+       "end": 13.357
+      },
+      {
+       "text": "the",
+       "start": 13.357,
+       "end": 13.407
+      },
+      {
+       "text": "Ghanaian",
+       "start": 13.482,
+       "end": 14.007
+      },
+      {
+       "text": "side,",
+       "start": 14.082,
+       "end": 14.707
+      },
+      {
+       "text": "we",
+       "start": 14.832,
+       "end": 14.907
+      },
+      {
+       "text": "work",
+       "start": 14.957,
+       "end": 15.132
+      },
+      {
+       "text": "to",
+       "start": 15.182,
+       "end": 15.257
+      },
+      {
+       "text": "identify",
+       "start": 15.332,
+       "end": 15.957
+      },
+      {
+       "text": "manufacturing",
+       "start": 16.032,
+       "end": 16.882
+      },
+      {
+       "text": "demand,",
+       "start": 16.932,
+       "end": 17.657
+      },
+      {
+       "text": "potential",
+       "start": 17.782,
+       "end": 18.257
+      },
+      {
+       "text": "local",
+       "start": 18.307,
+       "end": 18.607
+      },
+      {
+       "text": "partners,",
+       "start": 18.657,
+       "end": 19.257
+      },
+      {
+       "text": "and",
+       "start": 19.372,
+       "end": 19.447
+      },
+      {
+       "text": "project",
+       "start": 19.497,
+       "end": 19.922
+      },
+      {
+       "text": "requirements.",
+       "start": 19.947,
+       "end": 20.74
+      }
+     ]
+    },
+    {
+     "text": "GPM connects these two sides through equipment matching, technical review, business planning, and implementation coordination.",
+     "start": 21.324,
+     "end": 29.368,
+     "words": [
+      {
+       "text": "GPM",
+       "start": 21.324,
+       "end": 22.149
+      },
+      {
+       "text": "connects",
+       "start": 22.199,
+       "end": 22.574
+      },
+      {
+       "text": "these",
+       "start": 22.624,
+       "end": 22.824
+      },
+      {
+       "text": "two",
+       "start": 22.899,
+       "end": 23.074
+      },
+      {
+       "text": "sides",
+       "start": 23.149,
+       "end": 23.549
+      },
+      {
+       "text": "through",
+       "start": 23.599,
+       "end": 23.774
+      },
+      {
+       "text": "equipment",
+       "start": 23.824,
+       "end": 24.199
+      },
+      {
+       "text": "matching,",
+       "start": 24.249,
+       "end": 24.974
+      },
+      {
+       "text": "technical",
+       "start": 25.124,
+       "end": 25.574
+      },
+      {
+       "text": "review,",
+       "start": 25.624,
+       "end": 26.274
+      },
+      {
+       "text": "business",
+       "start": 26.449,
+       "end": 26.799
+      },
+      {
+       "text": "planning,",
+       "start": 26.849,
+       "end": 27.449
+      },
+      {
+       "text": "and",
+       "start": 27.549,
+       "end": 27.624
+      },
+      {
+       "text": "implementation",
+       "start": 27.699,
+       "end": 28.499
+      },
+      {
+       "text": "coordination.",
+       "start": 28.549,
+       "end": 29.368
+      }
+     ]
+    },
+    {
+     "text": "We are proposing a platform for practical cooperation.",
+     "start": 30.023,
+     "end": 33.357,
+     "words": [
+      {
+       "text": "We",
+       "start": 30.023,
+       "end": 30.123
+      },
+      {
+       "text": "are",
+       "start": 30.148,
+       "end": 30.223
+      },
+      {
+       "text": "proposing",
+       "start": 30.273,
+       "end": 30.848
+      },
+      {
+       "text": "a",
+       "start": 30.873,
+       "end": 30.898
+      },
+      {
+       "text": "platform",
+       "start": 30.948,
+       "end": 31.523
+      },
+      {
+       "text": "for",
+       "start": 31.573,
+       "end": 31.673
+      },
+      {
+       "text": "practical",
+       "start": 31.723,
+       "end": 32.248
+      },
+      {
+       "text": "cooperation.",
+       "start": 32.298,
+       "end": 33.357
+      }
+     ]
+    },
+    {
+     "text": "Each project must be evaluated separately, with the relevant suppliers and local partners.",
+     "start": 33.815,
+     "end": 39.151,
+     "words": [
+      {
+       "text": "Each",
+       "start": 33.815,
+       "end": 33.99
+      },
+      {
+       "text": "project",
+       "start": 34.04,
+       "end": 34.59
+      },
+      {
+       "text": "must",
+       "start": 34.64,
+       "end": 34.79
+      },
+      {
+       "text": "be",
+       "start": 34.815,
+       "end": 34.89
+      },
+      {
+       "text": "evaluated",
+       "start": 34.94,
+       "end": 35.565
+      },
+      {
+       "text": "separately,",
+       "start": 35.64,
+       "end": 36.39
+      },
+      {
+       "text": "with",
+       "start": 36.63,
+       "end": 36.755
+      },
+      {
+       "text": "the",
+       "start": 36.755,
+       "end": 36.83
+      },
+      {
+       "text": "relevant",
+       "start": 36.905,
+       "end": 37.28
+      },
+      {
+       "text": "suppliers",
+       "start": 37.33,
+       "end": 37.98
+      },
+      {
+       "text": "and",
+       "start": 38.03,
+       "end": 38.105
+      },
+      {
+       "text": "local",
+       "start": 38.155,
+       "end": 38.455
+      },
+      {
+       "text": "partners.",
+       "start": 38.505,
+       "end": 39.151
+      }
+     ]
+    },
+    {
+     "text": "Our value is in helping the right companies and technologies come together.",
+     "start": 39.857,
+     "end": 44.292,
+     "words": [
+      {
+       "text": "Our",
+       "start": 39.857,
+       "end": 39.932
+      },
+      {
+       "text": "value",
+       "start": 39.982,
+       "end": 40.482
+      },
+      {
+       "text": "is",
+       "start": 40.557,
+       "end": 40.657
+      },
+      {
+       "text": "in",
+       "start": 40.732,
+       "end": 40.907
+      },
+      {
+       "text": "helping",
+       "start": 40.982,
+       "end": 41.357
+      },
+      {
+       "text": "the",
+       "start": 41.407,
+       "end": 41.482
+      },
+      {
+       "text": "right",
+       "start": 41.532,
+       "end": 41.782
+      },
+      {
+       "text": "companies",
+       "start": 41.832,
+       "end": 42.332
+      },
+      {
+       "text": "and",
+       "start": 42.357,
+       "end": 42.432
+      },
+      {
+       "text": "technologies",
+       "start": 42.482,
+       "end": 43.307
+      },
+      {
+       "text": "come",
+       "start": 43.382,
+       "end": 43.582
+      },
+      {
+       "text": "together.",
+       "start": 43.632,
+       "end": 44.292
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s04",
+   "title": "Priority Manufacturing Opportunities",
+   "start": 133.2333,
+   "duration": 48.7667,
+   "sentences": [
+    {
+     "text": "We are focusing on four groups of manufacturing opportunities.",
+     "start": 1.28,
+     "end": 4.955,
+     "words": [
+      {
+       "text": "We",
+       "start": 1.28,
+       "end": 1.38
+      },
+      {
+       "text": "are",
+       "start": 1.405,
+       "end": 1.48
+      },
+      {
+       "text": "focusing",
+       "start": 1.555,
+       "end": 2.055
+      },
+      {
+       "text": "on",
+       "start": 2.155,
+       "end": 2.28
+      },
+      {
+       "text": "four",
+       "start": 2.405,
+       "end": 2.68
+      },
+      {
+       "text": "groups",
+       "start": 2.73,
+       "end": 3.03
+      },
+      {
+       "text": "of",
+       "start": 3.08,
+       "end": 3.23
+      },
+      {
+       "text": "manufacturing",
+       "start": 3.305,
+       "end": 4.155
+      },
+      {
+       "text": "opportunities.",
+       "start": 4.205,
+       "end": 4.955
+      }
+     ]
+    },
+    {
+     "text": "First, pharmaceutical equipment, including sterile vial powder filling and capping systems.",
+     "start": 5.611,
+     "end": 11.074,
+     "words": [
+      {
+       "text": "First,",
+       "start": 5.611,
+       "end": 6.061
+      },
+      {
+       "text": "pharmaceutical",
+       "start": 6.161,
+       "end": 6.886
+      },
+      {
+       "text": "equipment,",
+       "start": 6.936,
+       "end": 7.636
+      },
+      {
+       "text": "including",
+       "start": 7.761,
+       "end": 8.211
+      },
+      {
+       "text": "sterile",
+       "start": 8.286,
+       "end": 8.686
+      },
+      {
+       "text": "vial",
+       "start": 8.761,
+       "end": 9.086
+      },
+      {
+       "text": "powder",
+       "start": 9.161,
+       "end": 9.461
+      },
+      {
+       "text": "filling",
+       "start": 9.536,
+       "end": 9.836
+      },
+      {
+       "text": "and",
+       "start": 9.886,
+       "end": 9.961
+      },
+      {
+       "text": "capping",
+       "start": 10.036,
+       "end": 10.386
+      },
+      {
+       "text": "systems.",
+       "start": 10.436,
+       "end": 11.074
+      }
+     ]
+    },
+    {
+     "text": "These projects require particularly careful technical, quality, and regulatory review.",
+     "start": 11.593,
+     "end": 17.102,
+     "words": [
+      {
+       "text": "These",
+       "start": 11.593,
+       "end": 11.793
+      },
+      {
+       "text": "projects",
+       "start": 11.843,
+       "end": 12.368
+      },
+      {
+       "text": "require",
+       "start": 12.418,
+       "end": 12.893
+      },
+      {
+       "text": "particularly",
+       "start": 12.943,
+       "end": 13.568
+      },
+      {
+       "text": "careful",
+       "start": 13.643,
+       "end": 14.018
+      },
+      {
+       "text": "technical,",
+       "start": 14.093,
+       "end": 14.793
+      },
+      {
+       "text": "quality,",
+       "start": 14.968,
+       "end": 15.643
+      },
+      {
+       "text": "and",
+       "start": 15.768,
+       "end": 15.843
+      },
+      {
+       "text": "regulatory",
+       "start": 15.893,
+       "end": 16.568
+      },
+      {
+       "text": "review.",
+       "start": 16.618,
+       "end": 17.102
+      }
+     ]
+    },
+    {
+     "text": "Second, hygiene products.",
+     "start": 17.748,
+     "end": 19.414,
+     "words": [
+      {
+       "text": "Second,",
+       "start": 17.748,
+       "end": 18.073
+      },
+      {
+       "text": "hygiene",
+       "start": 18.148,
+       "end": 18.598
+      },
+      {
+       "text": "products.",
+       "start": 18.648,
+       "end": 19.414
+      }
+     ]
+    },
+    {
+     "text": "We are looking at three distinct categories: baby diapers, adult diapers, and feminine sanitary pads.",
+     "start": 19.844,
+     "end": 26.382,
+     "words": [
+      {
+       "text": "We",
+       "start": 19.844,
+       "end": 19.919
+      },
+      {
+       "text": "are",
+       "start": 19.944,
+       "end": 20.019
+      },
+      {
+       "text": "looking",
+       "start": 20.069,
+       "end": 20.344
+      },
+      {
+       "text": "at",
+       "start": 20.394,
+       "end": 20.494
+      },
+      {
+       "text": "three",
+       "start": 20.594,
+       "end": 20.819
+      },
+      {
+       "text": "distinct",
+       "start": 20.869,
+       "end": 21.219
+      },
+      {
+       "text": "categories:",
+       "start": 21.269,
+       "end": 22.194
+      },
+      {
+       "text": "baby",
+       "start": 22.369,
+       "end": 22.669
+      },
+      {
+       "text": "diapers,",
+       "start": 22.719,
+       "end": 23.394
+      },
+      {
+       "text": "adult",
+       "start": 23.544,
+       "end": 23.869
+      },
+      {
+       "text": "diapers,",
+       "start": 23.919,
+       "end": 24.444
+      },
+      {
+       "text": "and",
+       "start": 24.609,
+       "end": 24.684
+      },
+      {
+       "text": "feminine",
+       "start": 24.759,
+       "end": 25.209
+      },
+      {
+       "text": "sanitary",
+       "start": 25.284,
+       "end": 25.809
+      },
+      {
+       "text": "pads.",
+       "start": 25.859,
+       "end": 26.382
+      }
+     ]
+    },
+    {
+     "text": "Each requires its own suitable manufacturing equipment.",
+     "start": 27.053,
+     "end": 30.571,
+     "words": [
+      {
+       "text": "Each",
+       "start": 27.053,
+       "end": 27.228
+      },
+      {
+       "text": "requires",
+       "start": 27.278,
+       "end": 27.828
+      },
+      {
+       "text": "its",
+       "start": 27.878,
+       "end": 28.028
+      },
+      {
+       "text": "own",
+       "start": 28.178,
+       "end": 28.453
+      },
+      {
+       "text": "suitable",
+       "start": 28.553,
+       "end": 28.953
+      },
+      {
+       "text": "manufacturing",
+       "start": 29.003,
+       "end": 29.778
+      },
+      {
+       "text": "equipment.",
+       "start": 29.828,
+       "end": 30.571
+      }
+     ]
+    },
+    {
+     "text": "Third, plastic injection molding equipment, including machines, molds, and related automation.",
+     "start": 31.048,
+     "end": 37.438,
+     "words": [
+      {
+       "text": "Third,",
+       "start": 31.048,
+       "end": 31.473
+      },
+      {
+       "text": "plastic",
+       "start": 31.558,
+       "end": 31.983
+      },
+      {
+       "text": "injection",
+       "start": 32.033,
+       "end": 32.608
+      },
+      {
+       "text": "molding",
+       "start": 32.683,
+       "end": 33.033
+      },
+      {
+       "text": "equipment,",
+       "start": 33.083,
+       "end": 33.808
+      },
+      {
+       "text": "including",
+       "start": 33.933,
+       "end": 34.358
+      },
+      {
+       "text": "machines,",
+       "start": 34.408,
+       "end": 35.183
+      },
+      {
+       "text": "molds,",
+       "start": 35.333,
+       "end": 35.933
+      },
+      {
+       "text": "and",
+       "start": 36.033,
+       "end": 36.108
+      },
+      {
+       "text": "related",
+       "start": 36.158,
+       "end": 36.633
+      },
+      {
+       "text": "automation.",
+       "start": 36.733,
+       "end": 37.438
+      }
+     ]
+    },
+    {
+     "text": "And fourth, other industrial equipment such as packaging and processing machinery.",
+     "start": 38.041,
+     "end": 42.526,
+     "words": [
+      {
+       "text": "And",
+       "start": 38.041,
+       "end": 38.141
+      },
+      {
+       "text": "fourth,",
+       "start": 38.241,
+       "end": 38.691
+      },
+      {
+       "text": "other",
+       "start": 38.841,
+       "end": 39.041
+      },
+      {
+       "text": "industrial",
+       "start": 39.116,
+       "end": 39.691
+      },
+      {
+       "text": "equipment",
+       "start": 39.741,
+       "end": 40.191
+      },
+      {
+       "text": "such",
+       "start": 40.241,
+       "end": 40.391
+      },
+      {
+       "text": "as",
+       "start": 40.416,
+       "end": 40.566
+      },
+      {
+       "text": "packaging",
+       "start": 40.641,
+       "end": 41.216
+      },
+      {
+       "text": "and",
+       "start": 41.266,
+       "end": 41.341
+      },
+      {
+       "text": "processing",
+       "start": 41.391,
+       "end": 41.891
+      },
+      {
+       "text": "machinery.",
+       "start": 41.916,
+       "end": 42.526
+      }
+     ]
+    },
+    {
+     "text": "We would like to learn which of these sectors is most relevant to your business.",
+     "start": 43.127,
+     "end": 47.399,
+     "words": [
+      {
+       "text": "We",
+       "start": 43.127,
+       "end": 43.202
+      },
+      {
+       "text": "would",
+       "start": 43.227,
+       "end": 43.302
+      },
+      {
+       "text": "like",
+       "start": 43.352,
+       "end": 43.552
+      },
+      {
+       "text": "to",
+       "start": 43.602,
+       "end": 43.677
+      },
+      {
+       "text": "learn",
+       "start": 43.727,
+       "end": 44.027
+      },
+      {
+       "text": "which",
+       "start": 44.077,
+       "end": 44.252
+      },
+      {
+       "text": "of",
+       "start": 44.277,
+       "end": 44.327
+      },
+      {
+       "text": "these",
+       "start": 44.377,
+       "end": 44.577
+      },
+      {
+       "text": "sectors",
+       "start": 44.652,
+       "end": 45.402
+      },
+      {
+       "text": "is",
+       "start": 45.502,
+       "end": 45.602
+      },
+      {
+       "text": "most",
+       "start": 45.652,
+       "end": 45.952
+      },
+      {
+       "text": "relevant",
+       "start": 46.027,
+       "end": 46.427
+      },
+      {
+       "text": "to",
+       "start": 46.477,
+       "end": 46.527
+      },
+      {
+       "text": "your",
+       "start": 46.577,
+       "end": 46.702
+      },
+      {
+       "text": "business.",
+       "start": 46.752,
+       "end": 47.399
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s05",
+   "title": "Beyond Equipment Supply",
+   "start": 182.0,
+   "duration": 44.1,
+   "sentences": [
+    {
+     "text": "Purchasing a machine is only one part of starting a manufacturing business.",
+     "start": 1.276,
+     "end": 5.744,
+     "words": [
+      {
+       "text": "Purchasing",
+       "start": 1.276,
+       "end": 1.751
+      },
+      {
+       "text": "a",
+       "start": 1.776,
+       "end": 1.801
+      },
+      {
+       "text": "machine",
+       "start": 1.826,
+       "end": 2.476
+      },
+      {
+       "text": "is",
+       "start": 2.551,
+       "end": 2.651
+      },
+      {
+       "text": "only",
+       "start": 2.776,
+       "end": 3.051
+      },
+      {
+       "text": "one",
+       "start": 3.126,
+       "end": 3.326
+      },
+      {
+       "text": "part",
+       "start": 3.401,
+       "end": 3.626
+      },
+      {
+       "text": "of",
+       "start": 3.651,
+       "end": 3.701
+      },
+      {
+       "text": "starting",
+       "start": 3.751,
+       "end": 4.076
+      },
+      {
+       "text": "a",
+       "start": 4.126,
+       "end": 4.151
+      },
+      {
+       "text": "manufacturing",
+       "start": 4.201,
+       "end": 5.026
+      },
+      {
+       "text": "business.",
+       "start": 5.076,
+       "end": 5.744
+      }
+     ]
+    },
+    {
+     "text": "A company also needs to understand installation requirements, utilities, operating procedures, quality control, and maintenance.",
+     "start": 6.205,
+     "end": 14.701,
+     "words": [
+      {
+       "text": "A",
+       "start": 6.205,
+       "end": 6.255
+      },
+      {
+       "text": "company",
+       "start": 6.305,
+       "end": 6.73
+      },
+      {
+       "text": "also",
+       "start": 6.855,
+       "end": 7.18
+      },
+      {
+       "text": "needs",
+       "start": 7.23,
+       "end": 7.48
+      },
+      {
+       "text": "to",
+       "start": 7.53,
+       "end": 7.605
+      },
+      {
+       "text": "understand",
+       "start": 7.68,
+       "end": 8.255
+      },
+      {
+       "text": "installation",
+       "start": 8.33,
+       "end": 8.955
+      },
+      {
+       "text": "requirements,",
+       "start": 9.005,
+       "end": 10.08
+      },
+      {
+       "text": "utilities,",
+       "start": 10.255,
+       "end": 11.18
+      },
+      {
+       "text": "operating",
+       "start": 11.38,
+       "end": 11.805
+      },
+      {
+       "text": "procedures,",
+       "start": 11.855,
+       "end": 12.705
+      },
+      {
+       "text": "quality",
+       "start": 12.855,
+       "end": 13.28
+      },
+      {
+       "text": "control,",
+       "start": 13.33,
+       "end": 13.83
+      },
+      {
+       "text": "and",
+       "start": 13.905,
+       "end": 13.98
+      },
+      {
+       "text": "maintenance.",
+       "start": 14.03,
+       "end": 14.701
+      }
+     ]
+    },
+    {
+     "text": "Our proposed model connects equipment sourcing with engineering review and practical workforce training.",
+     "start": 15.394,
+     "end": 21.365,
+     "words": [
+      {
+       "text": "Our",
+       "start": 15.394,
+       "end": 15.469
+      },
+      {
+       "text": "proposed",
+       "start": 15.519,
+       "end": 16.069
+      },
+      {
+       "text": "model",
+       "start": 16.119,
+       "end": 16.569
+      },
+      {
+       "text": "connects",
+       "start": 16.644,
+       "end": 16.994
+      },
+      {
+       "text": "equipment",
+       "start": 17.044,
+       "end": 17.444
+      },
+      {
+       "text": "sourcing",
+       "start": 17.519,
+       "end": 17.969
+      },
+      {
+       "text": "with",
+       "start": 18.019,
+       "end": 18.144
+      },
+      {
+       "text": "engineering",
+       "start": 18.219,
+       "end": 18.769
+      },
+      {
+       "text": "review",
+       "start": 18.819,
+       "end": 19.569
+      },
+      {
+       "text": "and",
+       "start": 19.669,
+       "end": 19.744
+      },
+      {
+       "text": "practical",
+       "start": 19.794,
+       "end": 20.294
+      },
+      {
+       "text": "workforce",
+       "start": 20.344,
+       "end": 20.769
+      },
+      {
+       "text": "training.",
+       "start": 20.819,
+       "end": 21.365
+      }
+     ]
+    },
+    {
+     "text": "Depending on the project, Korean specialists and local technical partners may support equipment inspection, installation planning, commissioning, and training.",
+     "start": 21.855,
+     "end": 31.499,
+     "words": [
+      {
+       "text": "Depending",
+       "start": 21.855,
+       "end": 22.33
+      },
+      {
+       "text": "on",
+       "start": 22.38,
+       "end": 22.48
+      },
+      {
+       "text": "the",
+       "start": 22.48,
+       "end": 22.53
+      },
+      {
+       "text": "project,",
+       "start": 22.58,
+       "end": 23.405
+      },
+      {
+       "text": "Korean",
+       "start": 23.555,
+       "end": 24.005
+      },
+      {
+       "text": "specialists",
+       "start": 24.08,
+       "end": 24.755
+      },
+      {
+       "text": "and",
+       "start": 24.805,
+       "end": 24.88
+      },
+      {
+       "text": "local",
+       "start": 24.93,
+       "end": 25.255
+      },
+      {
+       "text": "technical",
+       "start": 25.33,
+       "end": 25.78
+      },
+      {
+       "text": "partners",
+       "start": 25.83,
+       "end": 26.33
+      },
+      {
+       "text": "may",
+       "start": 26.38,
+       "end": 26.53
+      },
+      {
+       "text": "support",
+       "start": 26.605,
+       "end": 26.955
+      },
+      {
+       "text": "equipment",
+       "start": 27.005,
+       "end": 27.405
+      },
+      {
+       "text": "inspection,",
+       "start": 27.43,
+       "end": 28.355
+      },
+      {
+       "text": "installation",
+       "start": 28.53,
+       "end": 29.18
+      },
+      {
+       "text": "planning,",
+       "start": 29.23,
+       "end": 29.83
+      },
+      {
+       "text": "commissioning,",
+       "start": 29.955,
+       "end": 30.58
+      },
+      {
+       "text": "and",
+       "start": 30.74,
+       "end": 30.815
+      },
+      {
+       "text": "training.",
+       "start": 30.89,
+       "end": 31.499
+      }
+     ]
+    },
+    {
+     "text": "The objective is straightforward: to help a local business move toward an operational manufacturing facility, rather than receive equipment without the knowledge needed to use it.",
+     "start": 31.924,
+     "end": 42.701,
+     "words": [
+      {
+       "text": "The",
+       "start": 31.924,
+       "end": 32.024
+      },
+      {
+       "text": "objective",
+       "start": 32.099,
+       "end": 32.774
+      },
+      {
+       "text": "is",
+       "start": 32.849,
+       "end": 32.924
+      },
+      {
+       "text": "straightforward:",
+       "start": 32.974,
+       "end": 34.099
+      },
+      {
+       "text": "to",
+       "start": 34.299,
+       "end": 34.374
+      },
+      {
+       "text": "help",
+       "start": 34.424,
+       "end": 34.624
+      },
+      {
+       "text": "a",
+       "start": 34.674,
+       "end": 34.724
+      },
+      {
+       "text": "local",
+       "start": 34.799,
+       "end": 35.124
+      },
+      {
+       "text": "business",
+       "start": 35.199,
+       "end": 35.624
+      },
+      {
+       "text": "move",
+       "start": 35.699,
+       "end": 35.974
+      },
+      {
+       "text": "toward",
+       "start": 36.024,
+       "end": 36.374
+      },
+      {
+       "text": "an",
+       "start": 36.399,
+       "end": 36.499
+      },
+      {
+       "text": "operational",
+       "start": 36.649,
+       "end": 37.274
+      },
+      {
+       "text": "manufacturing",
+       "start": 37.324,
+       "end": 38.124
+      },
+      {
+       "text": "facility,",
+       "start": 38.174,
+       "end": 38.974
+      },
+      {
+       "text": "rather",
+       "start": 39.179,
+       "end": 39.454
+      },
+      {
+       "text": "than",
+       "start": 39.504,
+       "end": 39.629
+      },
+      {
+       "text": "receive",
+       "start": 39.679,
+       "end": 40.029
+      },
+      {
+       "text": "equipment",
+       "start": 40.079,
+       "end": 40.654
+      },
+      {
+       "text": "without",
+       "start": 40.704,
+       "end": 40.979
+      },
+      {
+       "text": "the",
+       "start": 41.029,
+       "end": 41.104
+      },
+      {
+       "text": "knowledge",
+       "start": 41.179,
+       "end": 41.629
+      },
+      {
+       "text": "needed",
+       "start": 41.704,
+       "end": 42.004
+      },
+      {
+       "text": "to",
+       "start": 42.054,
+       "end": 42.129
+      },
+      {
+       "text": "use",
+       "start": 42.204,
+       "end": 42.454
+      },
+      {
+       "text": "it.",
+       "start": 42.504,
+       "end": 42.701
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s06",
+   "title": "How We Develop a Project",
+   "start": 226.1,
+   "duration": 46.1,
+   "sentences": [
+    {
+     "text": "Let me explain how a project can move forward.",
+     "start": 1.39,
+     "end": 4.251,
+     "words": [
+      {
+       "text": "Let",
+       "start": 1.39,
+       "end": 1.49
+      },
+      {
+       "text": "me",
+       "start": 1.515,
+       "end": 1.615
+      },
+      {
+       "text": "explain",
+       "start": 1.665,
+       "end": 2.265
+      },
+      {
+       "text": "how",
+       "start": 2.315,
+       "end": 2.465
+      },
+      {
+       "text": "a",
+       "start": 2.49,
+       "end": 2.515
+      },
+      {
+       "text": "project",
+       "start": 2.565,
+       "end": 3.04
+      },
+      {
+       "text": "can",
+       "start": 3.09,
+       "end": 3.19
+      },
+      {
+       "text": "move",
+       "start": 3.24,
+       "end": 3.465
+      },
+      {
+       "text": "forward.",
+       "start": 3.54,
+       "end": 4.251
+      }
+     ]
+    },
+    {
+     "text": "We begin by identifying equipment and reviewing its technical condition.",
+     "start": 4.681,
+     "end": 9.251,
+     "words": [
+      {
+       "text": "We",
+       "start": 4.681,
+       "end": 4.781
+      },
+      {
+       "text": "begin",
+       "start": 4.831,
+       "end": 5.231
+      },
+      {
+       "text": "by",
+       "start": 5.281,
+       "end": 5.481
+      },
+      {
+       "text": "identifying",
+       "start": 5.556,
+       "end": 6.256
+      },
+      {
+       "text": "equipment",
+       "start": 6.306,
+       "end": 7.106
+      },
+      {
+       "text": "and",
+       "start": 7.206,
+       "end": 7.281
+      },
+      {
+       "text": "reviewing",
+       "start": 7.331,
+       "end": 7.856
+      },
+      {
+       "text": "its",
+       "start": 7.906,
+       "end": 8.056
+      },
+      {
+       "text": "technical",
+       "start": 8.106,
+       "end": 8.556
+      },
+      {
+       "text": "condition.",
+       "start": 8.606,
+       "end": 9.251
+      }
+     ]
+    },
+    {
+     "text": "Next, we match potential equipment with the needs of a Ghanaian business.",
+     "start": 9.8,
+     "end": 14.072,
+     "words": [
+      {
+       "text": "Next,",
+       "start": 9.8,
+       "end": 10.2
+      },
+      {
+       "text": "we",
+       "start": 10.3,
+       "end": 10.375
+      },
+      {
+       "text": "match",
+       "start": 10.425,
+       "end": 10.7
+      },
+      {
+       "text": "potential",
+       "start": 10.75,
+       "end": 11.2
+      },
+      {
+       "text": "equipment",
+       "start": 11.25,
+       "end": 12.0
+      },
+      {
+       "text": "with",
+       "start": 12.075,
+       "end": 12.2
+      },
+      {
+       "text": "the",
+       "start": 12.2,
+       "end": 12.275
+      },
+      {
+       "text": "needs",
+       "start": 12.35,
+       "end": 12.7
+      },
+      {
+       "text": "of",
+       "start": 12.75,
+       "end": 12.85
+      },
+      {
+       "text": "a",
+       "start": 12.85,
+       "end": 12.9
+      },
+      {
+       "text": "Ghanaian",
+       "start": 12.975,
+       "end": 13.475
+      },
+      {
+       "text": "business.",
+       "start": 13.525,
+       "end": 14.072
+      }
+     ]
+    },
+    {
+     "text": "Then we assess feasibility, including the factory site, utilities, maintenance requirements, investment and operating conditions.",
+     "start": 14.667,
+     "end": 22.839,
+     "words": [
+      {
+       "text": "Then",
+       "start": 14.667,
+       "end": 14.842
+      },
+      {
+       "text": "we",
+       "start": 14.892,
+       "end": 14.967
+      },
+      {
+       "text": "assess",
+       "start": 15.017,
+       "end": 15.392
+      },
+      {
+       "text": "feasibility,",
+       "start": 15.467,
+       "end": 16.342
+      },
+      {
+       "text": "including",
+       "start": 16.467,
+       "end": 16.892
+      },
+      {
+       "text": "the",
+       "start": 16.917,
+       "end": 16.967
+      },
+      {
+       "text": "factory",
+       "start": 17.042,
+       "end": 17.467
+      },
+      {
+       "text": "site,",
+       "start": 17.542,
+       "end": 17.992
+      },
+      {
+       "text": "utilities,",
+       "start": 18.117,
+       "end": 19.042
+      },
+      {
+       "text": "maintenance",
+       "start": 19.192,
+       "end": 19.667
+      },
+      {
+       "text": "requirements,",
+       "start": 19.717,
+       "end": 20.567
+      },
+      {
+       "text": "investment",
+       "start": 20.667,
+       "end": 21.267
+      },
+      {
+       "text": "and",
+       "start": 21.317,
+       "end": 21.392
+      },
+      {
+       "text": "operating",
+       "start": 21.517,
+       "end": 21.967
+      },
+      {
+       "text": "conditions.",
+       "start": 22.017,
+       "end": 22.839
+      }
+     ]
+    },
+    {
+     "text": "If the parties agree, the project can move to contracting, relocation, installation, commissioning, and training.",
+     "start": 23.341,
+     "end": 30.082,
+     "words": [
+      {
+       "text": "If",
+       "start": 23.341,
+       "end": 23.441
+      },
+      {
+       "text": "the",
+       "start": 23.466,
+       "end": 23.516
+      },
+      {
+       "text": "parties",
+       "start": 23.566,
+       "end": 24.041
+      },
+      {
+       "text": "agree,",
+       "start": 24.091,
+       "end": 24.441
+      },
+      {
+       "text": "the",
+       "start": 24.561,
+       "end": 24.611
+      },
+      {
+       "text": "project",
+       "start": 24.661,
+       "end": 25.111
+      },
+      {
+       "text": "can",
+       "start": 25.161,
+       "end": 25.286
+      },
+      {
+       "text": "move",
+       "start": 25.336,
+       "end": 25.561
+      },
+      {
+       "text": "to",
+       "start": 25.611,
+       "end": 25.661
+      },
+      {
+       "text": "contracting,",
+       "start": 25.711,
+       "end": 26.636
+      },
+      {
+       "text": "relocation,",
+       "start": 26.761,
+       "end": 27.686
+      },
+      {
+       "text": "installation,",
+       "start": 27.836,
+       "end": 28.611
+      },
+      {
+       "text": "commissioning,",
+       "start": 28.721,
+       "end": 29.346
+      },
+      {
+       "text": "and",
+       "start": 29.396,
+       "end": 29.471
+      },
+      {
+       "text": "training.",
+       "start": 29.546,
+       "end": 30.082
+      }
+     ]
+    },
+    {
+     "text": "Finally, production performance and operational readiness are reviewed.",
+     "start": 30.648,
+     "end": 34.81,
+     "words": [
+      {
+       "text": "Finally,",
+       "start": 30.648,
+       "end": 31.223
+      },
+      {
+       "text": "production",
+       "start": 31.323,
+       "end": 31.748
+      },
+      {
+       "text": "performance",
+       "start": 31.798,
+       "end": 32.398
+      },
+      {
+       "text": "and",
+       "start": 32.448,
+       "end": 32.548
+      },
+      {
+       "text": "operational",
+       "start": 32.673,
+       "end": 33.248
+      },
+      {
+       "text": "readiness",
+       "start": 33.298,
+       "end": 33.898
+      },
+      {
+       "text": "are",
+       "start": 33.973,
+       "end": 34.048
+      },
+      {
+       "text": "reviewed.",
+       "start": 34.098,
+       "end": 34.81
+      }
+     ]
+    },
+    {
+     "text": "These stages are not automatic promises.",
+     "start": 35.303,
+     "end": 38.209,
+     "words": [
+      {
+       "text": "These",
+       "start": 35.303,
+       "end": 35.478
+      },
+      {
+       "text": "stages",
+       "start": 35.528,
+       "end": 36.178
+      },
+      {
+       "text": "are",
+       "start": 36.253,
+       "end": 36.353
+      },
+      {
+       "text": "not",
+       "start": 36.403,
+       "end": 36.653
+      },
+      {
+       "text": "automatic",
+       "start": 36.778,
+       "end": 37.253
+      },
+      {
+       "text": "promises.",
+       "start": 37.303,
+       "end": 38.209
+      }
+     ]
+    },
+    {
+     "text": "They are checkpoints intended to support better decisions before a company makes a major commitment.",
+     "start": 38.661,
+     "end": 44.767,
+     "words": [
+      {
+       "text": "They",
+       "start": 38.661,
+       "end": 38.786
+      },
+      {
+       "text": "are",
+       "start": 38.836,
+       "end": 38.936
+      },
+      {
+       "text": "checkpoints",
+       "start": 39.011,
+       "end": 39.811
+      },
+      {
+       "text": "intended",
+       "start": 39.886,
+       "end": 40.386
+      },
+      {
+       "text": "to",
+       "start": 40.436,
+       "end": 40.511
+      },
+      {
+       "text": "support",
+       "start": 40.561,
+       "end": 40.961
+      },
+      {
+       "text": "better",
+       "start": 41.036,
+       "end": 41.286
+      },
+      {
+       "text": "decisions",
+       "start": 41.336,
+       "end": 42.186
+      },
+      {
+       "text": "before",
+       "start": 42.261,
+       "end": 42.536
+      },
+      {
+       "text": "a",
+       "start": 42.561,
+       "end": 42.611
+      },
+      {
+       "text": "company",
+       "start": 42.661,
+       "end": 43.111
+      },
+      {
+       "text": "makes",
+       "start": 43.161,
+       "end": 43.386
+      },
+      {
+       "text": "a",
+       "start": 43.436,
+       "end": 43.486
+      },
+      {
+       "text": "major",
+       "start": 43.561,
+       "end": 43.911
+      },
+      {
+       "text": "commitment.",
+       "start": 43.961,
+       "end": 44.767
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s07",
+   "title": "Industrial Equipment Matching Platform",
+   "start": 272.2,
+   "duration": 47.0333,
+   "sentences": [
+    {
+     "text": "Another important part of our approach is organizing industrial equipment information.",
+     "start": 1.348,
+     "end": 6.896,
+     "words": [
+      {
+       "text": "Another",
+       "start": 1.348,
+       "end": 1.723
+      },
+      {
+       "text": "important",
+       "start": 1.798,
+       "end": 2.273
+      },
+      {
+       "text": "part",
+       "start": 2.323,
+       "end": 2.623
+      },
+      {
+       "text": "of",
+       "start": 2.648,
+       "end": 2.698
+      },
+      {
+       "text": "our",
+       "start": 2.748,
+       "end": 2.848
+      },
+      {
+       "text": "approach",
+       "start": 2.898,
+       "end": 3.673
+      },
+      {
+       "text": "is",
+       "start": 3.773,
+       "end": 3.923
+      },
+      {
+       "text": "organizing",
+       "start": 4.098,
+       "end": 4.848
+      },
+      {
+       "text": "industrial",
+       "start": 4.923,
+       "end": 5.548
+      },
+      {
+       "text": "equipment",
+       "start": 5.598,
+       "end": 5.998
+      },
+      {
+       "text": "information.",
+       "start": 6.048,
+       "end": 6.896
+      }
+     ]
+    },
+    {
+     "text": "When considering equipment from another country, business owners need more than a photograph and a price.",
+     "start": 7.356,
+     "end": 13.015,
+     "words": [
+      {
+       "text": "When",
+       "start": 7.356,
+       "end": 7.481
+      },
+      {
+       "text": "considering",
+       "start": 7.531,
+       "end": 8.056
+      },
+      {
+       "text": "equipment",
+       "start": 8.106,
+       "end": 8.506
+      },
+      {
+       "text": "from",
+       "start": 8.556,
+       "end": 8.656
+      },
+      {
+       "text": "another",
+       "start": 8.681,
+       "end": 8.981
+      },
+      {
+       "text": "country,",
+       "start": 9.031,
+       "end": 9.756
+      },
+      {
+       "text": "business",
+       "start": 9.956,
+       "end": 10.306
+      },
+      {
+       "text": "owners",
+       "start": 10.406,
+       "end": 10.706
+      },
+      {
+       "text": "need",
+       "start": 10.781,
+       "end": 11.006
+      },
+      {
+       "text": "more",
+       "start": 11.081,
+       "end": 11.331
+      },
+      {
+       "text": "than",
+       "start": 11.356,
+       "end": 11.431
+      },
+      {
+       "text": "a",
+       "start": 11.431,
+       "end": 11.531
+      },
+      {
+       "text": "photograph",
+       "start": 11.631,
+       "end": 12.256
+      },
+      {
+       "text": "and",
+       "start": 12.306,
+       "end": 12.381
+      },
+      {
+       "text": "a",
+       "start": 12.406,
+       "end": 12.431
+      },
+      {
+       "text": "price.",
+       "start": 12.506,
+       "end": 13.015
+      }
+     ]
+    },
+    {
+     "text": "They need technical specifications, equipment condition, maintenance history where available, and information about installation and relocation.",
+     "start": 13.603,
+     "end": 22.63,
+     "words": [
+      {
+       "text": "They",
+       "start": 13.603,
+       "end": 13.753
+      },
+      {
+       "text": "need",
+       "start": 13.803,
+       "end": 14.028
+      },
+      {
+       "text": "technical",
+       "start": 14.103,
+       "end": 14.553
+      },
+      {
+       "text": "specifications,",
+       "start": 14.603,
+       "end": 15.803
+      },
+      {
+       "text": "equipment",
+       "start": 15.928,
+       "end": 16.328
+      },
+      {
+       "text": "condition,",
+       "start": 16.378,
+       "end": 17.153
+      },
+      {
+       "text": "maintenance",
+       "start": 17.328,
+       "end": 17.778
+      },
+      {
+       "text": "history",
+       "start": 17.828,
+       "end": 18.278
+      },
+      {
+       "text": "where",
+       "start": 18.328,
+       "end": 18.478
+      },
+      {
+       "text": "available,",
+       "start": 18.528,
+       "end": 19.403
+      },
+      {
+       "text": "and",
+       "start": 19.593,
+       "end": 19.668
+      },
+      {
+       "text": "information",
+       "start": 19.718,
+       "end": 20.343
+      },
+      {
+       "text": "about",
+       "start": 20.393,
+       "end": 20.668
+      },
+      {
+       "text": "installation",
+       "start": 20.768,
+       "end": 21.543
+      },
+      {
+       "text": "and",
+       "start": 21.618,
+       "end": 21.693
+      },
+      {
+       "text": "relocation.",
+       "start": 21.743,
+       "end": 22.63
+      }
+     ]
+    },
+    {
+     "text": "GPM proposes to organize these details in a digital equipment catalog that supports discussions between suppliers and potential buyers.",
+     "start": 23.164,
+     "end": 32.275,
+     "words": [
+      {
+       "text": "GPM",
+       "start": 23.164,
+       "end": 23.964
+      },
+      {
+       "text": "proposes",
+       "start": 24.014,
+       "end": 24.564
+      },
+      {
+       "text": "to",
+       "start": 24.614,
+       "end": 24.689
+      },
+      {
+       "text": "organize",
+       "start": 24.814,
+       "end": 25.364
+      },
+      {
+       "text": "these",
+       "start": 25.414,
+       "end": 25.614
+      },
+      {
+       "text": "details",
+       "start": 25.664,
+       "end": 26.439
+      },
+      {
+       "text": "in",
+       "start": 26.489,
+       "end": 26.539
+      },
+      {
+       "text": "a",
+       "start": 26.589,
+       "end": 26.639
+      },
+      {
+       "text": "digital",
+       "start": 26.714,
+       "end": 27.139
+      },
+      {
+       "text": "equipment",
+       "start": 27.189,
+       "end": 27.589
+      },
+      {
+       "text": "catalog",
+       "start": 27.639,
+       "end": 28.514
+      },
+      {
+       "text": "that",
+       "start": 28.614,
+       "end": 28.764
+      },
+      {
+       "text": "supports",
+       "start": 28.814,
+       "end": 29.239
+      },
+      {
+       "text": "discussions",
+       "start": 29.289,
+       "end": 29.914
+      },
+      {
+       "text": "between",
+       "start": 29.964,
+       "end": 30.239
+      },
+      {
+       "text": "suppliers",
+       "start": 30.289,
+       "end": 30.964
+      },
+      {
+       "text": "and",
+       "start": 31.014,
+       "end": 31.089
+      },
+      {
+       "text": "potential",
+       "start": 31.139,
+       "end": 31.589
+      },
+      {
+       "text": "buyers.",
+       "start": 31.639,
+       "end": 32.275
+      }
+     ]
+    },
+    {
+     "text": "The interface shown here is a conceptual model, not a confirmed list of machines for immediate sale.",
+     "start": 32.8,
+     "end": 39.108,
+     "words": [
+      {
+       "text": "The",
+       "start": 32.8,
+       "end": 32.9
+      },
+      {
+       "text": "interface",
+       "start": 32.975,
+       "end": 33.45
+      },
+      {
+       "text": "shown",
+       "start": 33.525,
+       "end": 33.75
+      },
+      {
+       "text": "here",
+       "start": 33.8,
+       "end": 34.15
+      },
+      {
+       "text": "is",
+       "start": 34.225,
+       "end": 34.325
+      },
+      {
+       "text": "a",
+       "start": 34.375,
+       "end": 34.425
+      },
+      {
+       "text": "conceptual",
+       "start": 34.475,
+       "end": 35.15
+      },
+      {
+       "text": "model,",
+       "start": 35.2,
+       "end": 35.875
+      },
+      {
+       "text": "not",
+       "start": 36.095,
+       "end": 36.22
+      },
+      {
+       "text": "a",
+       "start": 36.22,
+       "end": 36.27
+      },
+      {
+       "text": "confirmed",
+       "start": 36.32,
+       "end": 36.895
+      },
+      {
+       "text": "list",
+       "start": 36.945,
+       "end": 37.12
+      },
+      {
+       "text": "of",
+       "start": 37.145,
+       "end": 37.195
+      },
+      {
+       "text": "machines",
+       "start": 37.22,
+       "end": 37.795
+      },
+      {
+       "text": "for",
+       "start": 37.845,
+       "end": 37.945
+      },
+      {
+       "text": "immediate",
+       "start": 37.995,
+       "end": 38.445
+      },
+      {
+       "text": "sale.",
+       "start": 38.52,
+       "end": 39.108
+      }
+     ]
+    },
+    {
+     "text": "Better information helps both sides determine whether an opportunity deserves further investigation.",
+     "start": 39.542,
+     "end": 45.73,
+     "words": [
+      {
+       "text": "Better",
+       "start": 39.542,
+       "end": 39.817
+      },
+      {
+       "text": "information",
+       "start": 39.867,
+       "end": 40.667
+      },
+      {
+       "text": "helps",
+       "start": 40.742,
+       "end": 41.017
+      },
+      {
+       "text": "both",
+       "start": 41.092,
+       "end": 41.317
+      },
+      {
+       "text": "sides",
+       "start": 41.392,
+       "end": 41.942
+      },
+      {
+       "text": "determine",
+       "start": 41.992,
+       "end": 42.567
+      },
+      {
+       "text": "whether",
+       "start": 42.617,
+       "end": 42.867
+      },
+      {
+       "text": "an",
+       "start": 42.892,
+       "end": 42.942
+      },
+      {
+       "text": "opportunity",
+       "start": 42.992,
+       "end": 43.567
+      },
+      {
+       "text": "deserves",
+       "start": 43.617,
+       "end": 44.167
+      },
+      {
+       "text": "further",
+       "start": 44.267,
+       "end": 44.592
+      },
+      {
+       "text": "investigation.",
+       "start": 44.642,
+       "end": 45.73
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s08",
+   "title": "Feasibility Before Investment",
+   "start": 319.2333,
+   "duration": 48.3,
+   "sentences": [
+    {
+     "text": "We understand that manufacturing investment requires careful decisions.",
+     "start": 1.301,
+     "end": 6.043,
+     "words": [
+      {
+       "text": "We",
+       "start": 1.301,
+       "end": 1.426
+      },
+      {
+       "text": "understand",
+       "start": 1.476,
+       "end": 2.026
+      },
+      {
+       "text": "that",
+       "start": 2.076,
+       "end": 2.251
+      },
+      {
+       "text": "manufacturing",
+       "start": 2.326,
+       "end": 3.126
+      },
+      {
+       "text": "investment",
+       "start": 3.176,
+       "end": 3.976
+      },
+      {
+       "text": "requires",
+       "start": 4.051,
+       "end": 4.701
+      },
+      {
+       "text": "careful",
+       "start": 4.776,
+       "end": 5.151
+      },
+      {
+       "text": "decisions.",
+       "start": 5.201,
+       "end": 6.043
+      }
+     ]
+    },
+    {
+     "text": "A machine may be technically functional but unsuitable for the local factory, raw materials, production requirements, or market conditions.",
+     "start": 6.494,
+     "end": 14.947,
+     "words": [
+      {
+       "text": "A",
+       "start": 6.494,
+       "end": 6.544
+      },
+      {
+       "text": "machine",
+       "start": 6.594,
+       "end": 7.044
+      },
+      {
+       "text": "may",
+       "start": 7.094,
+       "end": 7.194
+      },
+      {
+       "text": "be",
+       "start": 7.219,
+       "end": 7.319
+      },
+      {
+       "text": "technically",
+       "start": 7.394,
+       "end": 7.844
+      },
+      {
+       "text": "functional",
+       "start": 7.919,
+       "end": 8.394
+      },
+      {
+       "text": "but",
+       "start": 8.444,
+       "end": 8.619
+      },
+      {
+       "text": "unsuitable",
+       "start": 8.719,
+       "end": 9.394
+      },
+      {
+       "text": "for",
+       "start": 9.444,
+       "end": 9.619
+      },
+      {
+       "text": "the",
+       "start": 9.669,
+       "end": 9.769
+      },
+      {
+       "text": "local",
+       "start": 9.769,
+       "end": 9.969
+      },
+      {
+       "text": "factory,",
+       "start": 10.044,
+       "end": 10.819
+      },
+      {
+       "text": "raw",
+       "start": 11.019,
+       "end": 11.244
+      },
+      {
+       "text": "materials,",
+       "start": 11.294,
+       "end": 12.069
+      },
+      {
+       "text": "production",
+       "start": 12.194,
+       "end": 12.644
+      },
+      {
+       "text": "requirements,",
+       "start": 12.694,
+       "end": 13.619
+      },
+      {
+       "text": "or",
+       "start": 13.744,
+       "end": 13.894
+      },
+      {
+       "text": "market",
+       "start": 13.944,
+       "end": 14.244
+      },
+      {
+       "text": "conditions.",
+       "start": 14.294,
+       "end": 14.947
+      }
+     ]
+    },
+    {
+     "text": "That is why we propose reviewing six essential areas before major commitments are made: market demand, equipment suitability, investment and operating costs, factory infrastructure, workforce capability, and regulatory requirements.",
+     "start": 15.52,
+     "end": 30.476,
+     "words": [
+      {
+       "text": "That",
+       "start": 15.52,
+       "end": 15.67
+      },
+      {
+       "text": "is",
+       "start": 15.72,
+       "end": 15.82
+      },
+      {
+       "text": "why",
+       "start": 15.87,
+       "end": 16.07
+      },
+      {
+       "text": "we",
+       "start": 16.12,
+       "end": 16.195
+      },
+      {
+       "text": "propose",
+       "start": 16.245,
+       "end": 16.795
+      },
+      {
+       "text": "reviewing",
+       "start": 16.845,
+       "end": 17.27
+      },
+      {
+       "text": "six",
+       "start": 17.37,
+       "end": 17.62
+      },
+      {
+       "text": "essential",
+       "start": 17.67,
+       "end": 18.12
+      },
+      {
+       "text": "areas",
+       "start": 18.27,
+       "end": 18.645
+      },
+      {
+       "text": "before",
+       "start": 18.695,
+       "end": 18.995
+      },
+      {
+       "text": "major",
+       "start": 19.07,
+       "end": 19.395
+      },
+      {
+       "text": "commitments",
+       "start": 19.445,
+       "end": 19.945
+      },
+      {
+       "text": "are",
+       "start": 19.995,
+       "end": 20.07
+      },
+      {
+       "text": "made:",
+       "start": 20.12,
+       "end": 20.82
+      },
+      {
+       "text": "market",
+       "start": 21.045,
+       "end": 21.37
+      },
+      {
+       "text": "demand,",
+       "start": 21.42,
+       "end": 22.12
+      },
+      {
+       "text": "equipment",
+       "start": 22.245,
+       "end": 22.67
+      },
+      {
+       "text": "suitability,",
+       "start": 22.72,
+       "end": 23.52
+      },
+      {
+       "text": "investment",
+       "start": 23.67,
+       "end": 24.27
+      },
+      {
+       "text": "and",
+       "start": 24.32,
+       "end": 24.395
+      },
+      {
+       "text": "operating",
+       "start": 24.52,
+       "end": 24.97
+      },
+      {
+       "text": "costs,",
+       "start": 25.045,
+       "end": 25.72
+      },
+      {
+       "text": "factory",
+       "start": 25.895,
+       "end": 26.32
+      },
+      {
+       "text": "infrastructure,",
+       "start": 26.395,
+       "end": 27.27
+      },
+      {
+       "text": "workforce",
+       "start": 27.445,
+       "end": 27.945
+      },
+      {
+       "text": "capability,",
+       "start": 27.995,
+       "end": 28.695
+      },
+      {
+       "text": "and",
+       "start": 28.795,
+       "end": 28.87
+      },
+      {
+       "text": "regulatory",
+       "start": 28.945,
+       "end": 29.62
+      },
+      {
+       "text": "requirements.",
+       "start": 29.67,
+       "end": 30.476
+      }
+     ]
+    },
+    {
+     "text": "For pharmaceutical projects, quality and licensing requirements are particularly important.",
+     "start": 31.092,
+     "end": 36.712,
+     "words": [
+      {
+       "text": "For",
+       "start": 31.092,
+       "end": 31.192
+      },
+      {
+       "text": "pharmaceutical",
+       "start": 31.267,
+       "end": 31.967
+      },
+      {
+       "text": "projects,",
+       "start": 32.017,
+       "end": 32.942
+      },
+      {
+       "text": "quality",
+       "start": 33.117,
+       "end": 33.592
+      },
+      {
+       "text": "and",
+       "start": 33.642,
+       "end": 33.717
+      },
+      {
+       "text": "licensing",
+       "start": 33.767,
+       "end": 34.342
+      },
+      {
+       "text": "requirements",
+       "start": 34.392,
+       "end": 35.142
+      },
+      {
+       "text": "are",
+       "start": 35.217,
+       "end": 35.317
+      },
+      {
+       "text": "particularly",
+       "start": 35.367,
+       "end": 36.067
+      },
+      {
+       "text": "important.",
+       "start": 36.117,
+       "end": 36.712
+      }
+     ]
+    },
+    {
+     "text": "We do not want to promise an investment return without reliable evidence.",
+     "start": 37.295,
+     "end": 41.865,
+     "words": [
+      {
+       "text": "We",
+       "start": 37.295,
+       "end": 37.37
+      },
+      {
+       "text": "do",
+       "start": 37.42,
+       "end": 37.52
+      },
+      {
+       "text": "not",
+       "start": 37.52,
+       "end": 37.745
+      },
+      {
+       "text": "want",
+       "start": 37.795,
+       "end": 37.945
+      },
+      {
+       "text": "to",
+       "start": 37.97,
+       "end": 38.02
+      },
+      {
+       "text": "promise",
+       "start": 38.07,
+       "end": 38.47
+      },
+      {
+       "text": "an",
+       "start": 38.52,
+       "end": 38.57
+      },
+      {
+       "text": "investment",
+       "start": 38.62,
+       "end": 39.17
+      },
+      {
+       "text": "return",
+       "start": 39.22,
+       "end": 39.995
+      },
+      {
+       "text": "without",
+       "start": 40.095,
+       "end": 40.445
+      },
+      {
+       "text": "reliable",
+       "start": 40.495,
+       "end": 41.07
+      },
+      {
+       "text": "evidence.",
+       "start": 41.195,
+       "end": 41.865
+      }
+     ]
+    },
+    {
+     "text": "We want to help identify which opportunities are worth evaluating further.",
+     "start": 42.368,
+     "end": 46.981,
+     "words": [
+      {
+       "text": "We",
+       "start": 42.368,
+       "end": 42.468
+      },
+      {
+       "text": "want",
+       "start": 42.518,
+       "end": 42.668
+      },
+      {
+       "text": "to",
+       "start": 42.693,
+       "end": 42.743
+      },
+      {
+       "text": "help",
+       "start": 42.793,
+       "end": 43.018
+      },
+      {
+       "text": "identify",
+       "start": 43.093,
+       "end": 43.793
+      },
+      {
+       "text": "which",
+       "start": 43.843,
+       "end": 43.993
+      },
+      {
+       "text": "opportunities",
+       "start": 44.043,
+       "end": 44.918
+      },
+      {
+       "text": "are",
+       "start": 44.993,
+       "end": 45.093
+      },
+      {
+       "text": "worth",
+       "start": 45.168,
+       "end": 45.568
+      },
+      {
+       "text": "evaluating",
+       "start": 45.643,
+       "end": 46.318
+      },
+      {
+       "text": "further.",
+       "start": 46.418,
+       "end": 46.981
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s09",
+   "title": "Partnership Roles",
+   "start": 367.5333,
+   "duration": 48.1333,
+   "sentences": [
+    {
+     "text": "Successful cooperation requires clear responsibilities.",
+     "start": 1.301,
+     "end": 4.976,
+     "words": [
+      {
+       "text": "Successful",
+       "start": 1.301,
+       "end": 1.851
+      },
+      {
+       "text": "cooperation",
+       "start": 1.901,
+       "end": 2.901
+      },
+      {
+       "text": "requires",
+       "start": 2.976,
+       "end": 3.526
+      },
+      {
+       "text": "clear",
+       "start": 3.601,
+       "end": 3.901
+      },
+      {
+       "text": "responsibilities.",
+       "start": 3.951,
+       "end": 4.976
+      }
+     ]
+    },
+    {
+     "text": "Korean partners may provide industrial equipment, technical documentation, engineering support, and training.",
+     "start": 5.522,
+     "end": 12.663,
+     "words": [
+      {
+       "text": "Korean",
+       "start": 5.522,
+       "end": 5.947
+      },
+      {
+       "text": "partners",
+       "start": 5.997,
+       "end": 6.472
+      },
+      {
+       "text": "may",
+       "start": 6.522,
+       "end": 6.647
+      },
+      {
+       "text": "provide",
+       "start": 6.697,
+       "end": 7.172
+      },
+      {
+       "text": "industrial",
+       "start": 7.247,
+       "end": 7.847
+      },
+      {
+       "text": "equipment,",
+       "start": 7.897,
+       "end": 8.672
+      },
+      {
+       "text": "technical",
+       "start": 8.822,
+       "end": 9.272
+      },
+      {
+       "text": "documentation,",
+       "start": 9.322,
+       "end": 10.447
+      },
+      {
+       "text": "engineering",
+       "start": 10.647,
+       "end": 11.222
+      },
+      {
+       "text": "support,",
+       "start": 11.272,
+       "end": 11.747
+      },
+      {
+       "text": "and",
+       "start": 11.892,
+       "end": 11.967
+      },
+      {
+       "text": "training.",
+       "start": 12.042,
+       "end": 12.663
+      }
+     ]
+    },
+    {
+     "text": "Ghanaian manufacturers and investors bring local market knowledge, project sites, business operations, and investment decisions.",
+     "start": 13.11,
+     "end": 21.407,
+     "words": [
+      {
+       "text": "Ghanaian",
+       "start": 13.11,
+       "end": 13.61
+      },
+      {
+       "text": "manufacturers",
+       "start": 13.66,
+       "end": 14.585
+      },
+      {
+       "text": "and",
+       "start": 14.635,
+       "end": 14.71
+      },
+      {
+       "text": "investors",
+       "start": 14.735,
+       "end": 15.66
+      },
+      {
+       "text": "bring",
+       "start": 15.735,
+       "end": 15.96
+      },
+      {
+       "text": "local",
+       "start": 16.01,
+       "end": 16.335
+      },
+      {
+       "text": "market",
+       "start": 16.385,
+       "end": 16.71
+      },
+      {
+       "text": "knowledge,",
+       "start": 16.76,
+       "end": 17.41
+      },
+      {
+       "text": "project",
+       "start": 17.535,
+       "end": 17.985
+      },
+      {
+       "text": "sites,",
+       "start": 18.06,
+       "end": 18.685
+      },
+      {
+       "text": "business",
+       "start": 18.835,
+       "end": 19.185
+      },
+      {
+       "text": "operations,",
+       "start": 19.285,
+       "end": 20.035
+      },
+      {
+       "text": "and",
+       "start": 20.11,
+       "end": 20.185
+      },
+      {
+       "text": "investment",
+       "start": 20.21,
+       "end": 20.735
+      },
+      {
+       "text": "decisions.",
+       "start": 20.785,
+       "end": 21.407
+      }
+     ]
+    },
+    {
+     "text": "GPM aims to connect the parties and coordinate the early stages of project development.",
+     "start": 22.012,
+     "end": 27.731,
+     "words": [
+      {
+       "text": "GPM",
+       "start": 22.012,
+       "end": 22.887
+      },
+      {
+       "text": "aims",
+       "start": 23.012,
+       "end": 23.212
+      },
+      {
+       "text": "to",
+       "start": 23.262,
+       "end": 23.312
+      },
+      {
+       "text": "connect",
+       "start": 23.362,
+       "end": 23.687
+      },
+      {
+       "text": "the",
+       "start": 23.712,
+       "end": 23.762
+      },
+      {
+       "text": "parties",
+       "start": 23.812,
+       "end": 24.587
+      },
+      {
+       "text": "and",
+       "start": 24.662,
+       "end": 24.737
+      },
+      {
+       "text": "coordinate",
+       "start": 24.812,
+       "end": 25.312
+      },
+      {
+       "text": "the",
+       "start": 25.362,
+       "end": 25.462
+      },
+      {
+       "text": "early",
+       "start": 25.587,
+       "end": 25.812
+      },
+      {
+       "text": "stages",
+       "start": 25.887,
+       "end": 26.387
+      },
+      {
+       "text": "of",
+       "start": 26.412,
+       "end": 26.487
+      },
+      {
+       "text": "project",
+       "start": 26.537,
+       "end": 26.962
+      },
+      {
+       "text": "development.",
+       "start": 27.012,
+       "end": 27.731
+      }
+     ]
+    },
+    {
+     "text": "Chambers of Commerce and relevant institutions can also help businesses identify potential partners and opportunities for further discussion.",
+     "start": 28.157,
+     "end": 36.891,
+     "words": [
+      {
+       "text": "Chambers",
+       "start": 28.157,
+       "end": 28.632
+      },
+      {
+       "text": "of",
+       "start": 28.682,
+       "end": 28.782
+      },
+      {
+       "text": "Commerce",
+       "start": 28.857,
+       "end": 29.407
+      },
+      {
+       "text": "and",
+       "start": 29.457,
+       "end": 29.532
+      },
+      {
+       "text": "relevant",
+       "start": 29.607,
+       "end": 29.957
+      },
+      {
+       "text": "institutions",
+       "start": 30.007,
+       "end": 31.032
+      },
+      {
+       "text": "can",
+       "start": 31.107,
+       "end": 31.232
+      },
+      {
+       "text": "also",
+       "start": 31.357,
+       "end": 31.657
+      },
+      {
+       "text": "help",
+       "start": 31.707,
+       "end": 31.932
+      },
+      {
+       "text": "businesses",
+       "start": 32.007,
+       "end": 32.707
+      },
+      {
+       "text": "identify",
+       "start": 32.807,
+       "end": 33.482
+      },
+      {
+       "text": "potential",
+       "start": 33.532,
+       "end": 33.982
+      },
+      {
+       "text": "partners",
+       "start": 34.032,
+       "end": 34.607
+      },
+      {
+       "text": "and",
+       "start": 34.657,
+       "end": 34.732
+      },
+      {
+       "text": "opportunities",
+       "start": 34.782,
+       "end": 35.707
+      },
+      {
+       "text": "for",
+       "start": 35.757,
+       "end": 35.857
+      },
+      {
+       "text": "further",
+       "start": 35.957,
+       "end": 36.207
+      },
+      {
+       "text": "discussion.",
+       "start": 36.257,
+       "end": 36.891
+      }
+     ]
+    },
+    {
+     "text": "This is a proposed cooperation structure.",
+     "start": 37.483,
+     "end": 39.963,
+     "words": [
+      {
+       "text": "This",
+       "start": 37.483,
+       "end": 37.658
+      },
+      {
+       "text": "is",
+       "start": 37.708,
+       "end": 37.783
+      },
+      {
+       "text": "a",
+       "start": 37.808,
+       "end": 37.833
+      },
+      {
+       "text": "proposed",
+       "start": 37.883,
+       "end": 38.433
+      },
+      {
+       "text": "cooperation",
+       "start": 38.483,
+       "end": 39.158
+      },
+      {
+       "text": "structure.",
+       "start": 39.208,
+       "end": 39.963
+      }
+     ]
+    },
+    {
+     "text": "Actual roles, contracts, and responsibilities must be agreed upon by the participating companies.",
+     "start": 40.514,
+     "end": 46.649,
+     "words": [
+      {
+       "text": "Actual",
+       "start": 40.514,
+       "end": 40.839
+      },
+      {
+       "text": "roles,",
+       "start": 40.889,
+       "end": 41.614
+      },
+      {
+       "text": "contracts,",
+       "start": 41.764,
+       "end": 42.464
+      },
+      {
+       "text": "and",
+       "start": 42.514,
+       "end": 42.589
+      },
+      {
+       "text": "responsibilities",
+       "start": 42.639,
+       "end": 43.814
+      },
+      {
+       "text": "must",
+       "start": 43.889,
+       "end": 44.089
+      },
+      {
+       "text": "be",
+       "start": 44.139,
+       "end": 44.214
+      },
+      {
+       "text": "agreed",
+       "start": 44.264,
+       "end": 44.564
+      },
+      {
+       "text": "upon",
+       "start": 44.614,
+       "end": 45.014
+      },
+      {
+       "text": "by",
+       "start": 45.064,
+       "end": 45.189
+      },
+      {
+       "text": "the",
+       "start": 45.214,
+       "end": 45.264
+      },
+      {
+       "text": "participating",
+       "start": 45.314,
+       "end": 45.964
+      },
+      {
+       "text": "companies.",
+       "start": 46.014,
+       "end": 46.649
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s10",
+   "title": "Start with a Pilot Project",
+   "start": 415.6667,
+   "duration": 44.2667,
+   "sentences": [
+    {
+     "text": "We suggest beginning with a focused pilot project.",
+     "start": 1.344,
+     "end": 4.464,
+     "words": [
+      {
+       "text": "We",
+       "start": 1.344,
+       "end": 1.444
+      },
+      {
+       "text": "suggest",
+       "start": 1.494,
+       "end": 1.869
+      },
+      {
+       "text": "beginning",
+       "start": 1.919,
+       "end": 2.469
+      },
+      {
+       "text": "with",
+       "start": 2.519,
+       "end": 2.619
+      },
+      {
+       "text": "a",
+       "start": 2.644,
+       "end": 2.669
+      },
+      {
+       "text": "focused",
+       "start": 2.744,
+       "end": 3.194
+      },
+      {
+       "text": "pilot",
+       "start": 3.269,
+       "end": 3.594
+      },
+      {
+       "text": "project.",
+       "start": 3.644,
+       "end": 4.464
+      }
+     ]
+    },
+    {
+     "text": "Instead of trying to build several factories at once, let us first select one product category and identify one committed local business partner.",
+     "start": 4.908,
+     "end": 13.613,
+     "words": [
+      {
+       "text": "Instead",
+       "start": 4.908,
+       "end": 5.208
+      },
+      {
+       "text": "of",
+       "start": 5.233,
+       "end": 5.283
+      },
+      {
+       "text": "trying",
+       "start": 5.333,
+       "end": 5.608
+      },
+      {
+       "text": "to",
+       "start": 5.633,
+       "end": 5.683
+      },
+      {
+       "text": "build",
+       "start": 5.733,
+       "end": 5.983
+      },
+      {
+       "text": "several",
+       "start": 6.058,
+       "end": 6.383
+      },
+      {
+       "text": "factories",
+       "start": 6.458,
+       "end": 6.983
+      },
+      {
+       "text": "at",
+       "start": 7.033,
+       "end": 7.158
+      },
+      {
+       "text": "once,",
+       "start": 7.158,
+       "end": 7.858
+      },
+      {
+       "text": "let",
+       "start": 8.033,
+       "end": 8.158
+      },
+      {
+       "text": "us",
+       "start": 8.208,
+       "end": 8.308
+      },
+      {
+       "text": "first",
+       "start": 8.383,
+       "end": 8.608
+      },
+      {
+       "text": "select",
+       "start": 8.658,
+       "end": 9.033
+      },
+      {
+       "text": "one",
+       "start": 9.108,
+       "end": 9.283
+      },
+      {
+       "text": "product",
+       "start": 9.333,
+       "end": 9.683
+      },
+      {
+       "text": "category",
+       "start": 9.733,
+       "end": 10.558
+      },
+      {
+       "text": "and",
+       "start": 10.658,
+       "end": 10.733
+      },
+      {
+       "text": "identify",
+       "start": 10.808,
+       "end": 11.483
+      },
+      {
+       "text": "one",
+       "start": 11.558,
+       "end": 11.783
+      },
+      {
+       "text": "committed",
+       "start": 11.858,
+       "end": 12.308
+      },
+      {
+       "text": "local",
+       "start": 12.358,
+       "end": 12.658
+      },
+      {
+       "text": "business",
+       "start": 12.708,
+       "end": 13.033
+      },
+      {
+       "text": "partner.",
+       "start": 13.083,
+       "end": 13.613
+      }
+     ]
+    },
+    {
+     "text": "Together, we can define the required equipment, examine possible Korean supply options, and review the site, utilities, market demand, investment needs, and technical risks.",
+     "start": 14.118,
+     "end": 25.481,
+     "words": [
+      {
+       "text": "Together,",
+       "start": 14.118,
+       "end": 14.593
+      },
+      {
+       "text": "we",
+       "start": 14.783,
+       "end": 14.858
+      },
+      {
+       "text": "can",
+       "start": 14.908,
+       "end": 15.008
+      },
+      {
+       "text": "define",
+       "start": 15.058,
+       "end": 15.483
+      },
+      {
+       "text": "the",
+       "start": 15.533,
+       "end": 15.583
+      },
+      {
+       "text": "required",
+       "start": 15.633,
+       "end": 16.158
+      },
+      {
+       "text": "equipment,",
+       "start": 16.208,
+       "end": 17.008
+      },
+      {
+       "text": "examine",
+       "start": 17.188,
+       "end": 17.688
+      },
+      {
+       "text": "possible",
+       "start": 17.763,
+       "end": 18.238
+      },
+      {
+       "text": "Korean",
+       "start": 18.288,
+       "end": 18.688
+      },
+      {
+       "text": "supply",
+       "start": 18.738,
+       "end": 19.188
+      },
+      {
+       "text": "options,",
+       "start": 19.313,
+       "end": 19.888
+      },
+      {
+       "text": "and",
+       "start": 20.048,
+       "end": 20.123
+      },
+      {
+       "text": "review",
+       "start": 20.173,
+       "end": 20.448
+      },
+      {
+       "text": "the",
+       "start": 20.498,
+       "end": 20.573
+      },
+      {
+       "text": "site,",
+       "start": 20.673,
+       "end": 21.173
+      },
+      {
+       "text": "utilities,",
+       "start": 21.298,
+       "end": 22.073
+      },
+      {
+       "text": "market",
+       "start": 22.223,
+       "end": 22.523
+      },
+      {
+       "text": "demand,",
+       "start": 22.573,
+       "end": 23.173
+      },
+      {
+       "text": "investment",
+       "start": 23.298,
+       "end": 23.798
+      },
+      {
+       "text": "needs,",
+       "start": 23.848,
+       "end": 24.173
+      },
+      {
+       "text": "and",
+       "start": 24.303,
+       "end": 24.378
+      },
+      {
+       "text": "technical",
+       "start": 24.453,
+       "end": 24.903
+      },
+      {
+       "text": "risks.",
+       "start": 24.953,
+       "end": 25.481
+      }
+     ]
+    },
+    {
+     "text": "If the feasibility review is positive, the parties can discuss a detailed implementation plan.",
+     "start": 26.084,
+     "end": 32.209,
+     "words": [
+      {
+       "text": "If",
+       "start": 26.084,
+       "end": 26.184
+      },
+      {
+       "text": "the",
+       "start": 26.234,
+       "end": 26.309
+      },
+      {
+       "text": "feasibility",
+       "start": 26.384,
+       "end": 27.034
+      },
+      {
+       "text": "review",
+       "start": 27.084,
+       "end": 27.459
+      },
+      {
+       "text": "is",
+       "start": 27.509,
+       "end": 27.609
+      },
+      {
+       "text": "positive,",
+       "start": 27.684,
+       "end": 28.559
+      },
+      {
+       "text": "the",
+       "start": 28.684,
+       "end": 28.734
+      },
+      {
+       "text": "parties",
+       "start": 28.809,
+       "end": 29.334
+      },
+      {
+       "text": "can",
+       "start": 29.384,
+       "end": 29.484
+      },
+      {
+       "text": "discuss",
+       "start": 29.534,
+       "end": 30.109
+      },
+      {
+       "text": "a",
+       "start": 30.184,
+       "end": 30.234
+      },
+      {
+       "text": "detailed",
+       "start": 30.309,
+       "end": 30.884
+      },
+      {
+       "text": "implementation",
+       "start": 30.959,
+       "end": 31.759
+      },
+      {
+       "text": "plan.",
+       "start": 31.809,
+       "end": 32.209
+      }
+     ]
+    },
+    {
+     "text": "A pilot does not guarantee commercial success.",
+     "start": 32.853,
+     "end": 35.717,
+     "words": [
+      {
+       "text": "A",
+       "start": 32.853,
+       "end": 32.903
+      },
+      {
+       "text": "pilot",
+       "start": 32.978,
+       "end": 33.378
+      },
+      {
+       "text": "does",
+       "start": 33.428,
+       "end": 33.603
+      },
+      {
+       "text": "not",
+       "start": 33.603,
+       "end": 33.853
+      },
+      {
+       "text": "guarantee",
+       "start": 33.903,
+       "end": 34.428
+      },
+      {
+       "text": "commercial",
+       "start": 34.478,
+       "end": 34.903
+      },
+      {
+       "text": "success.",
+       "start": 34.953,
+       "end": 35.717
+      }
+     ]
+    },
+    {
+     "text": "However, it gives us a practical way to test the opportunity before considering a larger manufacturing program.",
+     "start": 36.168,
+     "end": 42.815,
+     "words": [
+      {
+       "text": "However,",
+       "start": 36.168,
+       "end": 36.643
+      },
+      {
+       "text": "it",
+       "start": 36.768,
+       "end": 36.818
+      },
+      {
+       "text": "gives",
+       "start": 36.868,
+       "end": 37.043
+      },
+      {
+       "text": "us",
+       "start": 37.093,
+       "end": 37.193
+      },
+      {
+       "text": "a",
+       "start": 37.243,
+       "end": 37.293
+      },
+      {
+       "text": "practical",
+       "start": 37.368,
+       "end": 37.868
+      },
+      {
+       "text": "way",
+       "start": 37.918,
+       "end": 38.143
+      },
+      {
+       "text": "to",
+       "start": 38.193,
+       "end": 38.268
+      },
+      {
+       "text": "test",
+       "start": 38.343,
+       "end": 38.593
+      },
+      {
+       "text": "the",
+       "start": 38.618,
+       "end": 38.693
+      },
+      {
+       "text": "opportunity",
+       "start": 38.743,
+       "end": 39.668
+      },
+      {
+       "text": "before",
+       "start": 39.743,
+       "end": 40.043
+      },
+      {
+       "text": "considering",
+       "start": 40.093,
+       "end": 40.643
+      },
+      {
+       "text": "a",
+       "start": 40.693,
+       "end": 40.743
+      },
+      {
+       "text": "larger",
+       "start": 40.818,
+       "end": 41.293
+      },
+      {
+       "text": "manufacturing",
+       "start": 41.368,
+       "end": 42.168
+      },
+      {
+       "text": "program.",
+       "start": 42.218,
+       "end": 42.815
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s11",
+   "title": "More Infrastructure Opportunities",
+   "start": 459.9333,
+   "duration": 49.9333,
+   "sentences": [
+    {
+     "text": "Industrial equipment transfer is the main focus of today’s presentation, but GPM also introduces five complementary infrastructure business areas.",
+     "start": 1.284,
+     "end": 11.651,
+     "words": [
+      {
+       "text": "Industrial",
+       "start": 1.284,
+       "end": 1.859
+      },
+      {
+       "text": "equipment",
+       "start": 1.909,
+       "end": 2.284
+      },
+      {
+       "text": "transfer",
+       "start": 2.334,
+       "end": 3.059
+      },
+      {
+       "text": "is",
+       "start": 3.134,
+       "end": 3.234
+      },
+      {
+       "text": "the",
+       "start": 3.284,
+       "end": 3.334
+      },
+      {
+       "text": "main",
+       "start": 3.409,
+       "end": 3.684
+      },
+      {
+       "text": "focus",
+       "start": 3.759,
+       "end": 4.184
+      },
+      {
+       "text": "of",
+       "start": 4.234,
+       "end": 4.309
+      },
+      {
+       "text": "today’s",
+       "start": 4.359,
+       "end": 4.759
+      },
+      {
+       "text": "presentation,",
+       "start": 4.809,
+       "end": 5.959
+      },
+      {
+       "text": "but",
+       "start": 6.124,
+       "end": 6.224
+      },
+      {
+       "text": "GPM",
+       "start": 6.299,
+       "end": 7.224
+      },
+      {
+       "text": "also",
+       "start": 7.374,
+       "end": 7.699
+      },
+      {
+       "text": "introduces",
+       "start": 7.774,
+       "end": 8.574
+      },
+      {
+       "text": "five",
+       "start": 8.699,
+       "end": 9.099
+      },
+      {
+       "text": "complementary",
+       "start": 9.174,
+       "end": 9.974
+      },
+      {
+       "text": "infrastructure",
+       "start": 10.049,
+       "end": 10.674
+      },
+      {
+       "text": "business",
+       "start": 10.749,
+       "end": 11.074
+      },
+      {
+       "text": "areas.",
+       "start": 11.199,
+       "end": 11.651
+      }
+     ]
+    },
+    {
+     "text": "These include mobile solar cold storage, solar cold-chain logistics terminals, modular housing, refrigeration efficiency improvement, and solar-powered EV charging.",
+     "start": 12.244,
+     "end": 23.873,
+     "words": [
+      {
+       "text": "These",
+       "start": 12.244,
+       "end": 12.494
+      },
+      {
+       "text": "include",
+       "start": 12.544,
+       "end": 12.944
+      },
+      {
+       "text": "mobile",
+       "start": 13.019,
+       "end": 13.369
+      },
+      {
+       "text": "solar",
+       "start": 13.444,
+       "end": 13.769
+      },
+      {
+       "text": "cold",
+       "start": 13.819,
+       "end": 14.094
+      },
+      {
+       "text": "storage,",
+       "start": 14.144,
+       "end": 14.969
+      },
+      {
+       "text": "solar",
+       "start": 15.169,
+       "end": 15.519
+      },
+      {
+       "text": "cold-chain",
+       "start": 15.569,
+       "end": 16.269
+      },
+      {
+       "text": "logistics",
+       "start": 16.319,
+       "end": 16.869
+      },
+      {
+       "text": "terminals,",
+       "start": 16.919,
+       "end": 17.719
+      },
+      {
+       "text": "modular",
+       "start": 17.894,
+       "end": 18.419
+      },
+      {
+       "text": "housing,",
+       "start": 18.469,
+       "end": 19.219
+      },
+      {
+       "text": "refrigeration",
+       "start": 19.344,
+       "end": 20.144
+      },
+      {
+       "text": "efficiency",
+       "start": 20.194,
+       "end": 20.744
+      },
+      {
+       "text": "improvement,",
+       "start": 20.794,
+       "end": 21.569
+      },
+      {
+       "text": "and",
+       "start": 21.694,
+       "end": 21.769
+      },
+      {
+       "text": "solar-powered",
+       "start": 21.869,
+       "end": 22.744
+      },
+      {
+       "text": "EV",
+       "start": 22.869,
+       "end": 23.194
+      },
+      {
+       "text": "charging.",
+       "start": 23.244,
+       "end": 23.873
+      }
+     ]
+    },
+    {
+     "text": "These solutions may be relevant to manufacturing sites, agricultural businesses, logistics operators, and industrial facilities.",
+     "start": 24.426,
+     "end": 32.855,
+     "words": [
+      {
+       "text": "These",
+       "start": 24.426,
+       "end": 24.626
+      },
+      {
+       "text": "solutions",
+       "start": 24.676,
+       "end": 25.301
+      },
+      {
+       "text": "may",
+       "start": 25.351,
+       "end": 25.451
+      },
+      {
+       "text": "be",
+       "start": 25.501,
+       "end": 25.601
+      },
+      {
+       "text": "relevant",
+       "start": 25.676,
+       "end": 26.101
+      },
+      {
+       "text": "to",
+       "start": 26.151,
+       "end": 26.226
+      },
+      {
+       "text": "manufacturing",
+       "start": 26.276,
+       "end": 27.101
+      },
+      {
+       "text": "sites,",
+       "start": 27.176,
+       "end": 27.826
+      },
+      {
+       "text": "agricultural",
+       "start": 28.076,
+       "end": 28.751
+      },
+      {
+       "text": "businesses,",
+       "start": 28.801,
+       "end": 29.651
+      },
+      {
+       "text": "logistics",
+       "start": 29.776,
+       "end": 30.351
+      },
+      {
+       "text": "operators,",
+       "start": 30.501,
+       "end": 31.226
+      },
+      {
+       "text": "and",
+       "start": 31.326,
+       "end": 31.401
+      },
+      {
+       "text": "industrial",
+       "start": 31.451,
+       "end": 32.026
+      },
+      {
+       "text": "facilities.",
+       "start": 32.076,
+       "end": 32.855
+      }
+     ]
+    },
+    {
+     "text": "We present them as additional areas for project-specific discussion, not as completed installations or guaranteed performance solutions.",
+     "start": 33.395,
+     "end": 42.104,
+     "words": [
+      {
+       "text": "We",
+       "start": 33.395,
+       "end": 33.52
+      },
+      {
+       "text": "present",
+       "start": 33.57,
+       "end": 33.97
+      },
+      {
+       "text": "them",
+       "start": 34.02,
+       "end": 34.22
+      },
+      {
+       "text": "as",
+       "start": 34.295,
+       "end": 34.395
+      },
+      {
+       "text": "additional",
+       "start": 34.47,
+       "end": 34.97
+      },
+      {
+       "text": "areas",
+       "start": 35.12,
+       "end": 35.47
+      },
+      {
+       "text": "for",
+       "start": 35.52,
+       "end": 35.62
+      },
+      {
+       "text": "project-specific",
+       "start": 35.67,
+       "end": 36.67
+      },
+      {
+       "text": "discussion,",
+       "start": 36.72,
+       "end": 37.595
+      },
+      {
+       "text": "not",
+       "start": 37.745,
+       "end": 37.945
+      },
+      {
+       "text": "as",
+       "start": 37.995,
+       "end": 38.095
+      },
+      {
+       "text": "completed",
+       "start": 38.145,
+       "end": 38.645
+      },
+      {
+       "text": "installations",
+       "start": 38.695,
+       "end": 39.645
+      },
+      {
+       "text": "or",
+       "start": 39.72,
+       "end": 40.095
+      },
+      {
+       "text": "guaranteed",
+       "start": 40.195,
+       "end": 40.77
+      },
+      {
+       "text": "performance",
+       "start": 40.82,
+       "end": 41.345
+      },
+      {
+       "text": "solutions.",
+       "start": 41.395,
+       "end": 42.104
+      }
+     ]
+    },
+    {
+     "text": "If any of these opportunities relates to your business, we would welcome a separate technical conversation.",
+     "start": 42.699,
+     "end": 48.503,
+     "words": [
+      {
+       "text": "If",
+       "start": 42.699,
+       "end": 42.799
+      },
+      {
+       "text": "any",
+       "start": 42.874,
+       "end": 43.024
+      },
+      {
+       "text": "of",
+       "start": 43.074,
+       "end": 43.124
+      },
+      {
+       "text": "these",
+       "start": 43.174,
+       "end": 43.374
+      },
+      {
+       "text": "opportunities",
+       "start": 43.424,
+       "end": 44.124
+      },
+      {
+       "text": "relates",
+       "start": 44.174,
+       "end": 44.574
+      },
+      {
+       "text": "to",
+       "start": 44.624,
+       "end": 44.674
+      },
+      {
+       "text": "your",
+       "start": 44.724,
+       "end": 44.849
+      },
+      {
+       "text": "business,",
+       "start": 44.924,
+       "end": 45.649
+      },
+      {
+       "text": "we",
+       "start": 45.774,
+       "end": 45.849
+      },
+      {
+       "text": "would",
+       "start": 45.874,
+       "end": 45.974
+      },
+      {
+       "text": "welcome",
+       "start": 46.049,
+       "end": 46.449
+      },
+      {
+       "text": "a",
+       "start": 46.524,
+       "end": 46.574
+      },
+      {
+       "text": "separate",
+       "start": 46.699,
+       "end": 47.049
+      },
+      {
+       "text": "technical",
+       "start": 47.124,
+       "end": 47.574
+      },
+      {
+       "text": "conversation.",
+       "start": 47.624,
+       "end": 48.503
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s12",
+   "title": "Let’s Build the Next Project Together",
+   "start": 509.8667,
+   "duration": 46.0667,
+   "sentences": [
+    {
+     "text": "Let me close with a simple invitation.",
+     "start": 1.326,
+     "end": 3.696,
+     "words": [
+      {
+       "text": "Let",
+       "start": 1.326,
+       "end": 1.426
+      },
+      {
+       "text": "me",
+       "start": 1.451,
+       "end": 1.551
+      },
+      {
+       "text": "close",
+       "start": 1.601,
+       "end": 2.101
+      },
+      {
+       "text": "with",
+       "start": 2.151,
+       "end": 2.251
+      },
+      {
+       "text": "a",
+       "start": 2.301,
+       "end": 2.351
+      },
+      {
+       "text": "simple",
+       "start": 2.451,
+       "end": 2.776
+      },
+      {
+       "text": "invitation.",
+       "start": 2.826,
+       "end": 3.696
+      }
+     ]
+    },
+    {
+     "text": "If you are considering a manufacturing business in Ghana, we would like to hear about your product, your business plans, and the challenges you face.",
+     "start": 4.286,
+     "end": 13.039,
+     "words": [
+      {
+       "text": "If",
+       "start": 4.286,
+       "end": 4.411
+      },
+      {
+       "text": "you",
+       "start": 4.461,
+       "end": 4.611
+      },
+      {
+       "text": "are",
+       "start": 4.661,
+       "end": 4.761
+      },
+      {
+       "text": "considering",
+       "start": 4.811,
+       "end": 5.461
+      },
+      {
+       "text": "a",
+       "start": 5.511,
+       "end": 5.561
+      },
+      {
+       "text": "manufacturing",
+       "start": 5.611,
+       "end": 6.436
+      },
+      {
+       "text": "business",
+       "start": 6.486,
+       "end": 6.861
+      },
+      {
+       "text": "in",
+       "start": 6.911,
+       "end": 7.011
+      },
+      {
+       "text": "Ghana,",
+       "start": 7.061,
+       "end": 7.736
+      },
+      {
+       "text": "we",
+       "start": 7.976,
+       "end": 8.051
+      },
+      {
+       "text": "would",
+       "start": 8.076,
+       "end": 8.151
+      },
+      {
+       "text": "like",
+       "start": 8.201,
+       "end": 8.376
+      },
+      {
+       "text": "to",
+       "start": 8.426,
+       "end": 8.501
+      },
+      {
+       "text": "hear",
+       "start": 8.576,
+       "end": 8.776
+      },
+      {
+       "text": "about",
+       "start": 8.826,
+       "end": 9.026
+      },
+      {
+       "text": "your",
+       "start": 9.076,
+       "end": 9.176
+      },
+      {
+       "text": "product,",
+       "start": 9.251,
+       "end": 9.976
+      },
+      {
+       "text": "your",
+       "start": 10.101,
+       "end": 10.226
+      },
+      {
+       "text": "business",
+       "start": 10.301,
+       "end": 10.651
+      },
+      {
+       "text": "plans,",
+       "start": 10.701,
+       "end": 11.351
+      },
+      {
+       "text": "and",
+       "start": 11.476,
+       "end": 11.551
+      },
+      {
+       "text": "the",
+       "start": 11.576,
+       "end": 11.626
+      },
+      {
+       "text": "challenges",
+       "start": 11.701,
+       "end": 12.301
+      },
+      {
+       "text": "you",
+       "start": 12.351,
+       "end": 12.451
+      },
+      {
+       "text": "face.",
+       "start": 12.526,
+       "end": 13.039
+      }
+     ]
+    },
+    {
+     "text": "You do not need to have every answer today.",
+     "start": 13.643,
+     "end": 16.187,
+     "words": [
+      {
+       "text": "You",
+       "start": 13.643,
+       "end": 13.718
+      },
+      {
+       "text": "do",
+       "start": 13.768,
+       "end": 13.843
+      },
+      {
+       "text": "not",
+       "start": 13.843,
+       "end": 14.043
+      },
+      {
+       "text": "need",
+       "start": 14.093,
+       "end": 14.243
+      },
+      {
+       "text": "to",
+       "start": 14.268,
+       "end": 14.318
+      },
+      {
+       "text": "have",
+       "start": 14.368,
+       "end": 14.668
+      },
+      {
+       "text": "every",
+       "start": 14.818,
+       "end": 15.043
+      },
+      {
+       "text": "answer",
+       "start": 15.193,
+       "end": 15.443
+      },
+      {
+       "text": "today.",
+       "start": 15.493,
+       "end": 16.187
+      }
+     ]
+    },
+    {
+     "text": "We can begin with a preliminary discussion to understand your requirements and assess whether suitable Korean equipment or technical partners may be available.",
+     "start": 16.617,
+     "end": 26.585,
+     "words": [
+      {
+       "text": "We",
+       "start": 16.617,
+       "end": 16.717
+      },
+      {
+       "text": "can",
+       "start": 16.767,
+       "end": 16.892
+      },
+      {
+       "text": "begin",
+       "start": 16.942,
+       "end": 17.342
+      },
+      {
+       "text": "with",
+       "start": 17.392,
+       "end": 17.492
+      },
+      {
+       "text": "a",
+       "start": 17.517,
+       "end": 17.567
+      },
+      {
+       "text": "preliminary",
+       "start": 17.642,
+       "end": 18.267
+      },
+      {
+       "text": "discussion",
+       "start": 18.317,
+       "end": 19.117
+      },
+      {
+       "text": "to",
+       "start": 19.192,
+       "end": 19.267
+      },
+      {
+       "text": "understand",
+       "start": 19.342,
+       "end": 19.892
+      },
+      {
+       "text": "your",
+       "start": 19.942,
+       "end": 20.067
+      },
+      {
+       "text": "requirements",
+       "start": 20.117,
+       "end": 21.192
+      },
+      {
+       "text": "and",
+       "start": 21.292,
+       "end": 21.367
+      },
+      {
+       "text": "assess",
+       "start": 21.417,
+       "end": 22.142
+      },
+      {
+       "text": "whether",
+       "start": 22.217,
+       "end": 22.467
+      },
+      {
+       "text": "suitable",
+       "start": 22.567,
+       "end": 22.992
+      },
+      {
+       "text": "Korean",
+       "start": 23.067,
+       "end": 23.417
+      },
+      {
+       "text": "equipment",
+       "start": 23.467,
+       "end": 24.042
+      },
+      {
+       "text": "or",
+       "start": 24.117,
+       "end": 24.392
+      },
+      {
+       "text": "technical",
+       "start": 24.467,
+       "end": 24.917
+      },
+      {
+       "text": "partners",
+       "start": 24.967,
+       "end": 25.517
+      },
+      {
+       "text": "may",
+       "start": 25.567,
+       "end": 25.717
+      },
+      {
+       "text": "be",
+       "start": 25.767,
+       "end": 25.867
+      },
+      {
+       "text": "available.",
+       "start": 25.917,
+       "end": 26.585
+      }
+     ]
+    },
+    {
+     "text": "We welcome conversations with manufacturers, investors, business associations, and technical partners.",
+     "start": 27.054,
+     "end": 33.819,
+     "words": [
+      {
+       "text": "We",
+       "start": 27.054,
+       "end": 27.179
+      },
+      {
+       "text": "welcome",
+       "start": 27.229,
+       "end": 27.629
+      },
+      {
+       "text": "conversations",
+       "start": 27.679,
+       "end": 28.504
+      },
+      {
+       "text": "with",
+       "start": 28.554,
+       "end": 28.679
+      },
+      {
+       "text": "manufacturers,",
+       "start": 28.729,
+       "end": 29.929
+      },
+      {
+       "text": "investors,",
+       "start": 30.054,
+       "end": 30.979
+      },
+      {
+       "text": "business",
+       "start": 31.129,
+       "end": 31.504
+      },
+      {
+       "text": "associations,",
+       "start": 31.554,
+       "end": 32.479
+      },
+      {
+       "text": "and",
+       "start": 32.594,
+       "end": 32.669
+      },
+      {
+       "text": "technical",
+       "start": 32.744,
+       "end": 33.194
+      },
+      {
+       "text": "partners.",
+       "start": 33.244,
+       "end": 33.819
+      }
+     ]
+    },
+    {
+     "text": "Thank you for your attention.",
+     "start": 34.482,
+     "end": 36.13,
+     "words": [
+      {
+       "text": "Thank",
+       "start": 34.482,
+       "end": 34.732
+      },
+      {
+       "text": "you",
+       "start": 34.782,
+       "end": 34.932
+      },
+      {
+       "text": "for",
+       "start": 34.982,
+       "end": 35.082
+      },
+      {
+       "text": "your",
+       "start": 35.132,
+       "end": 35.257
+      },
+      {
+       "text": "attention.",
+       "start": 35.307,
+       "end": 36.13
+      }
+     ]
+    },
+    {
+     "text": "We look forward to exploring practical Korea–Ghana manufacturing partnerships with you.",
+     "start": 36.539,
+     "end": 41.899,
+     "words": [
+      {
+       "text": "We",
+       "start": 36.539,
+       "end": 36.639
+      },
+      {
+       "text": "look",
+       "start": 36.689,
+       "end": 36.839
+      },
+      {
+       "text": "forward",
+       "start": 36.914,
+       "end": 37.339
+      },
+      {
+       "text": "to",
+       "start": 37.389,
+       "end": 37.489
+      },
+      {
+       "text": "exploring",
+       "start": 37.539,
+       "end": 38.114
+      },
+      {
+       "text": "practical",
+       "start": 38.164,
+       "end": 38.664
+      },
+      {
+       "text": "Korea–Ghana",
+       "start": 38.714,
+       "end": 39.839
+      },
+      {
+       "text": "manufacturing",
+       "start": 39.889,
+       "end": 40.664
+      },
+      {
+       "text": "partnerships",
+       "start": 40.714,
+       "end": 41.364
+      },
+      {
+       "text": "with",
+       "start": 41.414,
+       "end": 41.539
+      },
+      {
+       "text": "you.",
+       "start": 41.614,
+       "end": 41.899
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

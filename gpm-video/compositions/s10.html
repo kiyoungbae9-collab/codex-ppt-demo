@@ -1,0 +1,146 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #ffffff; color: #1C2528; font-family: "Inter", sans-serif; overflow: hidden; }
+    #root * { box-sizing: border-box; margin: 0; padding: 0; }
+    #root .stage { position: absolute; inset: 0; }
+    #root .title { position: absolute; left: 192px; top: 146px; font-size: 60px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; white-space: nowrap; color: #1C2528; }
+    #root .title .w { display: inline-block; }
+    #root .rule { position: absolute; left: 192px; top: 228px; width: 96px; height: 6px; background: #008C91; }
+    #root .headline { position: absolute; left: 192px; top: 252px; font-size: 34px; font-weight: 400; line-height: 1.25; color: #005B62; white-space: nowrap; }
+    #root .pageno { position: absolute; left: 0; right: 0; top: 982px; text-align: center; font-size: 28px; font-weight: 400; color: #7A898C; }
+    #root .card { position: absolute; background: #ffffff; border: 2px solid #D3DDDE; border-radius: 10px; }
+    #root .card.hub { background: #005B62; border-color: #005B62; color: #ffffff; }
+    #root .ghost { position: absolute; border: 2px dashed #C3D0D1; border-radius: 10px; }
+    #root .tile { width: 72px; height: 72px; border-radius: 10px; background: #E4F2F1; color: #008C91; display: flex; align-items: center; justify-content: center; flex: none; }
+    #root .tile.sm { width: 56px; height: 56px; }
+    #root .tile.sm .ic { width: 32px; height: 32px; }
+    #root .hub .tile { background: rgba(255, 255, 255, 0.14); color: #ffffff; }
+    #root .ic { width: 40px; height: 40px; stroke-width: 1.8; }
+    #root .cap { font-size: 28px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #008C91; }
+    #root .num { font-size: 28px; font-weight: 700; color: #008C91; }
+    #root .h { font-size: 30px; font-weight: 700; line-height: 1.2; color: #1C2528; }
+    #root .hub .h, #root .hub .b, #root .hub .cap { color: #ffffff; }
+    #root .b { font-size: 28px; font-weight: 400; line-height: 1.3; color: #4A5759; }
+    #root .note { font-size: 28px; font-weight: 400; line-height: 1.3; color: #7A898C; }
+    #root .tag { display: inline-flex; align-items: center; gap: 10px; padding: 6px 16px; border-radius: 6px; background: #E4F2F1; color: #005B62; font-size: 28px; font-weight: 700; white-space: nowrap; }
+    #root .tag .ic { width: 28px; height: 28px; }
+    #root .tag.out { background: #ffffff; border: 2px solid #005B62; }
+    #root .ln { position: absolute; background: #008C91; }
+    #root .abs { position: absolute; }
+    #root .row { display: flex; align-items: center; }
+
+    #s10-msg { position: absolute; left: 192px; top: 262px; font-size: 44px; font-weight: 700; letter-spacing: -0.01em; color: #C5CFD0; white-space: nowrap; }
+    #s10-msg span { padding-right: 18px; }
+    .s10-seg { top: 398px; height: 4px; }
+    #s10-l1 { left: 327px; width: 316px; } #s10-l2 { left: 643px; width: 317px; } #s10-l3 { left: 960px; width: 317px; } #s10-l4 { left: 1277px; width: 316px; }
+    .s10-n { position: absolute; top: 372px; width: 56px; height: 56px; border-radius: 50%; border: 3px solid #008C91; background: #fff; color: #008C91; font-size: 28px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    #s10-n1 { left: 299px; } #s10-n2 { left: 615px; } #s10-n3 { left: 932px; } #s10-n4 { left: 1249px; } #s10-n5 { left: 1565px; }
+    .s10-c { top: 452px; width: 270px; height: 196px; }
+    #s10-c1 { left: 192px; } #s10-c2 { left: 508px; } #s10-c3 { left: 825px; } #s10-c4 { left: 1142px; } #s10-c5 { left: 1458px; }
+    .s10-c .tile { position: absolute; left: 99px; top: 22px; }
+    .s10-c .h { position: absolute; left: 14px; right: 14px; top: 110px; text-align: center; line-height: 1.15; }
+    .s10-p { position: absolute; top: 706px; width: 512px; text-align: center; font-size: 36px; font-weight: 700; color: #005B62; }
+    #s10-p1 { left: 192px; } #s10-p2 { left: 704px; } #s10-p3 { left: 1216px; }
+    .s10-div { position: absolute; top: 704px; width: 2px; height: 48px; background: #D3DDDE; }
+    #s10-d1 { left: 703px; } #s10-d2 { left: 1215px; }
+  </style>
+  <div id="root" data-composition-id="s10" data-width="1920" data-height="1080">
+    <div class="stage" id="s10-stage">
+      <h1 class="title" id="s10-title"><span class="w">Start</span> <span class="w">with</span> <span class="w">a</span> <span class="w">Pilot</span> <span class="w">Project</span></h1>
+      <div class="rule" id="s10-rule"></div>
+      <p id="s10-msg"><span id="s10-m1">One Product.</span><span id="s10-m2">One Local Partner.</span><span id="s10-m3">One Feasibility Review.</span></p>
+
+      <div class="ln s10-seg" id="s10-l1"></div><div class="ln s10-seg" id="s10-l2"></div><div class="ln s10-seg" id="s10-l3"></div><div class="ln s10-seg" id="s10-l4"></div>
+      <div class="s10-n" id="s10-n1">1</div><div class="s10-n" id="s10-n2">2</div><div class="s10-n" id="s10-n3">3</div><div class="s10-n" id="s10-n4">4</div><div class="s10-n" id="s10-n5">5</div>
+      <div class="card s10-c" id="s10-c1"><div class="tile"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" /> <path d="M12 22V12" /> <path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7" /> <path d="m7.5 4.27 9 5.15" /> </svg></div><p class="h">Select a Product</p></div>
+      <div class="card s10-c" id="s10-c2"><div class="tile"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m11 17 2 2a1 1 0 1 0 3-3" /> <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /> <path d="m21 3 1 11h-2" /> <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /> <path d="M3 4h8" /> </svg></div><p class="h">Identify a Local Partner</p></div>
+      <div class="card s10-c" id="s10-c3"><div class="tile"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" /> <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" /> <path d="M12 2v2" /> <path d="M12 22v-2" /> <path d="m17 20.66-1-1.73" /> <path d="M11 10.27 7 3.34" /> <path d="m20.66 17-1.73-1" /> <path d="m3.34 7 1.73 1" /> <path d="M14 12h8" /> <path d="M2 12h2" /> <path d="m20.66 7-1.73 1" /> <path d="m3.34 17 1.73-1" /> <path d="m17 3.34-1 1.73" /> <path d="m11 13.73-4 6.93" /> </svg></div><p class="h">Review Korean Equipment</p></div>
+      <div class="card s10-c" id="s10-c4"><div class="tile"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect width="8" height="4" x="8" y="2" rx="1" ry="1" /> <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /> <path d="m9 14 2 2 4-4" /> </svg></div><p class="h">Assess Feasibility</p></div>
+      <div class="card s10-c" id="s10-c5"><div class="tile"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" /> <line x1="4" x2="4" y1="22" y2="15" /> </svg></div><p class="h">Plan the Pilot</p></div>
+
+      <p class="s10-p" id="s10-p1">Start small.</p>
+      <div class="s10-div" id="s10-d1"></div>
+      <p class="s10-p" id="s10-p2">Verify carefully.</p>
+      <div class="s10-div" id="s10-d2"></div>
+      <p class="s10-p" id="s10-p3">Scale when ready.</p>
+      <div class="pageno" id="s10-page">10</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Shared motion vocabulary (SPEC.md MOTION). `tl` is this scene's paused timeline.
+    const TEAL = "#008C91", LIGHT = "#E4F2F1", HAIR = "#D3DDDE", WHITE = "#FFFFFF";
+    const E = {
+      // text and blocks arrive by focusing in place: blur 8 -> 0, no translate
+      blurIn: (sel, t, d = 0.45) =>
+        tl.fromTo(sel, { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: d, ease: "expo.out" }, t),
+      // title words: 0.13 s each, 0.067 s apart
+      words: (sel, t) =>
+        tl.fromTo(sel, { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.13, stagger: 0.067, ease: "power4.out" }, t),
+      // lines and arrows draw
+      drawX: (sel, t, d = 0.6, origin = "left center") =>
+        tl.fromTo(sel, { scaleX: 0, transformOrigin: origin }, { scaleX: 1, duration: d, ease: "power2.inOut" }, t),
+      drawY: (sel, t, d = 0.45, origin = "center top") =>
+        tl.fromTo(sel, { scaleY: 0, transformOrigin: origin }, { scaleY: 1, duration: d, ease: "power2.inOut" }, t),
+      // SVG strokes draw (pathLength="1" on the element)
+      stroke: (sel, t, d = 0.7) =>
+        tl.fromTo(sel, { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: d, ease: "power2.inOut" }, t),
+      // cards open left to right
+      open: (sel, t, d = 0.5) =>
+        tl.fromTo(sel, { clipPath: "inset(0% 100% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: d, ease: "power3.out" }, t),
+      // tags, ticks and stamps land with a damped spring (scale only; opacity never overshoots)
+      land: (sel, t) => {
+        tl.fromTo(sel, { scale: 0.86 }, { scale: 1, duration: 0.4, ease: "back.out(1.5)" }, t);
+        tl.fromTo(sel, { opacity: 0 }, { opacity: 1, duration: 0.18, ease: "power2.out" }, t);
+      },
+      // focus: the named item goes teal, the rest step back
+      on: (sel, t) => tl.to(sel, { opacity: 1, borderColor: TEAL, backgroundColor: LIGHT, duration: 0.3, ease: "power2.inOut" }, t),
+      off: (sel, t, dimTo = 0.38) => tl.to(sel, { opacity: dimTo, borderColor: HAIR, backgroundColor: WHITE, duration: 0.3, ease: "power2.inOut" }, t),
+      rest: (sel, t) => tl.to(sel, { opacity: 1, borderColor: HAIR, backgroundColor: WHITE, duration: 0.4, ease: "power2.inOut" }, t),
+      dim: (sel, t, v = 0.38) => tl.to(sel, { opacity: v, duration: 0.3, ease: "power2.inOut" }, t),
+      full: (sel, t) => tl.to(sel, { opacity: 1, duration: 0.3, ease: "power2.inOut" }, t),
+      ink: (sel, t, c = "#005B62") => tl.to(sel, { color: c, duration: 0.35, ease: "power2.inOut" }, t),
+      // the scene leaves as one: blur out and fade, ending one frame before the cut
+      exit: (t) => tl.to("#s10-stage", { opacity: 0, filter: "blur(8px)", duration: 0.3, ease: "power3.in" }, t),
+      title: () => {
+        E.words("#s10-title .w", 0.25);
+        E.drawX("#s10-rule", 0.55, 0.5);
+        E.blurIn("#s10-page", 0.3, 0.4);
+      },
+    };
+    // focus one id from a list of already-visible ids
+    const focus = (ids, active, t) => ids.forEach((id) => (id === active ? E.on(id, t) : E.off(id, t)));
+
+    const C = ["#s10-c1", "#s10-c2", "#s10-c3", "#s10-c4", "#s10-c5"];
+    const N = ["#s10-n1", "#s10-n2", "#s10-n3", "#s10-n4", "#s10-n5"];
+    const L = ["#s10-l1", "#s10-l2", "#s10-l3", "#s10-l4"];
+    E.title();
+    E.blurIn("#s10-msg", 0.85);
+    // "We suggest beginning with a focused pilot project." -> the five-step roadmap waits, dimmed
+    C.forEach((c, i) => E.blurIn(c + ", " + N[i], 2.744 + i * 0.1, 0.45));
+    E.dim(C.concat(N).join(", "), 3.644, 0.32);
+    const step = (i, t) => {
+      if (i > 0) { E.rest(C[i - 1], t); E.drawX(L[i - 1], t - 0.35, 0.4); }
+      E.on(C[i], t);
+      tl.to(N[i], { opacity: 1, backgroundColor: TEAL, color: WHITE, duration: 0.3, ease: "power2.inOut" }, t);
+    };
+    // "...let us first select one product category and identify one committed local business partner."
+    step(0, 8.658);  E.ink("#s10-m1", 8.658);
+    step(1, 10.808);  E.ink("#s10-m2", 10.808);
+    // "Together, we can define the required equipment, examine possible Korean supply options, and review the site..."
+    step(2, 15.058);
+    step(3, 20.173);  E.ink("#s10-m3", 20.173);
+    // "If the feasibility review is positive, the parties can discuss a detailed implementation plan."
+    step(4, 30.309);
+    // "A pilot does not guarantee commercial success. However, it gives us a practical way to test the opportunity
+    //  before considering a larger manufacturing program."
+    E.rest("#s10-c5", 32.853);
+    E.blurIn("#s10-p1", 32.853);
+    E.blurIn("#s10-d1", 37.243, 0.3);
+    E.blurIn("#s10-p2", 37.243);
+    E.blurIn("#s10-d2", 39.743, 0.3);
+    E.blurIn("#s10-p3", 39.743);
+    E.exit(43.907);
+    window.__timelines["s10"] = tl;
+  </script>
+</template>

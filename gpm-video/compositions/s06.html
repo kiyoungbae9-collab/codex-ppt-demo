@@ -1,0 +1,151 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #ffffff; color: #1C2528; font-family: "Inter", sans-serif; overflow: hidden; }
+    #root * { box-sizing: border-box; margin: 0; padding: 0; }
+    #root .stage { position: absolute; inset: 0; }
+    #root .title { position: absolute; left: 192px; top: 146px; font-size: 60px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; white-space: nowrap; color: #1C2528; }
+    #root .title .w { display: inline-block; }
+    #root .rule { position: absolute; left: 192px; top: 228px; width: 96px; height: 6px; background: #008C91; }
+    #root .headline { position: absolute; left: 192px; top: 252px; font-size: 34px; font-weight: 400; line-height: 1.25; color: #005B62; white-space: nowrap; }
+    #root .pageno { position: absolute; left: 0; right: 0; top: 982px; text-align: center; font-size: 28px; font-weight: 400; color: #7A898C; }
+    #root .card { position: absolute; background: #ffffff; border: 2px solid #D3DDDE; border-radius: 10px; }
+    #root .card.hub { background: #005B62; border-color: #005B62; color: #ffffff; }
+    #root .ghost { position: absolute; border: 2px dashed #C3D0D1; border-radius: 10px; }
+    #root .tile { width: 72px; height: 72px; border-radius: 10px; background: #E4F2F1; color: #008C91; display: flex; align-items: center; justify-content: center; flex: none; }
+    #root .tile.sm { width: 56px; height: 56px; }
+    #root .tile.sm .ic { width: 32px; height: 32px; }
+    #root .hub .tile { background: rgba(255, 255, 255, 0.14); color: #ffffff; }
+    #root .ic { width: 40px; height: 40px; stroke-width: 1.8; }
+    #root .cap { font-size: 28px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #008C91; }
+    #root .num { font-size: 28px; font-weight: 700; color: #008C91; }
+    #root .h { font-size: 30px; font-weight: 700; line-height: 1.2; color: #1C2528; }
+    #root .hub .h, #root .hub .b, #root .hub .cap { color: #ffffff; }
+    #root .b { font-size: 28px; font-weight: 400; line-height: 1.3; color: #4A5759; }
+    #root .note { font-size: 28px; font-weight: 400; line-height: 1.3; color: #7A898C; }
+    #root .tag { display: inline-flex; align-items: center; gap: 10px; padding: 6px 16px; border-radius: 6px; background: #E4F2F1; color: #005B62; font-size: 28px; font-weight: 700; white-space: nowrap; }
+    #root .tag .ic { width: 28px; height: 28px; }
+    #root .tag.out { background: #ffffff; border: 2px solid #005B62; }
+    #root .ln { position: absolute; background: #008C91; }
+    #root .abs { position: absolute; }
+    #root .row { display: flex; align-items: center; }
+
+    .s06-st { width: 354px; height: 170px; }
+    #s06-1 { left: 192px; top: 290px; } #s06-2 { left: 586px; top: 290px; } #s06-3 { left: 980px; top: 290px; } #s06-4 { left: 1374px; top: 290px; }
+    #s06-5 { left: 389px; top: 552px; } #s06-6 { left: 783px; top: 552px; } #s06-7 { left: 1177px; top: 552px; }
+    .s06-st .num { position: absolute; left: 24px; top: 20px; }
+    .s06-st .tile { position: absolute; right: 22px; top: 18px; }
+    .s06-st .h { position: absolute; left: 24px; top: 86px; width: 300px; line-height: 1.15; }
+    .s06-ar { position: absolute; width: 40px; height: 24px; color: #008C91; }
+    #s06-a1 { left: 546px; top: 363px; } #s06-a2 { left: 940px; top: 363px; } #s06-a3 { left: 1334px; top: 363px; }
+    #s06-a5 { left: 743px; top: 625px; } #s06-a6 { left: 1137px; top: 625px; }
+    #s06-elbow { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; color: #008C91; }
+    .s06-ck { position: absolute; width: 48px; height: 48px; border-radius: 50%; background: #005B62; color: #fff; display: flex; align-items: center; justify-content: center; }
+    .s06-ck .ic { width: 28px; height: 28px; stroke-width: 2.6; }
+    #s06-k4 { left: 1704px; top: 268px; } #s06-k5 { left: 719px; top: 530px; }
+    #s06-f1 { position: absolute; left: 0; right: 0; top: 752px; display: flex; justify-content: center; align-items: center; gap: 14px; font-size: 30px; font-weight: 700; color: #005B62; }
+    #s06-f1 .ic { width: 34px; height: 34px; color: #005B62; }
+    #s06-f2 { position: absolute; left: 0; right: 0; top: 806px; text-align: center; }
+  </style>
+  <div id="root" data-composition-id="s06" data-width="1920" data-height="1080">
+    <div class="stage" id="s06-stage">
+      <h1 class="title" id="s06-title"><span class="w">How</span> <span class="w">We</span> <span class="w">Develop</span> <span class="w">a</span> <span class="w">Project</span></h1>
+      <div class="rule" id="s06-rule"></div>
+
+      <svg id="s06-elbow" viewBox="0 0 1920 1080" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path id="s06-p4" pathLength="1" stroke-dasharray="1" d="M1551 460 V506 H566 V540" />
+        <path id="s06-p4h" d="M556 532 L566 544 L576 532" />
+      </svg>
+      <div class="card s06-st" id="s06-1"><div class="num">01</div><div class="tile sm"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <circle cx="11" cy="11" r="8" /> <path d="m21 21-4.3-4.3" /> </svg></div><p class="h">Equipment Sourcing</p></div>
+      <div class="card s06-st" id="s06-2"><div class="num">02</div><div class="tile sm"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M3 7V5a2 2 0 0 1 2-2h2" /> <path d="M17 3h2a2 2 0 0 1 2 2v2" /> <path d="M21 17v2a2 2 0 0 1-2 2h-2" /> <path d="M7 21H5a2 2 0 0 1-2-2v-2" /> <circle cx="12" cy="12" r="3" /> <path d="m16 16-1.9-1.9" /> </svg></div><p class="h">Technical Inspection</p></div>
+      <div class="card s06-st" id="s06-3"><div class="num">03</div><div class="tile sm"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /> <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /> </svg></div><p class="h">Local Demand Matching</p></div>
+      <div class="card s06-st" id="s06-4"><div class="num">04</div><div class="tile sm"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect width="8" height="4" x="8" y="2" rx="1" ry="1" /> <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /> <path d="m9 14 2 2 4-4" /> </svg></div><p class="h">Feasibility Assessment</p></div>
+      <div class="card s06-st" id="s06-5"><div class="num">05</div><div class="tile sm"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m18 5-2.414-2.414A2 2 0 0 0 14.172 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2" /> <path d="M21.378 12.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" /> <path d="M8 18h1" /> </svg></div><p class="h">Contracting &amp; Relocation</p></div>
+      <div class="card s06-st" id="s06-6"><div class="num">06</div><div class="tile sm"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /> <path d="M22 10v6" /> <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /> </svg></div><p class="h">Installation &amp; Training</p></div>
+      <div class="card s06-st" id="s06-7"><div class="num">07</div><div class="tile sm"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" /> </svg></div><p class="h">Production Stabilization</p></div>
+      <svg class="s06-ar" id="s06-a1" viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 H32 M24 4 L32 12 L24 20" /></svg>
+      <svg class="s06-ar" id="s06-a2" viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 H32 M24 4 L32 12 L24 20" /></svg>
+      <svg class="s06-ar" id="s06-a3" viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 H32 M24 4 L32 12 L24 20" /></svg>
+      <svg class="s06-ar" id="s06-a5" viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 H32 M24 4 L32 12 L24 20" /></svg>
+      <svg class="s06-ar" id="s06-a6" viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 H32 M24 4 L32 12 L24 20" /></svg>
+      <div class="s06-ck" id="s06-k4"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg></div>
+      <div class="s06-ck" id="s06-k5"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg></div>
+      <p id="s06-f1"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m9 12 2 2 4-4" /> </svg>Decision checkpoints before any major commitment</p>
+      <p class="note" id="s06-f2">Each stage proceeds after the required technical and commercial review.</p>
+      <div class="pageno" id="s06-page">06</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Shared motion vocabulary (SPEC.md MOTION). `tl` is this scene's paused timeline.
+    const TEAL = "#008C91", LIGHT = "#E4F2F1", HAIR = "#D3DDDE", WHITE = "#FFFFFF";
+    const E = {
+      // text and blocks arrive by focusing in place: blur 8 -> 0, no translate
+      blurIn: (sel, t, d = 0.45) =>
+        tl.fromTo(sel, { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: d, ease: "expo.out" }, t),
+      // title words: 0.13 s each, 0.067 s apart
+      words: (sel, t) =>
+        tl.fromTo(sel, { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.13, stagger: 0.067, ease: "power4.out" }, t),
+      // lines and arrows draw
+      drawX: (sel, t, d = 0.6, origin = "left center") =>
+        tl.fromTo(sel, { scaleX: 0, transformOrigin: origin }, { scaleX: 1, duration: d, ease: "power2.inOut" }, t),
+      drawY: (sel, t, d = 0.45, origin = "center top") =>
+        tl.fromTo(sel, { scaleY: 0, transformOrigin: origin }, { scaleY: 1, duration: d, ease: "power2.inOut" }, t),
+      // SVG strokes draw (pathLength="1" on the element)
+      stroke: (sel, t, d = 0.7) =>
+        tl.fromTo(sel, { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: d, ease: "power2.inOut" }, t),
+      // cards open left to right
+      open: (sel, t, d = 0.5) =>
+        tl.fromTo(sel, { clipPath: "inset(0% 100% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: d, ease: "power3.out" }, t),
+      // tags, ticks and stamps land with a damped spring (scale only; opacity never overshoots)
+      land: (sel, t) => {
+        tl.fromTo(sel, { scale: 0.86 }, { scale: 1, duration: 0.4, ease: "back.out(1.5)" }, t);
+        tl.fromTo(sel, { opacity: 0 }, { opacity: 1, duration: 0.18, ease: "power2.out" }, t);
+      },
+      // focus: the named item goes teal, the rest step back
+      on: (sel, t) => tl.to(sel, { opacity: 1, borderColor: TEAL, backgroundColor: LIGHT, duration: 0.3, ease: "power2.inOut" }, t),
+      off: (sel, t, dimTo = 0.38) => tl.to(sel, { opacity: dimTo, borderColor: HAIR, backgroundColor: WHITE, duration: 0.3, ease: "power2.inOut" }, t),
+      rest: (sel, t) => tl.to(sel, { opacity: 1, borderColor: HAIR, backgroundColor: WHITE, duration: 0.4, ease: "power2.inOut" }, t),
+      dim: (sel, t, v = 0.38) => tl.to(sel, { opacity: v, duration: 0.3, ease: "power2.inOut" }, t),
+      full: (sel, t) => tl.to(sel, { opacity: 1, duration: 0.3, ease: "power2.inOut" }, t),
+      ink: (sel, t, c = "#005B62") => tl.to(sel, { color: c, duration: 0.35, ease: "power2.inOut" }, t),
+      // the scene leaves as one: blur out and fade, ending one frame before the cut
+      exit: (t) => tl.to("#s06-stage", { opacity: 0, filter: "blur(8px)", duration: 0.3, ease: "power3.in" }, t),
+      title: () => {
+        E.words("#s06-title .w", 0.25);
+        E.drawX("#s06-rule", 0.55, 0.5);
+        E.blurIn("#s06-page", 0.3, 0.4);
+      },
+    };
+    // focus one id from a list of already-visible ids
+    const focus = (ids, active, t) => ids.forEach((id) => (id === active ? E.on(id, t) : E.off(id, t)));
+
+    const S = ["#s06-1", "#s06-2", "#s06-3", "#s06-4", "#s06-5", "#s06-6", "#s06-7"];
+    E.title();
+    // "Let me explain how a project can move forward." -> the seven stages wait, dimmed
+    S.forEach((s, i) => E.open(s, 2.315 + i * 0.1, 0.45));
+    E.dim(S.join(", "), 3.240, 0.32);
+    // each stage lights when the voice names it; the arrow into it draws just before
+    const step = (i, t) => {
+      if (i > 0) E.rest(S[i - 1], t);
+      E.on(S[i], t);
+    };
+    step(0, 5.556);
+    E.open("#s06-a1", 7.031, 0.3); step(1, 7.331);
+    E.open("#s06-a2", 10.000, 0.3); step(2, 10.300);
+    E.open("#s06-a3", 14.717, 0.3); step(3, 15.017);
+    E.stroke("#s06-p4", 24.736, 0.6);
+    E.blurIn("#s06-p4h", 25.286, 0.2);
+    step(4, 25.336);
+    E.open("#s06-a5", 27.536, 0.3); step(5, 27.836);
+    E.open("#s06-a6", 30.348, 0.3); step(6, 30.648);
+    // "These stages are not automatic promises. They are checkpoints..."
+    E.rest("#s06-7", 35.303);
+    E.blurIn("#s06-f2", 35.303);
+    tl.to("#s06-4, #s06-5", { borderColor: "#005B62", borderWidth: 3, duration: 0.3, ease: "power2.inOut" }, 38.661);
+    E.land("#s06-k4", 38.661);
+    E.land("#s06-k5", 38.811);
+    E.blurIn("#s06-f1", 38.861);
+    E.exit(45.740);
+    window.__timelines["s06"] = tl;
+  </script>
+</template>

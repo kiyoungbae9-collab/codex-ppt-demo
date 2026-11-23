@@ -1,0 +1,17 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; font-family: "Inter", sans-serif; }
+    #chrome-logo { position: absolute; left: 120px; top: 50px; width: 64px; height: 64px; }
+    #chrome-brand { position: absolute; left: 204px; top: 66px; font-size: 28px; font-weight: 700; letter-spacing: 0.12em; color: #1C2528; white-space: nowrap; }
+  </style>
+  <div id="root" data-composition-id="chrome" data-width="1920" data-height="1080">
+    <!-- Logo area: official green GPM logo goes here (assets/brand/logo-slot.svg is a placeholder). -->
+    <img id="chrome-logo" src="assets/brand/logo-slot.svg" alt="GPM logo area" />
+    <div id="chrome-brand">GLOBAL PARTNER MARKET</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Static header: on screen from frame 0 to the last frame.
+    window.__timelines["chrome"] = tl;
+  </script>
+</template>

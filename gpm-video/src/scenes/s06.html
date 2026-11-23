@@ -1,0 +1,81 @@
+<template>
+  <style>
+{{BASE_CSS}}
+    .s06-st { width: 354px; height: 170px; }
+    #s06-1 { left: 192px; top: 290px; } #s06-2 { left: 586px; top: 290px; } #s06-3 { left: 980px; top: 290px; } #s06-4 { left: 1374px; top: 290px; }
+    #s06-5 { left: 389px; top: 552px; } #s06-6 { left: 783px; top: 552px; } #s06-7 { left: 1177px; top: 552px; }
+    .s06-st .num { position: absolute; left: 24px; top: 20px; }
+    .s06-st .tile { position: absolute; right: 22px; top: 18px; }
+    .s06-st .h { position: absolute; left: 24px; top: 86px; width: 300px; line-height: 1.15; }
+    .s06-ar { position: absolute; width: 40px; height: 24px; color: #008C91; }
+    #s06-a1 { left: 546px; top: 363px; } #s06-a2 { left: 940px; top: 363px; } #s06-a3 { left: 1334px; top: 363px; }
+    #s06-a5 { left: 743px; top: 625px; } #s06-a6 { left: 1137px; top: 625px; }
+    #s06-elbow { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; color: #008C91; }
+    .s06-ck { position: absolute; width: 48px; height: 48px; border-radius: 50%; background: #005B62; color: #fff; display: flex; align-items: center; justify-content: center; }
+    .s06-ck .ic { width: 28px; height: 28px; stroke-width: 2.6; }
+    #s06-k4 { left: 1704px; top: 268px; } #s06-k5 { left: 719px; top: 530px; }
+    #s06-f1 { position: absolute; left: 0; right: 0; top: 752px; display: flex; justify-content: center; align-items: center; gap: 14px; font-size: 30px; font-weight: 700; color: #005B62; }
+    #s06-f1 .ic { width: 34px; height: 34px; color: #005B62; }
+    #s06-f2 { position: absolute; left: 0; right: 0; top: 806px; text-align: center; }
+  </style>
+  <div id="root" data-composition-id="s06" data-width="1920" data-height="1080">
+    <div class="stage" id="s06-stage">
+      <h1 class="title" id="s06-title">{{TITLE}}</h1>
+      <div class="rule" id="s06-rule"></div>
+
+      <svg id="s06-elbow" viewBox="0 0 1920 1080" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path id="s06-p4" pathLength="1" stroke-dasharray="1" d="M1551 460 V506 H566 V540" />
+        <path id="s06-p4h" d="M556 532 L566 544 L576 532" />
+      </svg>
+      <div class="card s06-st" id="s06-1"><div class="num">01</div><div class="tile sm">{{icon:search}}</div><p class="h">Equipment Sourcing</p></div>
+      <div class="card s06-st" id="s06-2"><div class="num">02</div><div class="tile sm">{{icon:scan-search}}</div><p class="h">Technical Inspection</p></div>
+      <div class="card s06-st" id="s06-3"><div class="num">03</div><div class="tile sm">{{icon:link}}</div><p class="h">Local Demand Matching</p></div>
+      <div class="card s06-st" id="s06-4"><div class="num">04</div><div class="tile sm">{{icon:clipboard-check}}</div><p class="h">Feasibility Assessment</p></div>
+      <div class="card s06-st" id="s06-5"><div class="num">05</div><div class="tile sm">{{icon:file-pen-line}}</div><p class="h">Contracting &amp; Relocation</p></div>
+      <div class="card s06-st" id="s06-6"><div class="num">06</div><div class="tile sm">{{icon:graduation-cap}}</div><p class="h">Installation &amp; Training</p></div>
+      <div class="card s06-st" id="s06-7"><div class="num">07</div><div class="tile sm">{{icon:activity}}</div><p class="h">Production Stabilization</p></div>
+      <svg class="s06-ar" id="s06-a1" viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 H32 M24 4 L32 12 L24 20" /></svg>
+      <svg class="s06-ar" id="s06-a2" viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 H32 M24 4 L32 12 L24 20" /></svg>
+      <svg class="s06-ar" id="s06-a3" viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 H32 M24 4 L32 12 L24 20" /></svg>
+      <svg class="s06-ar" id="s06-a5" viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 H32 M24 4 L32 12 L24 20" /></svg>
+      <svg class="s06-ar" id="s06-a6" viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 H32 M24 4 L32 12 L24 20" /></svg>
+      <div class="s06-ck" id="s06-k4">{{icon:check}}</div>
+      <div class="s06-ck" id="s06-k5">{{icon:check}}</div>
+      <p id="s06-f1">{{icon:badge-check}}Decision checkpoints before any major commitment</p>
+      <p class="note" id="s06-f2">Each stage proceeds after the required technical and commercial review.</p>
+      <div class="pageno" id="s06-page">{{PAGE}}</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+{{HELPERS}}
+    const S = ["#s06-1", "#s06-2", "#s06-3", "#s06-4", "#s06-5", "#s06-6", "#s06-7"];
+    E.title();
+    // "Let me explain how a project can move forward." -> the seven stages wait, dimmed
+    S.forEach((s, i) => E.open(s, {{at:how a project can}} + i * 0.1, 0.45));
+    E.dim(S.join(", "), {{at:move forward}}, 0.32);
+    // each stage lights when the voice names it; the arrow into it draws just before
+    const step = (i, t) => {
+      if (i > 0) E.rest(S[i - 1], t);
+      E.on(S[i], t);
+    };
+    step(0, {{at:identifying equipment}});
+    E.open("#s06-a1", {{at:reviewing its technical-0.3}}, 0.3); step(1, {{at:reviewing its technical}});
+    E.open("#s06-a2", {{at:we match potential-0.3}}, 0.3); step(2, {{at:we match potential}});
+    E.open("#s06-a3", {{at:assess feasibility-0.3}}, 0.3); step(3, {{at:assess feasibility}});
+    E.stroke("#s06-p4", {{at:move to contracting-0.6}}, 0.6);
+    E.blurIn("#s06-p4h", {{at:move to contracting-0.05}}, 0.2);
+    step(4, {{at:move to contracting}});
+    E.open("#s06-a5", {{at:installation commissioning-0.3}}, 0.3); step(5, {{at:installation commissioning}});
+    E.open("#s06-a6", {{at:Finally production-0.3}}, 0.3); step(6, {{at:Finally production}});
+    // "These stages are not automatic promises. They are checkpoints..."
+    E.rest("#s06-7", {{at:These stages are not}});
+    E.blurIn("#s06-f2", {{at:These stages are not}});
+    tl.to("#s06-4, #s06-5", { borderColor: "#005B62", borderWidth: 3, duration: 0.3, ease: "power2.inOut" }, {{at:They are checkpoints}});
+    E.land("#s06-k4", {{at:They are checkpoints}});
+    E.land("#s06-k5", {{at:They are checkpoints+0.15}});
+    E.blurIn("#s06-f1", {{at:They are checkpoints+0.2}});
+    E.exit({{EXIT}});
+    window.__timelines["s06"] = tl;
+  </script>
+</template>

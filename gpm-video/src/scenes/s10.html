@@ -1,0 +1,76 @@
+<template>
+  <style>
+{{BASE_CSS}}
+    #s10-msg { position: absolute; left: 192px; top: 262px; font-size: 44px; font-weight: 700; letter-spacing: -0.01em; color: #C5CFD0; white-space: nowrap; }
+    #s10-msg span { padding-right: 18px; }
+    .s10-seg { top: 398px; height: 4px; }
+    #s10-l1 { left: 327px; width: 316px; } #s10-l2 { left: 643px; width: 317px; } #s10-l3 { left: 960px; width: 317px; } #s10-l4 { left: 1277px; width: 316px; }
+    .s10-n { position: absolute; top: 372px; width: 56px; height: 56px; border-radius: 50%; border: 3px solid #008C91; background: #fff; color: #008C91; font-size: 28px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    #s10-n1 { left: 299px; } #s10-n2 { left: 615px; } #s10-n3 { left: 932px; } #s10-n4 { left: 1249px; } #s10-n5 { left: 1565px; }
+    .s10-c { top: 452px; width: 270px; height: 196px; }
+    #s10-c1 { left: 192px; } #s10-c2 { left: 508px; } #s10-c3 { left: 825px; } #s10-c4 { left: 1142px; } #s10-c5 { left: 1458px; }
+    .s10-c .tile { position: absolute; left: 99px; top: 22px; }
+    .s10-c .h { position: absolute; left: 14px; right: 14px; top: 110px; text-align: center; line-height: 1.15; }
+    .s10-p { position: absolute; top: 706px; width: 512px; text-align: center; font-size: 36px; font-weight: 700; color: #005B62; }
+    #s10-p1 { left: 192px; } #s10-p2 { left: 704px; } #s10-p3 { left: 1216px; }
+    .s10-div { position: absolute; top: 704px; width: 2px; height: 48px; background: #D3DDDE; }
+    #s10-d1 { left: 703px; } #s10-d2 { left: 1215px; }
+  </style>
+  <div id="root" data-composition-id="s10" data-width="1920" data-height="1080">
+    <div class="stage" id="s10-stage">
+      <h1 class="title" id="s10-title">{{TITLE}}</h1>
+      <div class="rule" id="s10-rule"></div>
+      <p id="s10-msg"><span id="s10-m1">One Product.</span><span id="s10-m2">One Local Partner.</span><span id="s10-m3">One Feasibility Review.</span></p>
+
+      <div class="ln s10-seg" id="s10-l1"></div><div class="ln s10-seg" id="s10-l2"></div><div class="ln s10-seg" id="s10-l3"></div><div class="ln s10-seg" id="s10-l4"></div>
+      <div class="s10-n" id="s10-n1">1</div><div class="s10-n" id="s10-n2">2</div><div class="s10-n" id="s10-n3">3</div><div class="s10-n" id="s10-n4">4</div><div class="s10-n" id="s10-n5">5</div>
+      <div class="card s10-c" id="s10-c1"><div class="tile">{{icon:package}}</div><p class="h">Select a Product</p></div>
+      <div class="card s10-c" id="s10-c2"><div class="tile">{{icon:handshake}}</div><p class="h">Identify a Local Partner</p></div>
+      <div class="card s10-c" id="s10-c3"><div class="tile">{{icon:cog}}</div><p class="h">Review Korean Equipment</p></div>
+      <div class="card s10-c" id="s10-c4"><div class="tile">{{icon:clipboard-check}}</div><p class="h">Assess Feasibility</p></div>
+      <div class="card s10-c" id="s10-c5"><div class="tile">{{icon:flag}}</div><p class="h">Plan the Pilot</p></div>
+
+      <p class="s10-p" id="s10-p1">Start small.</p>
+      <div class="s10-div" id="s10-d1"></div>
+      <p class="s10-p" id="s10-p2">Verify carefully.</p>
+      <div class="s10-div" id="s10-d2"></div>
+      <p class="s10-p" id="s10-p3">Scale when ready.</p>
+      <div class="pageno" id="s10-page">{{PAGE}}</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+{{HELPERS}}
+    const C = ["#s10-c1", "#s10-c2", "#s10-c3", "#s10-c4", "#s10-c5"];
+    const N = ["#s10-n1", "#s10-n2", "#s10-n3", "#s10-n4", "#s10-n5"];
+    const L = ["#s10-l1", "#s10-l2", "#s10-l3", "#s10-l4"];
+    E.title();
+    E.blurIn("#s10-msg", 0.85);
+    // "We suggest beginning with a focused pilot project." -> the five-step roadmap waits, dimmed
+    C.forEach((c, i) => E.blurIn(c + ", " + N[i], {{at:focused pilot project}} + i * 0.1, 0.45));
+    E.dim(C.concat(N).join(", "), {{at:focused pilot project+0.9}}, 0.32);
+    const step = (i, t) => {
+      if (i > 0) { E.rest(C[i - 1], t); E.drawX(L[i - 1], t - 0.35, 0.4); }
+      E.on(C[i], t);
+      tl.to(N[i], { opacity: 1, backgroundColor: TEAL, color: WHITE, duration: 0.3, ease: "power2.inOut" }, t);
+    };
+    // "...let us first select one product category and identify one committed local business partner."
+    step(0, {{at:select one product}});  E.ink("#s10-m1", {{at:select one product}});
+    step(1, {{at:identify one committed}});  E.ink("#s10-m2", {{at:identify one committed}});
+    // "Together, we can define the required equipment, examine possible Korean supply options, and review the site..."
+    step(2, {{at:define the required equipment}});
+    step(3, {{at:review the site}});  E.ink("#s10-m3", {{at:review the site}});
+    // "If the feasibility review is positive, the parties can discuss a detailed implementation plan."
+    step(4, {{at:detailed implementation plan}});
+    // "A pilot does not guarantee commercial success. However, it gives us a practical way to test the opportunity
+    //  before considering a larger manufacturing program."
+    E.rest("#s10-c5", {{at:A pilot does not}});
+    E.blurIn("#s10-p1", {{at:A pilot does not}});
+    E.blurIn("#s10-d1", {{at:a practical way}}, 0.3);
+    E.blurIn("#s10-p2", {{at:a practical way}});
+    E.blurIn("#s10-d2", {{at:before considering}}, 0.3);
+    E.blurIn("#s10-p3", {{at:before considering}});
+    E.exit({{EXIT}});
+    window.__timelines["s10"] = tl;
+  </script>
+</template>

@@ -1,0 +1,86 @@
+<template>
+  <style>
+{{BASE_CSS}}
+    #s01-title { position: absolute; left: 192px; top: 276px; font-size: 84px; font-weight: 700; letter-spacing: -0.025em; line-height: 1.06; color: #1C2528; }
+    #s01-title .w { display: inline-block; }
+    #s01-rule { top: 484px; }
+    #s01-headline { position: absolute; left: 192px; top: 514px; width: 700px; font-size: 36px; line-height: 1.28; color: #005B62; }
+    #s01-myth { position: absolute; left: 192px; top: 664px; font-size: 32px; color: #7A898C; white-space: nowrap; }
+    #s01-strike { position: absolute; left: -6px; right: -6px; top: 20px; height: 3px; background: #008C91; }
+    #s01-truth { position: absolute; left: 192px; top: 712px; font-size: 34px; font-weight: 700; color: #008C91; white-space: nowrap; }
+    #s01-keys { position: absolute; left: 192px; top: 804px; font-size: 28px; color: #4A5759; white-space: nowrap; }
+    #s01-keys b { color: #008C91; font-weight: 700; padding: 0 10px; }
+    .s01-node { left: 1104px; width: 624px; height: 244px; }
+    #s01-korea { top: 284px; }
+    #s01-ghana { top: 614px; }
+    .s01-node .cap { position: absolute; left: 32px; top: 22px; }
+    .s01-tags { position: absolute; left: 32px; top: 72px; display: flex; flex-direction: column; gap: 7px; align-items: flex-start; }
+    #s01-hub { position: absolute; left: 1336px; top: 542px; width: 160px; height: 60px; border-radius: 8px; background: #005B62; color: #fff; font-size: 28px; font-weight: 700; letter-spacing: 0.08em; display: flex; align-items: center; justify-content: center; }
+    #s01-l1 { left: 1414px; top: 528px; width: 4px; height: 14px; }
+    #s01-l2 { left: 1414px; top: 602px; width: 4px; height: 12px; }
+  </style>
+  <div id="root" data-composition-id="s01" data-width="1920" data-height="1080">
+    <div class="stage" id="s01-stage">
+      <h1 id="s01-title"><span class="w">Korea–Ghana</span><br /><span class="w">Industrial</span> <span class="w">Partnership</span></h1>
+      <div class="rule" id="s01-rule"></div>
+      <p id="s01-headline">Turning Industrial Assets into Manufacturing Opportunities</p>
+      <p id="s01-myth">Not simply selling machines<span id="s01-strike"></span></p>
+      <p id="s01-truth">Sustainable manufacturing opportunities, together</p>
+      <p id="s01-keys">Industrial Equipment<b>·</b>Technology Transfer<b>·</b>Local Manufacturing</p>
+
+      <div class="card s01-node" id="s01-korea">
+        <div class="cap">Korea</div>
+        <div class="s01-tags">
+          <span class="tag" id="s01-k1">{{icon:cog}}Industrial equipment</span>
+          <span class="tag" id="s01-k2">{{icon:factory}}Manufacturing experience</span>
+          <span class="tag" id="s01-k3">{{icon:wrench}}Technical expertise</span>
+        </div>
+      </div>
+      <div class="ln" id="s01-l1"></div>
+      <div id="s01-hub">GPM</div>
+      <div class="ln" id="s01-l2"></div>
+      <div class="card s01-node" id="s01-ghana">
+        <div class="cap">Ghana</div>
+        <div class="s01-tags">
+          <span class="tag" id="s01-g1">{{icon:users}}Entrepreneurs</span>
+          <span class="tag" id="s01-g2">{{icon:lightbulb}}Growing business ambitions</span>
+          <span class="tag" id="s01-g3">{{icon:factory}}Local manufacturing</span>
+        </div>
+      </div>
+      <div class="pageno" id="s01-page">{{PAGE}}</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+{{HELPERS}}
+    // Poster frame: the title is on screen from frame 0; the rest builds as the voice names it.
+    E.drawX("#s01-rule", 0.2, 0.6);
+    E.blurIn("#s01-headline", 0.5, 0.6);
+    E.blurIn("#s01-keys", 1.0, 0.6);
+    E.blurIn("#s01-page", 0.2, 0.4);
+
+    // "...between Korea and Ghana."
+    E.open("#s01-korea", {{at:between Korea}});
+    E.open("#s01-ghana", {{at:and Ghana}});
+    // "Korea has industrial equipment, manufacturing experience, and technical expertise."
+    E.land("#s01-k1", {{at:Korea has industrial equipment+0.25}});
+    E.land("#s01-k2", {{at:manufacturing experience}});
+    E.land("#s01-k3", {{at:technical expertise}});
+    // "Ghana has entrepreneurs, growing business ambitions, and opportunities to develop local manufacturing."
+    E.land("#s01-g1", {{at:entrepreneurs}});
+    E.land("#s01-g2", {{at:growing business ambitions}});
+    E.land("#s01-g3", {{at:develop local manufacturing}});
+    // "Global Partner Market aims to connect these capabilities..."
+    E.land("#s01-hub", {{at:Global Partner Market aims}});
+    E.drawY("#s01-l1", {{at:connect these capabilities}}, 0.3);
+    E.drawY("#s01-l2", {{at:connect these capabilities+0.2}}, 0.3);
+    tl.to("#s01-korea, #s01-ghana", { borderColor: TEAL, duration: 0.4, ease: "power2.inOut" }, {{at:connect these capabilities+0.3}});
+    // "Our goal is not simply to sell machines. It is to help create sustainable manufacturing opportunities together."
+    E.blurIn("#s01-myth", {{at:Our goal is not}});
+    E.drawX("#s01-strike", {{at:sell machines}}, 0.45);
+    E.dim("#s01-myth", {{at:sell machines+0.5}}, 0.55);
+    E.blurIn("#s01-truth", {{at:sustainable manufacturing}});
+    E.exit({{EXIT}});
+    window.__timelines["s01"] = tl;
+  </script>
+</template>

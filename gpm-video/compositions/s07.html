@@ -1,0 +1,167 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #ffffff; color: #1C2528; font-family: "Inter", sans-serif; overflow: hidden; }
+    #root * { box-sizing: border-box; margin: 0; padding: 0; }
+    #root .stage { position: absolute; inset: 0; }
+    #root .title { position: absolute; left: 192px; top: 146px; font-size: 60px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; white-space: nowrap; color: #1C2528; }
+    #root .title .w { display: inline-block; }
+    #root .rule { position: absolute; left: 192px; top: 228px; width: 96px; height: 6px; background: #008C91; }
+    #root .headline { position: absolute; left: 192px; top: 252px; font-size: 34px; font-weight: 400; line-height: 1.25; color: #005B62; white-space: nowrap; }
+    #root .pageno { position: absolute; left: 0; right: 0; top: 982px; text-align: center; font-size: 28px; font-weight: 400; color: #7A898C; }
+    #root .card { position: absolute; background: #ffffff; border: 2px solid #D3DDDE; border-radius: 10px; }
+    #root .card.hub { background: #005B62; border-color: #005B62; color: #ffffff; }
+    #root .ghost { position: absolute; border: 2px dashed #C3D0D1; border-radius: 10px; }
+    #root .tile { width: 72px; height: 72px; border-radius: 10px; background: #E4F2F1; color: #008C91; display: flex; align-items: center; justify-content: center; flex: none; }
+    #root .tile.sm { width: 56px; height: 56px; }
+    #root .tile.sm .ic { width: 32px; height: 32px; }
+    #root .hub .tile { background: rgba(255, 255, 255, 0.14); color: #ffffff; }
+    #root .ic { width: 40px; height: 40px; stroke-width: 1.8; }
+    #root .cap { font-size: 28px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #008C91; }
+    #root .num { font-size: 28px; font-weight: 700; color: #008C91; }
+    #root .h { font-size: 30px; font-weight: 700; line-height: 1.2; color: #1C2528; }
+    #root .hub .h, #root .hub .b, #root .hub .cap { color: #ffffff; }
+    #root .b { font-size: 28px; font-weight: 400; line-height: 1.3; color: #4A5759; }
+    #root .note { font-size: 28px; font-weight: 400; line-height: 1.3; color: #7A898C; }
+    #root .tag { display: inline-flex; align-items: center; gap: 10px; padding: 6px 16px; border-radius: 6px; background: #E4F2F1; color: #005B62; font-size: 28px; font-weight: 700; white-space: nowrap; }
+    #root .tag .ic { width: 28px; height: 28px; }
+    #root .tag.out { background: #ffffff; border: 2px solid #005B62; }
+    #root .ln { position: absolute; background: #008C91; }
+    #root .abs { position: absolute; }
+    #root .row { display: flex; align-items: center; }
+
+    #s07-left { left: 192px; top: 326px; width: 520px; height: 434px; }
+    #s07-left .cap { position: absolute; left: 28px; top: 22px; }
+    #s07-left .note { position: absolute; left: 28px; top: 60px; }
+    #s07-mach { position: absolute; left: 60px; top: 112px; width: 400px; height: 190px; color: #008C91; }
+    .s07-mini { position: absolute; left: 28px; width: 464px; height: 48px; display: flex; align-items: center; gap: 14px; font-size: 28px; color: #4A5759; }
+    .s07-mini .ic { width: 28px; height: 28px; color: #7A898C; }
+    .s07-mini i { flex: 1; height: 12px; border-radius: 6px; background: #E6ECED; }
+    #s07-ph { top: 312px; } #s07-pr { top: 366px; }
+    #s07-stamp { position: absolute; left: 40px; top: 168px; width: 440px; padding: 12px 16px; background: #fff; border: 3px solid #005B62; border-radius: 6px; text-align: center; }
+    #s07-stamp b { display: block; font-size: 28px; font-weight: 700; letter-spacing: 0.06em; color: #005B62; }
+    #s07-stamp span { display: block; font-size: 28px; color: #005B62; }
+    #s07-right { left: 752px; top: 326px; width: 976px; height: 434px; }
+    .s07-f { position: absolute; left: 26px; width: 924px; height: 88px; border-bottom: 2px solid #E6ECED; display: flex; align-items: center; gap: 20px; }
+    #s07-f1 { top: 14px; } #s07-f2 { top: 116px; } #s07-f3 { top: 218px; } #s07-f4 { top: 320px; border-bottom: none; }
+    .s07-f .h { width: 400px; }
+    .s07-bars { flex: 1; display: flex; flex-direction: column; gap: 10px; }
+    .s07-bars i { display: block; height: 12px; border-radius: 6px; background: #E6ECED; }
+    #s07-flow { position: absolute; left: 0; right: 0; top: 786px; display: flex; justify-content: center; align-items: center; gap: 18px; }
+    #s07-flow svg { width: 44px; height: 24px; color: #008C91; }
+  </style>
+  <div id="root" data-composition-id="s07" data-width="1920" data-height="1080">
+    <div class="stage" id="s07-stage">
+      <h1 class="title" id="s07-title"><span class="w">Industrial</span> <span class="w">Equipment</span> <span class="w">Matching</span> <span class="w">Platform</span></h1>
+      <div class="rule" id="s07-rule"></div>
+      <p class="headline" id="s07-headline">Structured Information for Better Decisions</p>
+
+      <div class="card" id="s07-left">
+        <div class="cap">Equipment Record</div>
+        <p class="note">Conceptual example</p>
+        <svg id="s07-mach" viewBox="0 0 400 190" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="40" y="40" width="190" height="110" rx="6" fill="#E4F2F1" />
+          <rect x="62" y="62" width="70" height="44" rx="4" />
+          <path d="M150 70 h56 M150 88 h56 M150 106 h36" />
+          <path d="M95 40 V20 h60 V40" />
+          <path d="M230 120 H372" />
+          <circle cx="250" cy="132" r="10" /><circle cx="290" cy="132" r="10" /><circle cx="330" cy="132" r="10" /><circle cx="366" cy="132" r="10" />
+          <path d="M28 150 H384 M60 150 V176 M210 150 V176 M350 150 V176" />
+        </svg>
+        <div class="s07-mini" id="s07-ph"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect width="18" height="18" x="3" y="3" rx="2" ry="2" /> <circle cx="9" cy="9" r="2" /> <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" /> </svg>Photograph<i></i></div>
+        <div class="s07-mini" id="s07-pr"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" /> <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" /> </svg>Price<i></i></div>
+        <div id="s07-stamp"><b>CONCEPTUAL CATALOG</b><span>Not actual inventory</span></div>
+      </div>
+
+      <div class="card" id="s07-right">
+        <div class="s07-f" id="s07-f1"><div class="tile sm"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /> <path d="M14 2v4a2 2 0 0 0 2 2h4" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /> </svg></div><p class="h">Equipment Profile</p><div class="s07-bars"><i style="width: 88%"></i><i style="width: 56%"></i></div></div>
+        <div class="s07-f" id="s07-f2"><div class="tile sm"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M15 12h-5" /> <path d="M15 8h-5" /> <path d="M19 17V5a2 2 0 0 0-2-2H4" /> <path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3" /> </svg></div><p class="h">Technical Documentation</p><div class="s07-bars"><i style="width: 74%"></i><i style="width: 62%"></i></div></div>
+        <div class="s07-f" id="s07-f3"><div class="tile sm"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M3 7V5a2 2 0 0 1 2-2h2" /> <path d="M17 3h2a2 2 0 0 1 2 2v2" /> <path d="M21 17v2a2 2 0 0 1-2 2h-2" /> <path d="M7 21H5a2 2 0 0 1-2-2v-2" /> <circle cx="12" cy="12" r="3" /> <path d="m16 16-1.9-1.9" /> </svg></div><p class="h">Inspection &amp; Condition</p><div class="s07-bars"><i style="width: 82%"></i><i style="width: 44%"></i></div></div>
+        <div class="s07-f" id="s07-f4"><div class="tile sm"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" /> <path d="M15 18H9" /> <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" /> <circle cx="17" cy="18" r="2" /> <circle cx="7" cy="18" r="2" /> </svg></div><p class="h">Relocation Requirements</p><div class="s07-bars"><i style="width: 68%"></i><i style="width: 50%"></i></div></div>
+      </div>
+
+      <div id="s07-flow">
+        <span class="tag out" id="s07-w1">Supplier Data</span>
+        <svg id="s07-x1" viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 H36 M28 4 L36 12 L28 20" /></svg>
+        <span class="tag out" id="s07-w2">Equipment Review</span>
+        <svg id="s07-x2" viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 H36 M28 4 L36 12 L28 20" /></svg>
+        <span class="tag out" id="s07-w3">Local Demand Matching</span>
+      </div>
+      <div class="pageno" id="s07-page">07</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Shared motion vocabulary (SPEC.md MOTION). `tl` is this scene's paused timeline.
+    const TEAL = "#008C91", LIGHT = "#E4F2F1", HAIR = "#D3DDDE", WHITE = "#FFFFFF";
+    const E = {
+      // text and blocks arrive by focusing in place: blur 8 -> 0, no translate
+      blurIn: (sel, t, d = 0.45) =>
+        tl.fromTo(sel, { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: d, ease: "expo.out" }, t),
+      // title words: 0.13 s each, 0.067 s apart
+      words: (sel, t) =>
+        tl.fromTo(sel, { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.13, stagger: 0.067, ease: "power4.out" }, t),
+      // lines and arrows draw
+      drawX: (sel, t, d = 0.6, origin = "left center") =>
+        tl.fromTo(sel, { scaleX: 0, transformOrigin: origin }, { scaleX: 1, duration: d, ease: "power2.inOut" }, t),
+      drawY: (sel, t, d = 0.45, origin = "center top") =>
+        tl.fromTo(sel, { scaleY: 0, transformOrigin: origin }, { scaleY: 1, duration: d, ease: "power2.inOut" }, t),
+      // SVG strokes draw (pathLength="1" on the element)
+      stroke: (sel, t, d = 0.7) =>
+        tl.fromTo(sel, { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: d, ease: "power2.inOut" }, t),
+      // cards open left to right
+      open: (sel, t, d = 0.5) =>
+        tl.fromTo(sel, { clipPath: "inset(0% 100% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: d, ease: "power3.out" }, t),
+      // tags, ticks and stamps land with a damped spring (scale only; opacity never overshoots)
+      land: (sel, t) => {
+        tl.fromTo(sel, { scale: 0.86 }, { scale: 1, duration: 0.4, ease: "back.out(1.5)" }, t);
+        tl.fromTo(sel, { opacity: 0 }, { opacity: 1, duration: 0.18, ease: "power2.out" }, t);
+      },
+      // focus: the named item goes teal, the rest step back
+      on: (sel, t) => tl.to(sel, { opacity: 1, borderColor: TEAL, backgroundColor: LIGHT, duration: 0.3, ease: "power2.inOut" }, t),
+      off: (sel, t, dimTo = 0.38) => tl.to(sel, { opacity: dimTo, borderColor: HAIR, backgroundColor: WHITE, duration: 0.3, ease: "power2.inOut" }, t),
+      rest: (sel, t) => tl.to(sel, { opacity: 1, borderColor: HAIR, backgroundColor: WHITE, duration: 0.4, ease: "power2.inOut" }, t),
+      dim: (sel, t, v = 0.38) => tl.to(sel, { opacity: v, duration: 0.3, ease: "power2.inOut" }, t),
+      full: (sel, t) => tl.to(sel, { opacity: 1, duration: 0.3, ease: "power2.inOut" }, t),
+      ink: (sel, t, c = "#005B62") => tl.to(sel, { color: c, duration: 0.35, ease: "power2.inOut" }, t),
+      // the scene leaves as one: blur out and fade, ending one frame before the cut
+      exit: (t) => tl.to("#s07-stage", { opacity: 0, filter: "blur(8px)", duration: 0.3, ease: "power3.in" }, t),
+      title: () => {
+        E.words("#s07-title .w", 0.25);
+        E.drawX("#s07-rule", 0.55, 0.5);
+        E.blurIn("#s07-page", 0.3, 0.4);
+      },
+    };
+    // focus one id from a list of already-visible ids
+    const focus = (ids, active, t) => ids.forEach((id) => (id === active ? E.on(id, t) : E.off(id, t)));
+
+    E.title();
+    E.blurIn("#s07-headline", 0.85);
+    // "...organizing industrial equipment information."
+    E.open("#s07-left", 4.098);
+    // "...business owners need more than a photograph and a price."
+    E.land("#s07-ph", 11.431);
+    E.land("#s07-pr", 12.306);
+    // "They need technical specifications, equipment condition, maintenance history..., installation and relocation."
+    E.open("#s07-right", 13.603);
+    E.dim("#s07-ph, #s07-pr", 13.603, 0.4);
+    const F = ["#s07-f1", "#s07-f2", "#s07-f3", "#s07-f4"];
+    tl.set(F.join(", "), { opacity: 0.22 }, 0);
+    E.full("#s07-f1", 14.103);
+    E.full("#s07-f3", 15.928);
+    E.full("#s07-f2", 17.328);
+    E.full("#s07-f4", 20.768);
+    // "...a digital equipment catalog that supports discussions between suppliers and potential buyers."
+    E.blurIn("#s07-w1", 23.164);
+    E.open("#s07-x1", 26.714, 0.3);
+    E.blurIn("#s07-w2", 26.914);
+    E.open("#s07-x2", 29.964, 0.3);
+    E.blurIn("#s07-w3", 30.164);
+    // "The interface shown here is a conceptual model, not a confirmed list..."
+    E.dim("#s07-mach", 34.475, 0.28);
+    E.land("#s07-stamp", 34.475);
+    // "Better information helps both sides..."
+    tl.to("#s07-right", { borderColor: TEAL, duration: 0.4, ease: "power2.inOut" }, 39.542);
+    E.exit(46.673);
+    window.__timelines["s07"] = tl;
+  </script>
+</template>

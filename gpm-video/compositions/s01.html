@@ -1,0 +1,156 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #ffffff; color: #1C2528; font-family: "Inter", sans-serif; overflow: hidden; }
+    #root * { box-sizing: border-box; margin: 0; padding: 0; }
+    #root .stage { position: absolute; inset: 0; }
+    #root .title { position: absolute; left: 192px; top: 146px; font-size: 60px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; white-space: nowrap; color: #1C2528; }
+    #root .title .w { display: inline-block; }
+    #root .rule { position: absolute; left: 192px; top: 228px; width: 96px; height: 6px; background: #008C91; }
+    #root .headline { position: absolute; left: 192px; top: 252px; font-size: 34px; font-weight: 400; line-height: 1.25; color: #005B62; white-space: nowrap; }
+    #root .pageno { position: absolute; left: 0; right: 0; top: 982px; text-align: center; font-size: 28px; font-weight: 400; color: #7A898C; }
+    #root .card { position: absolute; background: #ffffff; border: 2px solid #D3DDDE; border-radius: 10px; }
+    #root .card.hub { background: #005B62; border-color: #005B62; color: #ffffff; }
+    #root .ghost { position: absolute; border: 2px dashed #C3D0D1; border-radius: 10px; }
+    #root .tile { width: 72px; height: 72px; border-radius: 10px; background: #E4F2F1; color: #008C91; display: flex; align-items: center; justify-content: center; flex: none; }
+    #root .tile.sm { width: 56px; height: 56px; }
+    #root .tile.sm .ic { width: 32px; height: 32px; }
+    #root .hub .tile { background: rgba(255, 255, 255, 0.14); color: #ffffff; }
+    #root .ic { width: 40px; height: 40px; stroke-width: 1.8; }
+    #root .cap { font-size: 28px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #008C91; }
+    #root .num { font-size: 28px; font-weight: 700; color: #008C91; }
+    #root .h { font-size: 30px; font-weight: 700; line-height: 1.2; color: #1C2528; }
+    #root .hub .h, #root .hub .b, #root .hub .cap { color: #ffffff; }
+    #root .b { font-size: 28px; font-weight: 400; line-height: 1.3; color: #4A5759; }
+    #root .note { font-size: 28px; font-weight: 400; line-height: 1.3; color: #7A898C; }
+    #root .tag { display: inline-flex; align-items: center; gap: 10px; padding: 6px 16px; border-radius: 6px; background: #E4F2F1; color: #005B62; font-size: 28px; font-weight: 700; white-space: nowrap; }
+    #root .tag .ic { width: 28px; height: 28px; }
+    #root .tag.out { background: #ffffff; border: 2px solid #005B62; }
+    #root .ln { position: absolute; background: #008C91; }
+    #root .abs { position: absolute; }
+    #root .row { display: flex; align-items: center; }
+
+    #s01-title { position: absolute; left: 192px; top: 276px; font-size: 84px; font-weight: 700; letter-spacing: -0.025em; line-height: 1.06; color: #1C2528; }
+    #s01-title .w { display: inline-block; }
+    #s01-rule { top: 484px; }
+    #s01-headline { position: absolute; left: 192px; top: 514px; width: 700px; font-size: 36px; line-height: 1.28; color: #005B62; }
+    #s01-myth { position: absolute; left: 192px; top: 664px; font-size: 32px; color: #7A898C; white-space: nowrap; }
+    #s01-strike { position: absolute; left: -6px; right: -6px; top: 20px; height: 3px; background: #008C91; }
+    #s01-truth { position: absolute; left: 192px; top: 712px; font-size: 34px; font-weight: 700; color: #008C91; white-space: nowrap; }
+    #s01-keys { position: absolute; left: 192px; top: 804px; font-size: 28px; color: #4A5759; white-space: nowrap; }
+    #s01-keys b { color: #008C91; font-weight: 700; padding: 0 10px; }
+    .s01-node { left: 1104px; width: 624px; height: 244px; }
+    #s01-korea { top: 284px; }
+    #s01-ghana { top: 614px; }
+    .s01-node .cap { position: absolute; left: 32px; top: 22px; }
+    .s01-tags { position: absolute; left: 32px; top: 72px; display: flex; flex-direction: column; gap: 7px; align-items: flex-start; }
+    #s01-hub { position: absolute; left: 1336px; top: 542px; width: 160px; height: 60px; border-radius: 8px; background: #005B62; color: #fff; font-size: 28px; font-weight: 700; letter-spacing: 0.08em; display: flex; align-items: center; justify-content: center; }
+    #s01-l1 { left: 1414px; top: 528px; width: 4px; height: 14px; }
+    #s01-l2 { left: 1414px; top: 602px; width: 4px; height: 12px; }
+  </style>
+  <div id="root" data-composition-id="s01" data-width="1920" data-height="1080">
+    <div class="stage" id="s01-stage">
+      <h1 id="s01-title"><span class="w">Korea–Ghana</span><br /><span class="w">Industrial</span> <span class="w">Partnership</span></h1>
+      <div class="rule" id="s01-rule"></div>
+      <p id="s01-headline">Turning Industrial Assets into Manufacturing Opportunities</p>
+      <p id="s01-myth">Not simply selling machines<span id="s01-strike"></span></p>
+      <p id="s01-truth">Sustainable manufacturing opportunities, together</p>
+      <p id="s01-keys">Industrial Equipment<b>·</b>Technology Transfer<b>·</b>Local Manufacturing</p>
+
+      <div class="card s01-node" id="s01-korea">
+        <div class="cap">Korea</div>
+        <div class="s01-tags">
+          <span class="tag" id="s01-k1"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" /> <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" /> <path d="M12 2v2" /> <path d="M12 22v-2" /> <path d="m17 20.66-1-1.73" /> <path d="M11 10.27 7 3.34" /> <path d="m20.66 17-1.73-1" /> <path d="m3.34 7 1.73 1" /> <path d="M14 12h8" /> <path d="M2 12h2" /> <path d="m20.66 7-1.73 1" /> <path d="m3.34 17 1.73-1" /> <path d="m17 3.34-1 1.73" /> <path d="m11 13.73-4 6.93" /> </svg>Industrial equipment</span>
+          <span class="tag" id="s01-k2"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" /> <path d="M17 18h1" /> <path d="M12 18h1" /> <path d="M7 18h1" /> </svg>Manufacturing experience</span>
+          <span class="tag" id="s01-k3"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /> </svg>Technical expertise</span>
+        </div>
+      </div>
+      <div class="ln" id="s01-l1"></div>
+      <div id="s01-hub">GPM</div>
+      <div class="ln" id="s01-l2"></div>
+      <div class="card s01-node" id="s01-ghana">
+        <div class="cap">Ghana</div>
+        <div class="s01-tags">
+          <span class="tag" id="s01-g1"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /> </svg>Entrepreneurs</span>
+          <span class="tag" id="s01-g2"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /> <path d="M9 18h6" /> <path d="M10 22h4" /> </svg>Growing business ambitions</span>
+          <span class="tag" id="s01-g3"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" /> <path d="M17 18h1" /> <path d="M12 18h1" /> <path d="M7 18h1" /> </svg>Local manufacturing</span>
+        </div>
+      </div>
+      <div class="pageno" id="s01-page">01</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Shared motion vocabulary (SPEC.md MOTION). `tl` is this scene's paused timeline.
+    const TEAL = "#008C91", LIGHT = "#E4F2F1", HAIR = "#D3DDDE", WHITE = "#FFFFFF";
+    const E = {
+      // text and blocks arrive by focusing in place: blur 8 -> 0, no translate
+      blurIn: (sel, t, d = 0.45) =>
+        tl.fromTo(sel, { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: d, ease: "expo.out" }, t),
+      // title words: 0.13 s each, 0.067 s apart
+      words: (sel, t) =>
+        tl.fromTo(sel, { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.13, stagger: 0.067, ease: "power4.out" }, t),
+      // lines and arrows draw
+      drawX: (sel, t, d = 0.6, origin = "left center") =>
+        tl.fromTo(sel, { scaleX: 0, transformOrigin: origin }, { scaleX: 1, duration: d, ease: "power2.inOut" }, t),
+      drawY: (sel, t, d = 0.45, origin = "center top") =>
+        tl.fromTo(sel, { scaleY: 0, transformOrigin: origin }, { scaleY: 1, duration: d, ease: "power2.inOut" }, t),
+      // SVG strokes draw (pathLength="1" on the element)
+      stroke: (sel, t, d = 0.7) =>
+        tl.fromTo(sel, { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: d, ease: "power2.inOut" }, t),
+      // cards open left to right
+      open: (sel, t, d = 0.5) =>
+        tl.fromTo(sel, { clipPath: "inset(0% 100% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: d, ease: "power3.out" }, t),
+      // tags, ticks and stamps land with a damped spring (scale only; opacity never overshoots)
+      land: (sel, t) => {
+        tl.fromTo(sel, { scale: 0.86 }, { scale: 1, duration: 0.4, ease: "back.out(1.5)" }, t);
+        tl.fromTo(sel, { opacity: 0 }, { opacity: 1, duration: 0.18, ease: "power2.out" }, t);
+      },
+      // focus: the named item goes teal, the rest step back
+      on: (sel, t) => tl.to(sel, { opacity: 1, borderColor: TEAL, backgroundColor: LIGHT, duration: 0.3, ease: "power2.inOut" }, t),
+      off: (sel, t, dimTo = 0.38) => tl.to(sel, { opacity: dimTo, borderColor: HAIR, backgroundColor: WHITE, duration: 0.3, ease: "power2.inOut" }, t),
+      rest: (sel, t) => tl.to(sel, { opacity: 1, borderColor: HAIR, backgroundColor: WHITE, duration: 0.4, ease: "power2.inOut" }, t),
+      dim: (sel, t, v = 0.38) => tl.to(sel, { opacity: v, duration: 0.3, ease: "power2.inOut" }, t),
+      full: (sel, t) => tl.to(sel, { opacity: 1, duration: 0.3, ease: "power2.inOut" }, t),
+      ink: (sel, t, c = "#005B62") => tl.to(sel, { color: c, duration: 0.35, ease: "power2.inOut" }, t),
+      // the scene leaves as one: blur out and fade, ending one frame before the cut
+      exit: (t) => tl.to("#s01-stage", { opacity: 0, filter: "blur(8px)", duration: 0.3, ease: "power3.in" }, t),
+      title: () => {
+        E.words("#s01-title .w", 0.25);
+        E.drawX("#s01-rule", 0.55, 0.5);
+        E.blurIn("#s01-page", 0.3, 0.4);
+      },
+    };
+    // focus one id from a list of already-visible ids
+    const focus = (ids, active, t) => ids.forEach((id) => (id === active ? E.on(id, t) : E.off(id, t)));
+
+    // Poster frame: the title is on screen from frame 0; the rest builds as the voice names it.
+    E.drawX("#s01-rule", 0.2, 0.6);
+    E.blurIn("#s01-headline", 0.5, 0.6);
+    E.blurIn("#s01-keys", 1.0, 0.6);
+    E.blurIn("#s01-page", 0.2, 0.4);
+
+    // "...between Korea and Ghana."
+    E.open("#s01-korea", 13.913);
+    E.open("#s01-ghana", 14.863);
+    // "Korea has industrial equipment, manufacturing experience, and technical expertise."
+    E.land("#s01-k1", 16.293);
+    E.land("#s01-k2", 18.343);
+    E.land("#s01-k3", 20.368);
+    // "Ghana has entrepreneurs, growing business ambitions, and opportunities to develop local manufacturing."
+    E.land("#s01-g1", 23.059);
+    E.land("#s01-g2", 24.259);
+    E.land("#s01-g3", 27.084);
+    // "Global Partner Market aims to connect these capabilities..."
+    E.land("#s01-hub", 29.466);
+    E.drawY("#s01-l1", 31.216, 0.3);
+    E.drawY("#s01-l2", 31.416, 0.3);
+    tl.to("#s01-korea, #s01-ghana", { borderColor: TEAL, duration: 0.4, ease: "power2.inOut" }, 31.516);
+    // "Our goal is not simply to sell machines. It is to help create sustainable manufacturing opportunities together."
+    E.blurIn("#s01-myth", 36.016);
+    E.drawX("#s01-strike", 37.391, 0.45);
+    E.dim("#s01-myth", 37.891, 0.55);
+    E.blurIn("#s01-truth", 40.122);
+    E.exit(43.940);
+    window.__timelines["s01"] = tl;
+  </script>
+</template>

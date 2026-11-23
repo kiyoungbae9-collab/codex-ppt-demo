@@ -1,0 +1,80 @@
+<template>
+  <style>
+{{BASE_CSS}}
+    .s09-col { top: 286px; width: 460px; height: 400px; }
+    #s09-k { left: 192px; } #s09-g { left: 730px; } #s09-h { left: 1268px; }
+    .s09-col .cap { position: absolute; left: 28px; top: 24px; }
+    .s09-it { position: absolute; left: 28px; width: 404px; display: flex; align-items: center; gap: 16px; }
+    .s09-it .h { font-size: 30px; }
+    .s09-col .s09-it:nth-of-type(2) { top: 84px; } .s09-col .s09-it:nth-of-type(3) { top: 184px; } .s09-col .s09-it:nth-of-type(4) { top: 284px; }
+    .s09-ar { position: absolute; top: 470px; width: 78px; height: 32px; color: #008C91; }
+    #s09-a1 { left: 652px; } #s09-a2 { left: 1190px; }
+    #s09-band { position: absolute; left: 192px; top: 712px; width: 1536px; height: 96px; border-radius: 10px; background: #E4F2F1; display: flex; align-items: center; gap: 20px; padding: 0 26px; }
+    #s09-band .tile { background: #ffffff; }
+    #s09-band .h { font-size: 28px; }
+    #s09-band .b { color: #005B62; }
+    #s09-disc { position: absolute; left: 0; right: 0; top: 826px; text-align: center; }
+  </style>
+  <div id="root" data-composition-id="s09" data-width="1920" data-height="1080">
+    <div class="stage" id="s09-stage">
+      <h1 class="title" id="s09-title">{{TITLE}}</h1>
+      <div class="rule" id="s09-rule"></div>
+
+      <div class="card s09-col" id="s09-k">
+        <div class="cap">Korean Partners</div>
+        <div class="s09-it" id="s09-k1"><div class="tile sm">{{icon:cog}}</div><p class="h">Equipment &amp; technology</p></div>
+        <div class="s09-it" id="s09-k2"><div class="tile sm">{{icon:wrench}}</div><p class="h">Technical support</p></div>
+        <div class="s09-it" id="s09-k3"><div class="tile sm">{{icon:graduation-cap}}</div><p class="h">Training participation</p></div>
+      </div>
+      <svg class="s09-ar" id="s09-a1" viewBox="0 0 78 32" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 16 H68 M58 6 L68 16 L58 26 M20 6 L10 16 L20 26" /></svg>
+      <div class="card hub s09-col" id="s09-g">
+        <div class="cap">GPM</div>
+        <div class="s09-it" id="s09-g1"><div class="tile sm">{{icon:link}}</div><p class="h">Matching &amp; coordination</p></div>
+        <div class="s09-it" id="s09-g2"><div class="tile sm">{{icon:clipboard-check}}</div><p class="h">Project structuring</p></div>
+        <div class="s09-it" id="s09-g3"><div class="tile sm">{{icon:handshake}}</div><p class="h">Implementation support</p></div>
+      </div>
+      <svg class="s09-ar" id="s09-a2" viewBox="0 0 78 32" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 16 H68 M58 6 L68 16 L58 26 M20 6 L10 16 L20 26" /></svg>
+      <div class="card s09-col" id="s09-h">
+        <div class="cap">Ghanaian Partners</div>
+        <div class="s09-it" id="s09-h1"><div class="tile sm">{{icon:store}}</div><p class="h">Local market demand</p></div>
+        <div class="s09-it" id="s09-h2"><div class="tile sm">{{icon:factory}}</div><p class="h">Factory &amp; investment</p></div>
+        <div class="s09-it" id="s09-h3"><div class="tile sm">{{icon:users}}</div><p class="h">Local operations</p></div>
+      </div>
+      <div id="s09-band">
+        <div class="tile sm">{{icon:building-2}}</div>
+        <div><p class="h">Chambers of Commerce &amp; Relevant Institutions</p><p class="b">Business networking and partnership exploration</p></div>
+      </div>
+      <p class="note" id="s09-disc">Proposed roles — subject to project-specific agreements.</p>
+      <div class="pageno" id="s09-page">{{PAGE}}</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+{{HELPERS}}
+    E.title();
+    // "Korean partners may provide industrial equipment, technical documentation, engineering support, and training."
+    E.open("#s09-k", {{at:Korean partners}});
+    E.blurIn("#s09-k1", {{at:industrial equipment}});
+    E.blurIn("#s09-k2", {{at:technical documentation}});
+    E.blurIn("#s09-k3", {{at:and training}});
+    // "Ghanaian manufacturers and investors bring local market knowledge, project sites, business operations, and investment decisions."
+    E.open("#s09-h", {{at:Ghanaian manufacturers}});
+    E.blurIn("#s09-h1", {{at:local market knowledge}});
+    E.blurIn("#s09-h2", {{at:project sites}});
+    E.blurIn("#s09-h3", {{at:business operations}});
+    // "GPM aims to connect the parties and coordinate the early stages of project development."
+    E.open("#s09-g", {{at:GPM aims}});
+    E.open("#s09-a1", {{at:connect the parties}}, 0.35);
+    E.open("#s09-a2", {{at:connect the parties+0.2}}, 0.35);
+    E.blurIn("#s09-g1", {{at:connect the parties}});
+    E.blurIn("#s09-g2", {{at:coordinate the early stages}});
+    E.blurIn("#s09-g3", {{at:of project development}});
+    // "Chambers of Commerce and relevant institutions can also help..."
+    E.open("#s09-band", {{at:Chambers of Commerce}}, 0.6);
+    // "This is a proposed cooperation structure. Actual roles, contracts, and responsibilities must be agreed..."
+    E.blurIn("#s09-disc", {{at:This is a proposed}});
+    tl.to("#s09-disc", { color: "#005B62", duration: 0.35, ease: "power2.inOut" }, {{at:must be agreed}});
+    E.exit({{EXIT}});
+    window.__timelines["s09"] = tl;
+  </script>
+</template>

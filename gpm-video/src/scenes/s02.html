@@ -1,0 +1,69 @@
+<template>
+  <style>
+{{BASE_CSS}}
+    #s02-q { position: absolute; left: 192px; top: 258px; font-size: 46px; font-weight: 700; letter-spacing: -0.015em; color: #1C2528; white-space: nowrap; }
+    #s02-yb { color: #1C2528; }
+    #s02-ex { position: absolute; left: 192px; top: 340px; display: flex; gap: 14px; }
+    .s02-card { top: 420px; width: 440px; height: 232px; }
+    #s02-c1 { left: 192px; } #s02-c2 { left: 740px; } #s02-c3 { left: 1288px; }
+    .s02-card .tile { position: absolute; left: 28px; top: 26px; }
+    .s02-card .h { position: absolute; left: 28px; top: 96px; }
+    .s02-card .b { position: absolute; left: 28px; top: 140px; width: 384px; }
+    .s02-stub { top: 652px; width: 4px; height: 30px; }
+    #s02-v1 { left: 410px; } #s02-v2 { left: 958px; } #s02-v3 { left: 1506px; }
+    #s02-bar { left: 410px; top: 680px; width: 1100px; height: 4px; }
+    #s02-v4 { left: 958px; top: 682px; width: 4px; height: 26px; }
+    #s02-res { position: absolute; left: 540px; top: 708px; width: 840px; height: 80px; border-radius: 10px; background: #005B62; color: #fff; display: flex; align-items: center; justify-content: center; gap: 18px; font-size: 30px; font-weight: 700; letter-spacing: 0.06em; }
+    #s02-res .ic { width: 36px; height: 36px; }
+    #s02-foot { position: absolute; left: 0; right: 0; top: 808px; text-align: center; }
+  </style>
+  <div id="root" data-composition-id="s02" data-width="1920" data-height="1080">
+    <div class="stage" id="s02-stage">
+      <h1 class="title" id="s02-title">{{TITLE}}</h1>
+      <div class="rule" id="s02-rule"></div>
+      <p id="s02-q">What Could <span id="s02-yb">Your Business</span> Manufacture in Ghana?</p>
+      <div id="s02-ex">
+        <span class="tag" id="s02-e1">Hygiene products</span>
+        <span class="tag" id="s02-e2">Pharmaceutical manufacturing</span>
+        <span class="tag" id="s02-e3">Plastic products</span>
+        <span class="tag" id="s02-e4">Packaging</span>
+      </div>
+      <div class="card s02-card" id="s02-c1"><div class="tile sm">{{icon:cog}}</div><p class="h">Equipment</p><p class="b">Korean industrial assets</p></div>
+      <div class="card s02-card" id="s02-c2"><div class="tile sm">{{icon:store}}</div><p class="h">Local Demand</p><p class="b">Ghanaian business opportunities</p></div>
+      <div class="card s02-card" id="s02-c3"><div class="tile sm">{{icon:hard-hat}}</div><p class="h">Technical Capability</p><p class="b">Engineering and workforce skills</p></div>
+      <div class="ln s02-stub" id="s02-v1"></div><div class="ln s02-stub" id="s02-v2"></div><div class="ln s02-stub" id="s02-v3"></div>
+      <div class="ln" id="s02-bar"></div>
+      <div class="ln" id="s02-v4"></div>
+      <div id="s02-res">{{icon:factory}}POTENTIAL MANUFACTURING PROJECT</div>
+      <p class="note" id="s02-foot">The opportunity begins when these three elements come together.</p>
+      <div class="pageno" id="s02-page">{{PAGE}}</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+{{HELPERS}}
+    E.title();
+    // "What product would you like to manufacture in Ghana...?"
+    E.blurIn("#s02-q", {{at:What product}});
+    // "...hygiene products. For others, pharmaceutical manufacturing, plastic products, or packaging."
+    E.land("#s02-e1", {{at:hygiene products}});
+    E.land("#s02-e2", {{at:pharmaceutical manufacturing}});
+    E.land("#s02-e3", {{at:plastic products}});
+    E.land("#s02-e4", {{at:or packaging+0.15}});
+    // "...requires more than buying equipment. You need market demand, the right technology, trained people..."
+    E.dim("#s02-ex", {{at:Starting a manufacturing project}}, 0.4);
+    E.open("#s02-c1", {{at:buying equipment}});
+    E.open("#s02-c2", {{at:market demand}});
+    E.open("#s02-c3", {{at:the right technology}});
+    // "...connect Korean industrial resources with Ghanaian entrepreneurs..."
+    E.drawY("#s02-v1, #s02-v2, #s02-v3", {{at:connect Korean industrial}}, 0.35);
+    E.drawX("#s02-bar", {{at:connect Korean industrial+0.3}}, 0.5, "center center");
+    E.drawY("#s02-v4", {{at:connect Korean industrial+0.75}}, 0.25);
+    E.open("#s02-res", {{at:Ghanaian entrepreneurs}}, 0.6);
+    E.blurIn("#s02-foot", {{at:who already understand}});
+    // "The starting point is your business idea."
+    E.ink("#s02-yb", {{at:your business idea}}, TEAL);
+    E.exit({{EXIT}});
+    window.__timelines["s02"] = tl;
+  </script>
+</template>

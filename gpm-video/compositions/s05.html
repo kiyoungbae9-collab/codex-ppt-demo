@@ -1,0 +1,150 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #ffffff; color: #1C2528; font-family: "Inter", sans-serif; overflow: hidden; }
+    #root * { box-sizing: border-box; margin: 0; padding: 0; }
+    #root .stage { position: absolute; inset: 0; }
+    #root .title { position: absolute; left: 192px; top: 146px; font-size: 60px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; white-space: nowrap; color: #1C2528; }
+    #root .title .w { display: inline-block; }
+    #root .rule { position: absolute; left: 192px; top: 228px; width: 96px; height: 6px; background: #008C91; }
+    #root .headline { position: absolute; left: 192px; top: 252px; font-size: 34px; font-weight: 400; line-height: 1.25; color: #005B62; white-space: nowrap; }
+    #root .pageno { position: absolute; left: 0; right: 0; top: 982px; text-align: center; font-size: 28px; font-weight: 400; color: #7A898C; }
+    #root .card { position: absolute; background: #ffffff; border: 2px solid #D3DDDE; border-radius: 10px; }
+    #root .card.hub { background: #005B62; border-color: #005B62; color: #ffffff; }
+    #root .ghost { position: absolute; border: 2px dashed #C3D0D1; border-radius: 10px; }
+    #root .tile { width: 72px; height: 72px; border-radius: 10px; background: #E4F2F1; color: #008C91; display: flex; align-items: center; justify-content: center; flex: none; }
+    #root .tile.sm { width: 56px; height: 56px; }
+    #root .tile.sm .ic { width: 32px; height: 32px; }
+    #root .hub .tile { background: rgba(255, 255, 255, 0.14); color: #ffffff; }
+    #root .ic { width: 40px; height: 40px; stroke-width: 1.8; }
+    #root .cap { font-size: 28px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #008C91; }
+    #root .num { font-size: 28px; font-weight: 700; color: #008C91; }
+    #root .h { font-size: 30px; font-weight: 700; line-height: 1.2; color: #1C2528; }
+    #root .hub .h, #root .hub .b, #root .hub .cap { color: #ffffff; }
+    #root .b { font-size: 28px; font-weight: 400; line-height: 1.3; color: #4A5759; }
+    #root .note { font-size: 28px; font-weight: 400; line-height: 1.3; color: #7A898C; }
+    #root .tag { display: inline-flex; align-items: center; gap: 10px; padding: 6px 16px; border-radius: 6px; background: #E4F2F1; color: #005B62; font-size: 28px; font-weight: 700; white-space: nowrap; }
+    #root .tag .ic { width: 28px; height: 28px; }
+    #root .tag.out { background: #ffffff; border: 2px solid #005B62; }
+    #root .ln { position: absolute; background: #008C91; }
+    #root .abs { position: absolute; }
+    #root .row { display: flex; align-items: center; }
+
+    #s05-eq { position: absolute; left: 192px; top: 252px; font-size: 34px; font-weight: 700; color: #C5CFD0; white-space: nowrap; }
+    #s05-eq .op { color: #C5CFD0; padding: 0 12px; font-weight: 400; }
+    .s05-blk, .s05-gh { top: 330px; width: 348px; height: 226px; }
+    #s05-b1, #s05-g1 { left: 192px; } #s05-b2, #s05-g2 { left: 588px; } #s05-b3, #s05-g3 { left: 984px; } #s05-b4, #s05-g4 { left: 1380px; }
+    .s05-blk .num { position: absolute; left: 28px; top: 26px; }
+    .s05-blk .tile { position: absolute; right: 28px; top: 26px; }
+    .s05-blk .h { position: absolute; left: 28px; top: 126px; width: 290px; }
+    .s05-seg { top: 584px; height: 4px; }
+    #s05-l1 { left: 366px; width: 396px; } #s05-l2 { left: 762px; width: 396px; } #s05-l3 { left: 1158px; width: 396px; }
+    .s05-dot { position: absolute; top: 576px; width: 20px; height: 20px; border-radius: 50%; background: #008C91; }
+    #s05-p1 { left: 356px; } #s05-p2 { left: 752px; } #s05-p3 { left: 1148px; } #s05-p4 { left: 1544px; }
+    #s05-needs { position: absolute; left: 192px; top: 626px; display: flex; align-items: center; gap: 12px; }
+    #s05-needs .note { margin-right: 6px; }
+    #s05-m1 { position: absolute; left: 192px; top: 722px; font-size: 34px; color: #1C2528; white-space: nowrap; }
+    #s05-m1 b { color: #008C91; font-weight: 700; }
+    #s05-m2 { position: absolute; left: 192px; top: 770px; font-size: 34px; color: #7A898C; white-space: nowrap; }
+  </style>
+  <div id="root" data-composition-id="s05" data-width="1920" data-height="1080">
+    <div class="stage" id="s05-stage">
+      <h1 class="title" id="s05-title"><span class="w">Beyond</span> <span class="w">Equipment</span> <span class="w">Supply</span></h1>
+      <div class="rule" id="s05-rule"></div>
+      <p id="s05-eq"><span id="s05-e1">Equipment</span><span class="op">+</span><span id="s05-e2">Engineering</span><span class="op">+</span><span id="s05-e3">Training</span><span class="op">+</span><span id="s05-e4">Operational Readiness</span></p>
+
+      <div class="ghost s05-gh" id="s05-g2"></div><div class="ghost s05-gh" id="s05-g3"></div><div class="ghost s05-gh" id="s05-g4"></div>
+      <div class="card s05-blk" id="s05-b1"><div class="num">1</div><div class="tile"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" /> <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" /> <path d="M12 2v2" /> <path d="M12 22v-2" /> <path d="m17 20.66-1-1.73" /> <path d="M11 10.27 7 3.34" /> <path d="m20.66 17-1.73-1" /> <path d="m3.34 7 1.73 1" /> <path d="M14 12h8" /> <path d="M2 12h2" /> <path d="m20.66 7-1.73 1" /> <path d="m3.34 17 1.73-1" /> <path d="m17 3.34-1 1.73" /> <path d="m11 13.73-4 6.93" /> </svg></div><p class="h">Equipment Sourcing</p></div>
+      <div class="card s05-blk" id="s05-b2"><div class="num">2</div><div class="tile"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /> </svg></div><p class="h">Engineering &amp; Installation</p></div>
+      <div class="card s05-blk" id="s05-b3"><div class="num">3</div><div class="tile"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /> <path d="M22 10v6" /> <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /> </svg></div><p class="h">Workforce Training</p></div>
+      <div class="card s05-blk" id="s05-b4"><div class="num">4</div><div class="tile"><svg class="ic" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <circle cx="12" cy="12" r="10" /> <path d="m9 12 2 2 4-4" /> </svg></div><p class="h">Operational Readiness</p></div>
+      <div class="ln s05-seg" id="s05-l1"></div><div class="ln s05-seg" id="s05-l2"></div><div class="ln s05-seg" id="s05-l3"></div>
+      <div class="s05-dot" id="s05-p1"></div><div class="s05-dot" id="s05-p2"></div><div class="s05-dot" id="s05-p3"></div><div class="s05-dot" id="s05-p4"></div>
+
+      <div id="s05-needs">
+        <span class="note" id="s05-nl">A business also needs:</span>
+        <span class="tag" id="s05-n1">Installation</span>
+        <span class="tag" id="s05-n2">Utilities</span>
+        <span class="tag" id="s05-n3">Operating procedures</span>
+        <span class="tag" id="s05-n4">Quality control</span>
+        <span class="tag" id="s05-n5">Maintenance</span>
+      </div>
+      <p id="s05-m1">The objective is a <b>viable local manufacturing operation</b>,</p>
+      <p id="s05-m2">not merely an equipment shipment.</p>
+      <div class="pageno" id="s05-page">05</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Shared motion vocabulary (SPEC.md MOTION). `tl` is this scene's paused timeline.
+    const TEAL = "#008C91", LIGHT = "#E4F2F1", HAIR = "#D3DDDE", WHITE = "#FFFFFF";
+    const E = {
+      // text and blocks arrive by focusing in place: blur 8 -> 0, no translate
+      blurIn: (sel, t, d = 0.45) =>
+        tl.fromTo(sel, { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: d, ease: "expo.out" }, t),
+      // title words: 0.13 s each, 0.067 s apart
+      words: (sel, t) =>
+        tl.fromTo(sel, { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.13, stagger: 0.067, ease: "power4.out" }, t),
+      // lines and arrows draw
+      drawX: (sel, t, d = 0.6, origin = "left center") =>
+        tl.fromTo(sel, { scaleX: 0, transformOrigin: origin }, { scaleX: 1, duration: d, ease: "power2.inOut" }, t),
+      drawY: (sel, t, d = 0.45, origin = "center top") =>
+        tl.fromTo(sel, { scaleY: 0, transformOrigin: origin }, { scaleY: 1, duration: d, ease: "power2.inOut" }, t),
+      // SVG strokes draw (pathLength="1" on the element)
+      stroke: (sel, t, d = 0.7) =>
+        tl.fromTo(sel, { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: d, ease: "power2.inOut" }, t),
+      // cards open left to right
+      open: (sel, t, d = 0.5) =>
+        tl.fromTo(sel, { clipPath: "inset(0% 100% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: d, ease: "power3.out" }, t),
+      // tags, ticks and stamps land with a damped spring (scale only; opacity never overshoots)
+      land: (sel, t) => {
+        tl.fromTo(sel, { scale: 0.86 }, { scale: 1, duration: 0.4, ease: "back.out(1.5)" }, t);
+        tl.fromTo(sel, { opacity: 0 }, { opacity: 1, duration: 0.18, ease: "power2.out" }, t);
+      },
+      // focus: the named item goes teal, the rest step back
+      on: (sel, t) => tl.to(sel, { opacity: 1, borderColor: TEAL, backgroundColor: LIGHT, duration: 0.3, ease: "power2.inOut" }, t),
+      off: (sel, t, dimTo = 0.38) => tl.to(sel, { opacity: dimTo, borderColor: HAIR, backgroundColor: WHITE, duration: 0.3, ease: "power2.inOut" }, t),
+      rest: (sel, t) => tl.to(sel, { opacity: 1, borderColor: HAIR, backgroundColor: WHITE, duration: 0.4, ease: "power2.inOut" }, t),
+      dim: (sel, t, v = 0.38) => tl.to(sel, { opacity: v, duration: 0.3, ease: "power2.inOut" }, t),
+      full: (sel, t) => tl.to(sel, { opacity: 1, duration: 0.3, ease: "power2.inOut" }, t),
+      ink: (sel, t, c = "#005B62") => tl.to(sel, { color: c, duration: 0.35, ease: "power2.inOut" }, t),
+      // the scene leaves as one: blur out and fade, ending one frame before the cut
+      exit: (t) => tl.to("#s05-stage", { opacity: 0, filter: "blur(8px)", duration: 0.3, ease: "power3.in" }, t),
+      title: () => {
+        E.words("#s05-title .w", 0.25);
+        E.drawX("#s05-rule", 0.55, 0.5);
+        E.blurIn("#s05-page", 0.3, 0.4);
+      },
+    };
+    // focus one id from a list of already-visible ids
+    const focus = (ids, active, t) => ids.forEach((id) => (id === active ? E.on(id, t) : E.off(id, t)));
+
+    E.title();
+    E.blurIn("#s05-eq", 0.85);
+    // "Purchasing a machine is only one part of starting a manufacturing business."
+    E.open("#s05-b1", 1.276);
+    E.land("#s05-p1", 1.576);
+    E.ink("#s05-e1", 1.276);
+    E.blurIn("#s05-g2, #s05-g3, #s05-g4", 2.776, 0.6);
+    // "A company also needs to understand installation requirements, utilities, operating procedures, quality control, and maintenance."
+    E.blurIn("#s05-nl", 6.205);
+    E.land("#s05-n1", 8.330);
+    E.land("#s05-n2", 10.255);
+    E.land("#s05-n3", 11.380);
+    E.land("#s05-n4", 12.855);
+    E.land("#s05-n5", 13.905);
+    // "Our proposed model connects equipment sourcing with engineering review and practical workforce training."
+    E.open("#s05-b2", 18.219); E.drawX("#s05-l1", 17.919, 0.4); E.land("#s05-p2", 18.319); E.ink("#s05-e2", 18.219);
+    E.open("#s05-b3", 20.344); E.drawX("#s05-l2", 20.044, 0.4); E.land("#s05-p3", 20.444); E.ink("#s05-e3", 20.344);
+    // "...Korean specialists and local technical partners may support..."
+    tl.to("#s05-b2, #s05-b3", { borderColor: TEAL, backgroundColor: LIGHT, duration: 0.3, ease: "power2.inOut" }, 23.555);
+    // "...to help a local business move toward an operational manufacturing facility..."
+    E.open("#s05-b4", 36.649); E.drawX("#s05-l3", 36.349, 0.4); E.land("#s05-p4", 36.749); E.ink("#s05-e4", 36.649);
+    E.rest("#s05-b2, #s05-b3", 36.649);
+    tl.to("#s05-eq .op", { color: "#7A898C", duration: 0.35, ease: "power2.inOut" }, 36.649);
+    E.dim("#s05-needs", 31.924, 0.4);
+    E.blurIn("#s05-m1", 31.924);
+    E.blurIn("#s05-m2", 39.179);
+    E.exit(43.740);
+    window.__timelines["s05"] = tl;
+  </script>
+</template>

@@ -1,0 +1,75 @@
+<template>
+  <style>
+{{BASE_CSS}}
+    #s08-myth { position: absolute; left: 192px; top: 322px; display: flex; align-items: center; gap: 18px; }
+    #s08-ne { font-size: 40px; font-weight: 700; color: #7A898C; }
+    .s08-hd { position: absolute; top: 404px; }
+    #s08-hl { left: 192px; } #s08-hr { left: 975px; }
+    .s08-cell { width: 753px; height: 100px; }
+    #s08-m1 { left: 192px; top: 452px; } #s08-m2 { left: 192px; top: 568px; } #s08-m3 { left: 192px; top: 684px; }
+    #s08-t1 { left: 975px; top: 452px; } #s08-t2 { left: 975px; top: 568px; } #s08-t3 { left: 975px; top: 684px; }
+    .s08-cell .tile { position: absolute; left: 22px; top: 20px; }
+    .s08-cell .h { position: absolute; left: 98px; top: 32px; }
+    #s08-flag { position: absolute; right: 22px; top: 25px; }
+    #s08-ev { position: absolute; left: 0; right: 0; top: 806px; display: flex; justify-content: center; align-items: center; gap: 14px; font-size: 30px; font-weight: 700; color: #005B62; }
+    #s08-ev .ic { width: 34px; height: 34px; }
+  </style>
+  <div id="root" data-composition-id="s08" data-width="1920" data-height="1080">
+    <div class="stage" id="s08-stage">
+      <h1 class="title" id="s08-title">{{TITLE}}</h1>
+      <div class="rule" id="s08-rule"></div>
+      <p class="headline" id="s08-headline">Six Areas to Review Before Making a Commitment</p>
+
+      <div id="s08-myth">
+        <span class="tag" id="s08-y1">{{icon:check}}Technically functional</span>
+        <span id="s08-ne">≠</span>
+        <span class="tag out" id="s08-y2">Suitable for the local factory, materials &amp; market</span>
+      </div>
+      <div class="cap s08-hd" id="s08-hl">Market &amp; Business</div>
+      <div class="cap s08-hd" id="s08-hr">Technical &amp; Operational</div>
+      <div class="card s08-cell" id="s08-m1"><div class="tile sm">{{icon:store}}</div><p class="h">Market Demand</p></div>
+      <div class="card s08-cell" id="s08-m2"><div class="tile sm">{{icon:wallet}}</div><p class="h">Capital &amp; Operating Costs</p></div>
+      <div class="card s08-cell" id="s08-m3"><div class="tile sm">{{icon:scroll-text}}</div><p class="h">Permits &amp; Regulations</p><span class="tag out" id="s08-flag">Key for pharma</span></div>
+      <div class="card s08-cell" id="s08-t1"><div class="tile sm">{{icon:cog}}</div><p class="h">Equipment Suitability</p></div>
+      <div class="card s08-cell" id="s08-t2"><div class="tile sm">{{icon:building-2}}</div><p class="h">Factory Infrastructure</p></div>
+      <div class="card s08-cell" id="s08-t3"><div class="tile sm">{{icon:users}}</div><p class="h">Workforce &amp; Technical Skills</p></div>
+      <p id="s08-ev">{{icon:badge-check}}Evidence-Based Review Before Major Investment Decisions</p>
+      <div class="pageno" id="s08-page">{{PAGE}}</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+{{HELPERS}}
+    E.title();
+    E.blurIn("#s08-headline", 0.85);
+    // "A machine may be technically functional but unsuitable for the local factory, raw materials, ... or market conditions."
+    E.land("#s08-y1", {{at:technically functional}});
+    E.blurIn("#s08-ne", {{at:but unsuitable}}, 0.3);
+    E.land("#s08-y2", {{at:but unsuitable+0.15}});
+    // "That is why we propose reviewing six essential areas ...: market demand, equipment suitability, ..."
+    E.dim("#s08-myth", {{at:That is why}}, 0.4);
+    E.blurIn("#s08-hl, #s08-hr", {{at:six essential areas}});
+    const order = [
+      ["#s08-m1", {{at:market demand}}],
+      ["#s08-t1", {{at:equipment suitability}}],
+      ["#s08-m2", {{at:investment and operating costs}}],
+      ["#s08-t2", {{at:factory infrastructure}}],
+      ["#s08-t3", {{at:workforce capability}}],
+      ["#s08-m3", {{at:regulatory requirements}}],
+    ];
+    order.forEach(([id, t], i) => {
+      E.open(id, t, 0.45);
+      if (i > 0) E.rest(order[i - 1][0], t);
+      tl.to(id, { borderColor: TEAL, backgroundColor: LIGHT, duration: 0.3, ease: "power2.inOut" }, t + 0.05);
+    });
+    E.rest("#s08-m3", {{at:For pharmaceutical projects-0.2}});
+    // "For pharmaceutical projects, quality and licensing requirements are particularly important."
+    tl.to("#s08-m3", { borderColor: TEAL, backgroundColor: LIGHT, duration: 0.3, ease: "power2.inOut" }, {{at:For pharmaceutical projects}});
+    E.land("#s08-flag", {{at:quality and licensing}});
+    // "We do not want to promise an investment return without reliable evidence."
+    E.rest("#s08-m3", {{at:We do not want}});
+    E.blurIn("#s08-ev", {{at:reliable evidence}});
+    E.exit({{EXIT}});
+    window.__timelines["s08"] = tl;
+  </script>
+</template>

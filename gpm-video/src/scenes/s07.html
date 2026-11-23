@@ -1,0 +1,97 @@
+<template>
+  <style>
+{{BASE_CSS}}
+    #s07-left { left: 192px; top: 326px; width: 520px; height: 434px; }
+    #s07-left .cap { position: absolute; left: 28px; top: 22px; }
+    #s07-left .note { position: absolute; left: 28px; top: 60px; }
+    #s07-mach { position: absolute; left: 60px; top: 112px; width: 400px; height: 190px; color: #008C91; }
+    .s07-mini { position: absolute; left: 28px; width: 464px; height: 48px; display: flex; align-items: center; gap: 14px; font-size: 28px; color: #4A5759; }
+    .s07-mini .ic { width: 28px; height: 28px; color: #7A898C; }
+    .s07-mini i { flex: 1; height: 12px; border-radius: 6px; background: #E6ECED; }
+    #s07-ph { top: 312px; } #s07-pr { top: 366px; }
+    #s07-stamp { position: absolute; left: 40px; top: 168px; width: 440px; padding: 12px 16px; background: #fff; border: 3px solid #005B62; border-radius: 6px; text-align: center; }
+    #s07-stamp b { display: block; font-size: 28px; font-weight: 700; letter-spacing: 0.06em; color: #005B62; }
+    #s07-stamp span { display: block; font-size: 28px; color: #005B62; }
+    #s07-right { left: 752px; top: 326px; width: 976px; height: 434px; }
+    .s07-f { position: absolute; left: 26px; width: 924px; height: 88px; border-bottom: 2px solid #E6ECED; display: flex; align-items: center; gap: 20px; }
+    #s07-f1 { top: 14px; } #s07-f2 { top: 116px; } #s07-f3 { top: 218px; } #s07-f4 { top: 320px; border-bottom: none; }
+    .s07-f .h { width: 400px; }
+    .s07-bars { flex: 1; display: flex; flex-direction: column; gap: 10px; }
+    .s07-bars i { display: block; height: 12px; border-radius: 6px; background: #E6ECED; }
+    #s07-flow { position: absolute; left: 0; right: 0; top: 786px; display: flex; justify-content: center; align-items: center; gap: 18px; }
+    #s07-flow svg { width: 44px; height: 24px; color: #008C91; }
+  </style>
+  <div id="root" data-composition-id="s07" data-width="1920" data-height="1080">
+    <div class="stage" id="s07-stage">
+      <h1 class="title" id="s07-title">{{TITLE}}</h1>
+      <div class="rule" id="s07-rule"></div>
+      <p class="headline" id="s07-headline">Structured Information for Better Decisions</p>
+
+      <div class="card" id="s07-left">
+        <div class="cap">Equipment Record</div>
+        <p class="note">Conceptual example</p>
+        <svg id="s07-mach" viewBox="0 0 400 190" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="40" y="40" width="190" height="110" rx="6" fill="#E4F2F1" />
+          <rect x="62" y="62" width="70" height="44" rx="4" />
+          <path d="M150 70 h56 M150 88 h56 M150 106 h36" />
+          <path d="M95 40 V20 h60 V40" />
+          <path d="M230 120 H372" />
+          <circle cx="250" cy="132" r="10" /><circle cx="290" cy="132" r="10" /><circle cx="330" cy="132" r="10" /><circle cx="366" cy="132" r="10" />
+          <path d="M28 150 H384 M60 150 V176 M210 150 V176 M350 150 V176" />
+        </svg>
+        <div class="s07-mini" id="s07-ph">{{icon:image}}Photograph<i></i></div>
+        <div class="s07-mini" id="s07-pr">{{icon:tag}}Price<i></i></div>
+        <div id="s07-stamp"><b>CONCEPTUAL CATALOG</b><span>Not actual inventory</span></div>
+      </div>
+
+      <div class="card" id="s07-right">
+        <div class="s07-f" id="s07-f1"><div class="tile sm">{{icon:file-text}}</div><p class="h">Equipment Profile</p><div class="s07-bars"><i style="width: 88%"></i><i style="width: 56%"></i></div></div>
+        <div class="s07-f" id="s07-f2"><div class="tile sm">{{icon:scroll-text}}</div><p class="h">Technical Documentation</p><div class="s07-bars"><i style="width: 74%"></i><i style="width: 62%"></i></div></div>
+        <div class="s07-f" id="s07-f3"><div class="tile sm">{{icon:scan-search}}</div><p class="h">Inspection &amp; Condition</p><div class="s07-bars"><i style="width: 82%"></i><i style="width: 44%"></i></div></div>
+        <div class="s07-f" id="s07-f4"><div class="tile sm">{{icon:truck}}</div><p class="h">Relocation Requirements</p><div class="s07-bars"><i style="width: 68%"></i><i style="width: 50%"></i></div></div>
+      </div>
+
+      <div id="s07-flow">
+        <span class="tag out" id="s07-w1">Supplier Data</span>
+        <svg id="s07-x1" viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 H36 M28 4 L36 12 L28 20" /></svg>
+        <span class="tag out" id="s07-w2">Equipment Review</span>
+        <svg id="s07-x2" viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 12 H36 M28 4 L36 12 L28 20" /></svg>
+        <span class="tag out" id="s07-w3">Local Demand Matching</span>
+      </div>
+      <div class="pageno" id="s07-page">{{PAGE}}</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+{{HELPERS}}
+    E.title();
+    E.blurIn("#s07-headline", 0.85);
+    // "...organizing industrial equipment information."
+    E.open("#s07-left", {{at:organizing industrial equipment}});
+    // "...business owners need more than a photograph and a price."
+    E.land("#s07-ph", {{at:a photograph}});
+    E.land("#s07-pr", {{at:and a price}});
+    // "They need technical specifications, equipment condition, maintenance history..., installation and relocation."
+    E.open("#s07-right", {{at:They need technical}});
+    E.dim("#s07-ph, #s07-pr", {{at:They need technical}}, 0.4);
+    const F = ["#s07-f1", "#s07-f2", "#s07-f3", "#s07-f4"];
+    tl.set(F.join(", "), { opacity: 0.22 }, 0);
+    E.full("#s07-f1", {{at:technical specifications}});
+    E.full("#s07-f3", {{at:equipment condition}});
+    E.full("#s07-f2", {{at:maintenance history}});
+    E.full("#s07-f4", {{at:installation and relocation}});
+    // "...a digital equipment catalog that supports discussions between suppliers and potential buyers."
+    E.blurIn("#s07-w1", {{at:GPM proposes}});
+    E.open("#s07-x1", {{at:digital equipment catalog}}, 0.3);
+    E.blurIn("#s07-w2", {{at:digital equipment catalog+0.2}});
+    E.open("#s07-x2", {{at:between suppliers}}, 0.3);
+    E.blurIn("#s07-w3", {{at:between suppliers+0.2}});
+    // "The interface shown here is a conceptual model, not a confirmed list..."
+    E.dim("#s07-mach", {{at:conceptual model}}, 0.28);
+    E.land("#s07-stamp", {{at:conceptual model}});
+    // "Better information helps both sides..."
+    tl.to("#s07-right", { borderColor: TEAL, duration: 0.4, ease: "power2.inOut" }, {{at:Better information}});
+    E.exit({{EXIT}});
+    window.__timelines["s07"] = tl;
+  </script>
+</template>

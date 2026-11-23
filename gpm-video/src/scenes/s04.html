@@ -1,0 +1,90 @@
+<template>
+  <style>
+{{BASE_CSS}}
+    .s04-card { width: 753px; height: 252px; }
+    #s04-c1 { left: 192px; top: 284px; } #s04-c2 { left: 975px; top: 284px; }
+    #s04-c3 { left: 192px; top: 562px; } #s04-c4 { left: 975px; top: 562px; }
+    .s04-card .num { position: absolute; left: 34px; top: 28px; }
+    .s04-card .tile { position: absolute; right: 34px; top: 28px; }
+    .s04-card .h { position: absolute; left: 34px; top: 76px; text-transform: uppercase; letter-spacing: 0.02em; color: #005B62; }
+    .s04-card .b { position: absolute; left: 34px; top: 126px; }
+    .s04-row { position: absolute; left: 34px; display: flex; gap: 12px; }
+    #s04-flag { position: absolute; left: 34px; top: 180px; }
+    #s04-hy { top: 124px; }
+    #s04-sep { position: absolute; left: 34px; top: 190px; }
+    #s04-note { position: absolute; left: 0; right: 0; top: 832px; text-align: center; }
+  </style>
+  <div id="root" data-composition-id="s04" data-width="1920" data-height="1080">
+    <div class="stage" id="s04-stage">
+      <h1 class="title" id="s04-title">{{TITLE}}</h1>
+      <div class="rule" id="s04-rule"></div>
+
+      <div class="card s04-card" id="s04-c1">
+        <div class="num">01</div>
+        <div class="tile" id="s04-i1">{{icon:flask-conical}}</div>
+        <p class="h" id="s04-h1">Pharmaceutical Equipment</p>
+        <p class="b" id="s04-b1">Sterile vial filling &amp; capping</p>
+        <span class="tag out" id="s04-flag">{{icon:shield-check}}Quality &amp; regulatory review required</span>
+      </div>
+      <div class="card s04-card" id="s04-c2">
+        <div class="num">02</div>
+        <div class="tile" id="s04-i2">{{icon:package}}</div>
+        <p class="h" id="s04-h2">Hygiene Products</p>
+        <div class="s04-row" id="s04-hy">
+          <span class="tag" id="s04-t1">Baby diapers</span>
+          <span class="tag" id="s04-t2">Adult diapers</span>
+          <span class="tag" id="s04-t3">Sanitary pads</span>
+        </div>
+        <p class="note" id="s04-sep">Separate equipment for each category</p>
+      </div>
+      <div class="card s04-card" id="s04-c3">
+        <div class="num">03</div>
+        <div class="tile" id="s04-i3">{{icon:blocks}}</div>
+        <p class="h" id="s04-h3">Plastic Injection Molding</p>
+        <p class="b" id="s04-b3">Machines · Molds · Automation</p>
+      </div>
+      <div class="card s04-card" id="s04-c4">
+        <div class="num">04</div>
+        <div class="tile" id="s04-i4">{{icon:boxes}}</div>
+        <p class="h" id="s04-h4">Other Industrial Equipment</p>
+        <p class="b" id="s04-b4">Packaging · Processing · Machining</p>
+      </div>
+      <p class="note" id="s04-note">All equipment availability and regulatory requirements are subject to verification.</p>
+      <div class="pageno" id="s04-page">{{PAGE}}</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+{{HELPERS}}
+    const C = ["#s04-c1", "#s04-c2", "#s04-c3", "#s04-c4"];
+    E.title();
+    // "We are focusing on four groups of manufacturing opportunities." -> four numbered frames
+    C.forEach((c, i) => E.open(c, {{at:four groups}} + i * 0.12, 0.45));
+    // "First, pharmaceutical equipment, including sterile vial powder filling and capping systems."
+    E.blurIn("#s04-h1, #s04-i1", {{at:First pharmaceutical}});
+    focus(C, "#s04-c1", {{at:First pharmaceutical}});
+    E.blurIn("#s04-b1", {{at:sterile vial}});
+    // "...careful technical, quality, and regulatory review."
+    E.land("#s04-flag", {{at:regulatory review}});
+    // "Second, hygiene products. ... baby diapers, adult diapers, and feminine sanitary pads."
+    E.blurIn("#s04-h2, #s04-i2", {{at:Second hygiene}});
+    focus(C, "#s04-c2", {{at:Second hygiene}});
+    E.land("#s04-t1", {{at:baby diapers}});
+    E.land("#s04-t2", {{at:adult diapers}});
+    E.land("#s04-t3", {{at:feminine sanitary pads}});
+    E.blurIn("#s04-sep", {{at:Each requires its own}});
+    // "Third, plastic injection molding equipment, including machines, molds, and related automation."
+    E.blurIn("#s04-h3, #s04-i3", {{at:Third plastic}});
+    focus(C, "#s04-c3", {{at:Third plastic}});
+    E.blurIn("#s04-b3", {{at:including machines}});
+    // "And fourth, other industrial equipment such as packaging and processing machinery."
+    E.blurIn("#s04-h4, #s04-i4", {{at:And fourth}});
+    focus(C, "#s04-c4", {{at:And fourth}});
+    E.blurIn("#s04-b4", {{at:such as packaging}});
+    // "We would like to learn which of these sectors is most relevant to your business."
+    E.rest(C.join(", "), {{at:We would like to learn}});
+    E.blurIn("#s04-note", {{at:which of these sectors}});
+    E.exit({{EXIT}});
+    window.__timelines["s04"] = tl;
+  </script>
+</template>
