@@ -29,8 +29,13 @@
 - `hyperframes check`: lint 0 errors, runtime 0, layout 0, audio 0.
 - Looked at: every scene at its completed state, every scene's start and middle, all 11 seams,
   and the phone-width sheet.
-- Sound was **measured, not heard** (see below). Nobody has listened to the Kokoro read; proper
-  nouns ("Ghanaian", "GPM", "Korea–Ghana") were checked only through the phonemizer output.
+- Render: `renders/GPM_Korea-Ghana_Partnership_EN.mp4` (not in git), H.264 1920×1080 30 fps +
+  AAC 48 kHz stereo, 555.93 s, 26.5 MB, CRF 20, 16,678 frames; frames at 165 s and 450 s pulled
+  from the file match the preview.
+- Sound was **measured, not heard**: integrated −14.2 LUFS, short-term max −12.9 LUFS, true peak
+  −1.2 dBTP, 0 clipped samples, LRA 2.6 LU; voice onset 2.45 s (matches the 2.4 s lead). Nobody
+  has listened to the Kokoro read; proper nouns ("Ghanaian", "GPM", "Korea–Ghana") were checked
+  only through the phonemizer output.
 
 ## Warnings kept on purpose
 
